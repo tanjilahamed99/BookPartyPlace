@@ -1,7 +1,10 @@
-import {Lato } from "next/font/google";
+import { Lato } from "next/font/google";
 import "./globals.css";
 
-const Loto = Lato({ subsets: ["latin"] });
+const Loto = Lato({
+  subsets: ["latin"],
+  weight: ["100", "300", "400", "700", "900"]
+});
 
 export const metadata = {
   title: "BookPartyPlace",
@@ -10,7 +13,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html className="container mx-auto" lang="en">
       <body className={Loto.className}>{children}</body>
     </html>
   );
