@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FaRegHeart } from "react-icons/fa6";
 
 const Navbar = () => {
 
@@ -25,19 +26,31 @@ const Navbar = () => {
                         }
                     </ul>
                 </div>
-                <div>
-                    <Image src={'https://i.ibb.co/Sy34qfd/Logo.png'} width={500} height={500} alt="Website logo" />
+                <div className="flex  items-center">
+                    <Image className="w-10" src={'https://i.ibb.co/Sy34qfd/Logo.png'} width={500} height={500} alt="Website logo" />
+                    <h2 className="text-xl font-bold text-[#040404]">BookPartyPlace</h2>
                 </div>
             </div>
-            <div className="navbar-center hidden lg:flex">
+            {/* <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
                     {
                         ulLinks
                     }
                 </ul>
-            </div>
-            <div className="navbar-end">
-                <a className="btn">Button</a>
+            </div> */}
+            <div className="navbar-end flex items-center gap-10">
+                <div className="text-[#535552] text-lg md:flex items-center gap-8 hidden">
+                    <h2>Are u a Vendor ?</h2>
+                    <h2>Blog</h2>
+                </div>
+                <div className="flex items-center gap-5">
+                    <FaRegHeart className="text-4xl text-[#BCBFBA] hidden md:flex"  />
+                    <div className="avatar">
+                        <div className="w-10 rounded-full">
+                            <Image src={'https://i.ibb.co/k3twN21/7c81e16cc1f60c3091c8fd5e7d764f3b.jpg'} alt="profile image" width={500} height={500} />
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );
