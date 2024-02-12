@@ -1,4 +1,5 @@
 import Navbar from "@/components/Shared/Navbar/Navbar";
+import SearchBar from "@/pages/Home/SearchBar/SearchBar";
 
 export default function Home() {
   return (
@@ -6,10 +7,15 @@ export default function Home() {
 
       {/* header section */}
       <header>
+
+        {/* Navbar */}
         <Navbar />
-        
+
+        {/* Search bar / search section */}
+        <SearchBar />
+
       </header>
-      
+
       {/* body section */}
       <body>
 
@@ -17,7 +23,7 @@ export default function Home() {
 
       {/* footer section */}
       <footer>
-        
+
       </footer>
     </div>
   );

@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     colors: {
       'primary-color': '#F9BF2D',
+      'primary-text-gray': '#535552'
     },
   },
   plugins: [require("daisyui")],

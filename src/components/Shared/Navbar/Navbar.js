@@ -38,7 +38,7 @@ const Navbar = () => {
                     </div>
                 </div>
                 <div className="navbar-end flex items-center gap-10">
-                    <div className="text-[#535552] text-lg md:flex items-center gap-8 hidden">
+                    <div className="text-primary-text-gray text-lg md:flex items-center gap-8 hidden">
                         <h2>Are u a Vendor ?</h2>
                         <h2>Blog</h2>
                     </div>
@@ -56,16 +56,16 @@ const Navbar = () => {
 
             <div>
                 <div className="mt-2">
-                    <hr className="w-full text-[#535552] hidden md:flex" />
-                    
+                    <hr className="w-full text-primary-text-gray hidden lg:flex" />
+
                     {/* ul links */}
-                    <ul className="menu menu-horizontal px-1 justify-center md:flex font-semibold  text-xl hidden">
+                    <ul className="menu menu-horizontal px-1 justify-center lg:flex font-semibold  text-xl hidden text-primary-text-gray">
                         {
                             ulLinks
                         }
                     </ul>
 
-                    <hr className="w-full text-[#535552 ]  hidden md:flex " />
+                    <hr className="w-full text-primary-text-gray  hidden lg:flex " />
                 </div>
             </div>
 
