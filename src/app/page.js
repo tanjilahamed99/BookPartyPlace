@@ -1,12 +1,10 @@
 import Navbar from "@/components/Shared/Navbar/Navbar";
 import SearchBar from "@/pages/Home/SearchBar/SearchBar";
+import Suggestion from "@/pages/Home/Suggestion/Suggestion";
 
 export default function Home() {
   return (
     <div>
-
-      {/* header section */}
-      <header>
 
         {/* Navbar */}
         <Navbar />
@@ -14,17 +12,12 @@ export default function Home() {
         {/* Search bar / search section */}
         <SearchBar />
 
-      </header>
 
-      {/* body section */}
-      <body>
 
-      </body>
+        {/* suggestion component */}
+        <Suggestion />
 
-      {/* footer section */}
-      <footer>
 
-      </footer>
     </div>
   );
 }
