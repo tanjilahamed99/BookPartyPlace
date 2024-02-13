@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaRegHeart } from "react-icons/fa6";
+import Dropdown from "./Dropdown";
 
 const Navbar = () => {
 
@@ -13,9 +14,14 @@ const Navbar = () => {
         <li><Link href={'/'}>Photo/ Filmshoot</Link></li>
         <li><Link href={'/'}>Workshop</Link></li>
 
-
     </>
 
+
+    const WeddingLinks = <>
+
+
+
+    </>
 
 
     return (
@@ -52,20 +58,14 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-            {/* navigation links */}
 
+            {/* navigation links */}
             <div>
                 <div className="mt-2">
-                    <hr className="w-full text-primary-text-gray hidden lg:flex" />
+                    <hr className="w-full text-primary-text-gray hidden lg:flex mb-5" />
 
                     {/* ul links */}
-                    <ul className="menu menu-horizontal px-1 justify-center lg:flex font-semibold  text-xl hidden text-primary-text-gray">
-                        {
-                            ulLinks
-                        }
-                    </ul>
-
-                    <hr className="w-full text-primary-text-gray  hidden lg:flex " />
+                    <Dropdown />
                 </div>
             </div>
 
