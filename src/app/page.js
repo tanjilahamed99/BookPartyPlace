@@ -1,5 +1,6 @@
 import Navbar from "@/components/Shared/Navbar/Navbar";
 import EventCategories from "@/pages/Home/EventCategories/EventCategories";
+import HomeAbout from "@/pages/Home/HomeAbout/HomeAbout";
 import HomeContact from "@/pages/Home/HomeContact/HomeContact";
 import SearchBar from "@/pages/Home/SearchBar/SearchBar";
 import Suggestion from "@/pages/Home/Suggestion/Suggestion";
@@ -28,6 +29,9 @@ export default function Home() {
 
       {/* Home contact */}
       <HomeContact />
+
+      {/* Home About */}
+      <HomeAbout />
 
     </div>
   );
