@@ -21,8 +21,10 @@ const EventCategories = async () => {
             </div>
 
             {/* swiper js */}
-            <div className="hidden lg:flex">
-                <SwiperSlider data={suggestionData} />
+            <div className="lg:inline hidden">
+                <div className="">
+                    <SwiperSlider data={suggestionData} />
+                </div>
             </div>
 
 

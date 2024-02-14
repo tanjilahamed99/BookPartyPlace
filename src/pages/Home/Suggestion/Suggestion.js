@@ -10,7 +10,7 @@ const Suggestion = async () => {
     return (
         <div className="md:my-20 my-10 container mx-auto">
             <SectionTitle title={'What are you looking for ?'} />
-            <div className="lg:grid grid-cols-5 items-center gap-5  mt-3 hidden">
+            <div className="lg:grid grid-cols-5 items-center gap-5   hidden">
                 {
                     suggestionData?.slice(0, 5).map(i => <DisplayNData key={i._id} data={i}></DisplayNData>)
                 }

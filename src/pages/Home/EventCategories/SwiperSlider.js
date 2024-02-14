@@ -16,15 +16,15 @@ const SwiperSlider = ({ data }) => {
     const [setSwiperRef] = useState(null);
 
     return (
-        <div className=''>
+        <div className='relative'>
             <Swiper
                 onSwiper={setSwiperRef}
                 slidesPerView={5}
-                centeredSlides={true}
+                // centeredSlides={true}
                 spaceBetween={10}
-                pagination={{
-                    type: 'fraction',
-                }}
+                // pagination={{
+                //     type: 'fraction',
+                // }}
                 navigation={{
                     prevEl: '.custom-swiper-button-prev',
                     nextEl: '.custom-swiper-button-next'
@@ -44,7 +44,7 @@ const SwiperSlider = ({ data }) => {
 
 
             </Swiper>
-            <div className='flex gap-3  right-5 -top-8'>
+            <div className='flex gap-3  right-5 -top-11 absolute'>
                 <button className='custom-swiper-button-prev'>
                     <IoIosArrowBack className=" bg-primary-color rounded-full text-4xl p-2" />
                 </button>
