@@ -1,3 +1,4 @@
+import Footer from "@/components/Shared/Footer/Footer";
 import Navbar from "@/components/Shared/Navbar/Navbar";
 import EventCategories from "@/pages/Home/EventCategories/EventCategories";
 import HomeAbout from "@/pages/Home/HomeAbout/HomeAbout";
@@ -32,6 +33,9 @@ export default function Home() {
 
       {/* Home About */}
       <HomeAbout />
+
+      {/* footer */}
+      <Footer />
 
     </div>
   );
