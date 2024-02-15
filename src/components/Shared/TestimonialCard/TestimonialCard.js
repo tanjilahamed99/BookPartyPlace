@@ -7,7 +7,7 @@ const TestimonialCard = ({ data }) => {
     return (
         <div className="border-[#BCBFBA] border relative">
             <Image
-                className="absolute rounded-full md:w-32 md:h-32 md:-top-20 -top-10 xl:left-[32%] lg:left-[28%] md:left-[30%] z-10 h-20 w-20"
+                className="absolute rounded-full md:w-32 md:h-32 md:-top-20 -top-10 xl:left-[32%] lg:left-[28%] md:left-[30%] left-[33%] z-10 h-20 w-20"
                 src={data?.img} alt="testimonials image"
                 width={500}
                 height={500} />

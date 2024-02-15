@@ -6,6 +6,7 @@ import HomeContact from "@/pages/Home/HomeContact/HomeContact";
 import SearchBar from "@/pages/Home/SearchBar/SearchBar";
 import Suggestion from "@/pages/Home/Suggestion/Suggestion";
 import Testimonials from "@/pages/Home/Testimonials/Testimonials";
+import UniqueVenues from "@/pages/Home/UniqueVenues/UniqueVenues";
 import WorkCommand from "@/pages/Home/WorkCommand/WorkCommand";
 
 export default function Home() {
@@ -25,6 +26,9 @@ export default function Home() {
         {/* event categories */}
         <EventCategories />
       </div>
+
+      {/* Unique Venues*/}
+      <UniqueVenues />
 
       {/* Testimonial */}
       <Testimonials />
