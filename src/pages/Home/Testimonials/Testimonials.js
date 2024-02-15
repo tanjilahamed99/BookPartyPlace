@@ -17,7 +17,7 @@ const Testimonials = () => {
             <div className="hidden lg:inline">
                 <TestimonialsSlider view={3} data={testimonialDetails} />
             </div>
-            
+
             {/* medium screen */}
             <div className="hidden md:inline lg:hidden">
                 <TestimonialsSlider view={2} data={testimonialDetails} />
@@ -25,7 +25,7 @@ const Testimonials = () => {
 
             {/* small screen */}
             <div className="md:hidden">
-            <TestimonialsSlider view={1} data={testimonialDetails}/>
+                <TestimonialsSlider view={1} data={testimonialDetails} />
             </div>
         </div>
     );

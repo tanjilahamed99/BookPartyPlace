@@ -7,7 +7,7 @@ import { GrYoutube } from "react-icons/gr";
 
 const Footer = () => {
     return (
-        <footer className="footer mt-20 flex flex-col lg:flex-row xl:gap-20 lg:gap-5 lg:items-center px-5">
+        <footer className="footer mt-20 mb-10 flex flex-col lg:flex-row xl:gap-20 lg:gap-5 lg:items-center px-5">
             <div className="lg:w-1/3 mx-auto w-full">
                 <div className="flex  items-center">
                     <Image className="w-10" src={'https://i.ibb.co/Sy34qfd/Logo.png'} width={500} height={500} alt="Website logo" />

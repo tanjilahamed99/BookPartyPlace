@@ -1,6 +1,7 @@
 "use client"
 
-import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
@@ -8,7 +9,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Pagination, Navigation } from 'swiper/modules';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
-import DisplayNData from '@/components/Shared/DisplayNData/DisplayNData';
+import DisplayNData from '@/components/DisplayNData/DisplayNData';
 
 
 const SwiperSlider = ({ data }) => {
@@ -34,10 +35,10 @@ const SwiperSlider = ({ data }) => {
             >
 
                 {
-                    data?.map((i,idx) => <SwiperSlide  key={i._id}>
+                    data?.map((i) => <SwiperSlide key={i._id}>
 
                         <DisplayNData data={i}></DisplayNData>
-                        
+
                     </SwiperSlide>)
                 }
 
@@ -56,6 +57,11 @@ const SwiperSlider = ({ data }) => {
             </div>
         </div>
     );
+};
+
+
+SwiperSlider.propTypes = {
+    data: PropTypes.array
 };
 
 export default SwiperSlider;

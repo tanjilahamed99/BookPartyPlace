@@ -3,36 +3,35 @@ import DisplayLData from "@/components/DisplayLData/DisplayLData";
 import DisplayLDataSlider from "@/components/DisplayLDataSlider/DisplayLDataSlider";
 import SectionTitle from "@/components/SectionTitle/SectionTitle";
 
-const UniqueVenues = async () => {
+const EventByVenues = async() => {
 
-    const sliderData = await UseAllSuggestionData()
+    const eventData = await UseAllSuggestionData()
 
     return (
         <div className="my-20">
-            <SectionTitle title="Unique Venues for you" />
+            <SectionTitle title="Promotions near your area" />
 
-            {/* sliders for big screen*/}
             <div>
                 {/* big screen /xl */}
                 <div className="hidden xl:inline">
-                    <DisplayLDataSlider view={3.5} data={sliderData} />
+                    <DisplayLDataSlider view={3.5} data={eventData} />
                 </div>
 
                 {/* large screen / lg  */}
                 <div className="hidden lg:inline xl:hidden">
-                    <DisplayLDataSlider view={3} data={sliderData} />
+                    <DisplayLDataSlider view={3} data={eventData} />
                 </div>
 
                 {/* medium screen / md */}
                 <div className="hidden md:inline lg:hidden">
-                    <DisplayLDataSlider view={2.3} data={sliderData} />
+                    <DisplayLDataSlider view={2.3} data={eventData} />
                 </div>
             </div>
 
             {/* Grid layout for small device  */}
             <div className=" grid grid-cols-2 items-center gap-4 mx-3 md:hidden">
                 {
-                    sliderData?.map(i => <DisplayLData key={i._id} data={i}/>)
+                    eventData?.map(i => <DisplayLData key={i._id} data={i} />)
                 }
             </div>
 
@@ -40,4 +39,4 @@ const UniqueVenues = async () => {
     );
 };
 
-export default UniqueVenues;
+export default EventByVenues;

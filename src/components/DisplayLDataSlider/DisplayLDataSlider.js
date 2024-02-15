@@ -36,6 +36,7 @@ const DisplayLDataSlider = ({ data,view }) => {
 
                 {
                     data?.map((i, idx) => <SwiperSlide key={i._id}>
+                        
                         <DisplayLData data={i} />
 
                     </SwiperSlide>)

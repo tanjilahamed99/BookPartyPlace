@@ -1,8 +1,10 @@
-import Footer from "@/components/Shared/Footer/Footer";
-import Navbar from "@/components/Shared/Navbar/Navbar";
+import Footer from "@/components/Footer/Footer";
+import Navbar from "@/components/Navbar/Navbar";
 import EventCategories from "@/pages/Home/EventCategories/EventCategories";
+import EventByVenues from "@/pages/Home/EventsByVenues/EventByVenues";
 import HomeAbout from "@/pages/Home/HomeAbout/HomeAbout";
 import HomeContact from "@/pages/Home/HomeContact/HomeContact";
+import Promotion from "@/pages/Home/Promotion/Promotion";
 import SearchBar from "@/pages/Home/SearchBar/SearchBar";
 import Suggestion from "@/pages/Home/Suggestion/Suggestion";
 import Testimonials from "@/pages/Home/Testimonials/Testimonials";
@@ -39,8 +41,14 @@ export default function Home() {
       {/* Home contact */}
       <HomeContact />
 
+      {/* promotion */}
+      <Promotion />
+
       {/* Home About */}
       <HomeAbout />
+
+      {/* Events Published by Venues */}
+      <EventByVenues />
 
       {/* footer */}
       <Footer />

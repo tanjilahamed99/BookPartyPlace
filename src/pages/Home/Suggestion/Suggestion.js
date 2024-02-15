@@ -1,7 +1,7 @@
 import UseAllSuggestionData from "@/Hooks/UseAllSuggestionData";
-import DisplayNData from "@/components/Shared/DisplayNData/DisplayNData";
-import SectionTitle from "@/components/Shared/SectionTitle/SectionTitle";
 import SuggestionSlider from "./SuggestionSlider";
+import DisplayNData from "@/components/DisplayNData/DisplayNData";
+import SectionTitle from "@/components/SectionTitle/SectionTitle";
 
 const Suggestion = async () => {
 

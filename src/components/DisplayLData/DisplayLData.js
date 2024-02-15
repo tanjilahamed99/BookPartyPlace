@@ -1,4 +1,5 @@
-import Image from "next/image";
+
+
 import { FaHeart, FaStar } from "react-icons/fa";
 import { TiLocationOutline } from "react-icons/ti";
 import { IoIosPeople } from "react-icons/io";

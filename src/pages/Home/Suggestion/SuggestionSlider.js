@@ -1,8 +1,9 @@
 "use client"
 
+import PropTypes from 'prop-types';
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
-import DisplayNData from "@/components/Shared/DisplayNData/DisplayNData";
+import DisplayNData from "@/components/DisplayNData/DisplayNData";
 
 
 const SuggestionSlider = ({ data }) => {
@@ -17,9 +18,11 @@ const SuggestionSlider = ({ data }) => {
         },
     })
 
+
+    console.log(data.value)
+
     return (
         <div ref={sliderRef} className="keen-slider">
-            <div className={`keen-slider__slide number-slide1`}>1</div>
 
             {
                 data?.map((i, idx) => <div key={i._id} className={`keen-slider__slide number-slide${idx} rounded-2xl shadow-2xl shadow-[#0404041A] py-4`}>
@@ -31,6 +34,13 @@ const SuggestionSlider = ({ data }) => {
             }
         </div>
     );
+};
+
+
+
+
+SuggestionSlider.propTypes = {
+    data: PropTypes.array
 };
 
 export default SuggestionSlider;
