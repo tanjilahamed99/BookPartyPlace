@@ -51,7 +51,7 @@ export default function Home() {
       {/* Home About */}
       <HomeAbout />
 
-      {/* Events Published by Venues */}
+      {/* Events Published b Venues */}
       <EventByVenues />
 
       {/* footer */}
