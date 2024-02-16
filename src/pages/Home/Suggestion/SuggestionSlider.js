@@ -17,9 +17,7 @@ const SuggestionSlider = ({ data }) => {
             max: 10,
         },
     })
-
-
-    console.log(data.value)
+    
 
     return (
         <div ref={sliderRef} className="keen-slider">

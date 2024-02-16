@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import EventCategories from "@/pages/Home/EventCategories/EventCategories";
 import EventByVenues from "@/pages/Home/EventsByVenues/EventByVenues";
 import HomeAbout from "@/pages/Home/HomeAbout/HomeAbout";
+import HomeBlog from "@/pages/Home/HomeBlog/HomeBlog";
 import HomeContact from "@/pages/Home/HomeContact/HomeContact";
 import Promotion from "@/pages/Home/Promotion/Promotion";
 import SearchBar from "@/pages/Home/SearchBar/SearchBar";
@@ -41,6 +42,9 @@ export default function Home() {
       {/* Home contact */}
       <HomeContact />
 
+      {/* Home blog section */}
+      <HomeBlog />
+      
       {/* promotion */}
       <Promotion />
 

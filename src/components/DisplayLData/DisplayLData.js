@@ -7,7 +7,7 @@ import ImageSlider from "./ImageSlider";
 
 const DisplayLData = ({ data }) => {
     return (
-        <div href={'/'}>
+        <div>
             <div className='rounded-2xl pb-4'>
                 <div className="relative">
                     {/* image slider */}
