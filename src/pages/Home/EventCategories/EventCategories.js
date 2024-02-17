@@ -1,6 +1,6 @@
 
 import SuggestionSlider from "../Suggestion/SuggestionSlider";
-import UseAllSuggestionData from "@/Hooks/UseAllSuggestionData";
+import UseAllSuggestionData from "@/components/Hooks/UseAllSuggestionData";
 import SwiperSlider from "./SwiperSlider";
 import SectionTitle from "@/components/SectionTitle/SectionTitle";
 

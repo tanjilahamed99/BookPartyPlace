@@ -1,4 +1,4 @@
-import UseAllSuggestionData from "@/Hooks/UseAllSuggestionData";
+import UseAllSuggestionData from "@/components/Hooks/UseAllSuggestionData";
 import DisplayBlogData from "@/components/DisplayBlogData/DisplayBlogData";
 import SectionButton from "@/components/SectionButton/SectionButton";
 

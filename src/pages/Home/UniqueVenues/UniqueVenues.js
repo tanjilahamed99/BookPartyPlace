@@ -1,4 +1,4 @@
-import UseAllSuggestionData from "@/Hooks/UseAllSuggestionData";
+import UseAllSuggestionData from "@/components/Hooks/UseAllSuggestionData";
 import DisplayLData from "@/components/DisplayLData/DisplayLData";
 import DisplayLDataSlider from "@/components/DisplayLDataSlider/DisplayLDataSlider";
 import SectionTitle from "@/components/SectionTitle/SectionTitle";

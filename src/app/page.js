@@ -12,12 +12,12 @@ import Testimonials from "@/pages/Home/Testimonials/Testimonials";
 import UniqueVenues from "@/pages/Home/UniqueVenues/UniqueVenues";
 import WorkCommand from "@/pages/Home/WorkCommand/WorkCommand";
 
-export default function Home() {
+const Home = () => {
   return (
     <div>
 
       {/* Navbar */}
-      <Navbar />
+      < Navbar />
 
       <div className="">
         {/* Search bar / search section */}
@@ -44,7 +44,7 @@ export default function Home() {
 
       {/* Home blog section */}
       <HomeBlog />
-      
+
       {/* promotion */}
       <Promotion />
 
@@ -57,6 +57,8 @@ export default function Home() {
       {/* footer */}
       <Footer />
 
-    </div>
+    </div >
   );
 }
+
+export default Home
