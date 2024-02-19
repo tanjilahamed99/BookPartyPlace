@@ -3,7 +3,7 @@
 import PropTypes from 'prop-types';
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
-import DisplayNData from "@/components/DisplayNData/DisplayNData";
+import DisplayNData from '@/Shared/DisplayNData/DisplayNData';
 
 
 const SuggestionSlider = ({ data }) => {

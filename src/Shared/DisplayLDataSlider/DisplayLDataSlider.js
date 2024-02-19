@@ -12,6 +12,7 @@ import DisplayLData from '../DisplayLData/DisplayLData';
 
 
 
+
 const DisplayLDataSlider = ({ data,view }) => {
 
     const [setSwiperRef] = useState(null);

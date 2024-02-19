@@ -1,31 +1,23 @@
 import TestimonialsSlider from "./TestimonialsSlider";
 
-const Testimonials = () => {
 
-    const testimonialDetails = [
-        { "name": "Alex", "position": "Position, Company name", "img": 'https://i.ibb.co/MZJZfXD/testimonial.jpg' },
-        { "name": "Atif", "position": "Position, Company name", "img": 'https://i.ibb.co/MZJZfXD/testimonial.jpg' },
-        { "name": "Romon", "position": "Position, Company name", "img": 'https://i.ibb.co/MZJZfXD/testimonial.jpg' },
-        { "name": "Heles", "position": "Position, Company name", "img": 'https://i.ibb.co/MZJZfXD/testimonial.jpg' },
-        { "name": "Liton", "position": "Position, Company name", "img": 'https://i.ibb.co/MZJZfXD/testimonial.jpg' },
-        { "name": "Sumaiya", "position": "Position, Company name", "img": 'https://i.ibb.co/MZJZfXD/testimonial.jpg' },
-    ]
+const Testimonials = () => {
 
     return (
         <div>
             {/* larger screen */}
             <div className="hidden lg:inline">
-                <TestimonialsSlider view={3} data={testimonialDetails} />
+                <TestimonialsSlider view={3} />
             </div>
 
             {/* medium screen */}
             <div className="hidden md:inline lg:hidden">
-                <TestimonialsSlider view={2} data={testimonialDetails} />
+                <TestimonialsSlider view={2} />
             </div>
 
             {/* small screen */}
             <div className="md:hidden">
-                <TestimonialsSlider view={1} data={testimonialDetails} />
+                <TestimonialsSlider view={1} />
             </div>
         </div>
     );

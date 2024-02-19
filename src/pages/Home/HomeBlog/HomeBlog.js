@@ -1,10 +1,8 @@
-import UseAllSuggestionData from "@/components/Hooks/UseAllSuggestionData";
-import DisplayBlogData from "@/components/DisplayBlogData/DisplayBlogData";
-import SectionButton from "@/components/SectionButton/SectionButton";
+import DisplayBlogData from "@/Shared/DisplayBlogData/DisplayBlogData";
+import SectionButton from "@/Shared/SectionButton/SectionButton";
 
-const HomeBlog = async () => {
+const HomeBlog =  ({data}) => {
 
-    const blogData = await UseAllSuggestionData()
 
     return (
         <div>
@@ -48,7 +46,7 @@ const HomeBlog = async () => {
             {/* display blog data here*/}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-10 lg:gap-5 xl:gap-10 mt-10">
                 {
-                    blogData?.slice(0, 3).map(i => <DisplayBlogData key={i._id} data={i}></DisplayBlogData>)
+                    data?.slice(0, 3).map(i => <DisplayBlogData key={i._id} data={i}></DisplayBlogData>)
                 }
 
             </div>

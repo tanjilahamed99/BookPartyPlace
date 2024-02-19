@@ -1,5 +1,6 @@
-import Footer from "@/components/Footer/Footer";
-import Navbar from "@/components/Navbar/Navbar";
+import UseAllSuggestionData from "@/Hooks/UseAllSuggestionData";
+import Footer from "@/Shared/Footer/Footer";
+import Navbar from "@/Shared/Navbar/Navbar";
 import EventCategories from "@/pages/Home/EventCategories/EventCategories";
 import EventByVenues from "@/pages/Home/EventsByVenues/EventByVenues";
 import HomeAbout from "@/pages/Home/HomeAbout/HomeAbout";
@@ -12,7 +13,11 @@ import Testimonials from "@/pages/Home/Testimonials/Testimonials";
 import UniqueVenues from "@/pages/Home/UniqueVenues/UniqueVenues";
 import WorkCommand from "@/pages/Home/WorkCommand/WorkCommand";
 
-const Home = () => {
+
+const Home = async () => {
+
+  const data = await UseAllSuggestionData()
+
   return (
     <div>
 
@@ -24,14 +29,14 @@ const Home = () => {
         <SearchBar />
 
         {/* suggestion component */}
-        <Suggestion />
+        <Suggestion data={data} />
 
         {/* event categories */}
-        <EventCategories />
+        <EventCategories data={data} />
       </div>
 
       {/* Unique Venues*/}
-      <UniqueVenues />
+      <UniqueVenues data={data} />
 
       {/* Testimonial */}
       <Testimonials />
@@ -43,16 +48,16 @@ const Home = () => {
       <HomeContact />
 
       {/* Home blog section */}
-      <HomeBlog />
+      <HomeBlog data={data} />
 
       {/* promotion */}
-      <Promotion />
+      <Promotion data={data} />
 
       {/* Home About */}
       <HomeAbout />
 
       {/* Events Published b Venues */}
-      <EventByVenues />
+      <EventByVenues data={data} />
 
       {/* footer */}
       <Footer />

@@ -1,11 +1,9 @@
-import UseAllSuggestionData from "@/components/Hooks/UseAllSuggestionData";
-import DisplayLData from "@/components/DisplayLData/DisplayLData";
-import DisplayLDataSlider from "@/components/DisplayLDataSlider/DisplayLDataSlider";
-import SectionTitle from "@/components/SectionTitle/SectionTitle";
 
-const UniqueVenues = async () => {
+import DisplayLData from "@/Shared/DisplayLData/DisplayLData";
+import DisplayLDataSlider from "@/Shared/DisplayLDataSlider/DisplayLDataSlider";
+import SectionTitle from "@/Shared/SectionTitle/SectionTitle";
 
-    const sliderData = await UseAllSuggestionData()
+const UniqueVenues = ({data}) => {
 
     return (
         <div className="my-20">
@@ -15,24 +13,24 @@ const UniqueVenues = async () => {
             <div>
                 {/* big screen /xl */}
                 <div className="hidden xl:inline">
-                    <DisplayLDataSlider view={3.5} data={sliderData} />
+                    <DisplayLDataSlider view={3.5} data={data} />
                 </div>
 
                 {/* large screen / lg  */}
                 <div className="hidden lg:inline xl:hidden">
-                    <DisplayLDataSlider view={3} data={sliderData} />
+                    <DisplayLDataSlider view={3} data={data} />
                 </div>
 
                 {/* medium screen / md */}
                 <div className="hidden md:inline lg:hidden">
-                    <DisplayLDataSlider view={2.3} data={sliderData} />
+                    <DisplayLDataSlider view={2.3} data={data} />
                 </div>
             </div>
 
             {/* Grid layout for small device  */}
             <div className=" grid grid-cols-2 items-center gap-4 mx-3 md:hidden">
                 {
-                    sliderData?.map(i => <DisplayLData key={i._id} data={i}/>)
+                    data?.map(i => <DisplayLData key={i._id} data={i}/>)
                 }
             </div>
 

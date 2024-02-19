@@ -1,4 +1,5 @@
-import SectionButton from '@/components/SectionButton/SectionButton';
+
+import SectionButton from '@/Shared/SectionButton/SectionButton';
 import Image from 'next/image';
 import React from 'react';
 
