@@ -39,7 +39,7 @@ const Home = async () => {
       <UniqueVenues data={data} />
 
       {/* Testimonial */}
-      <Testimonials />
+      {/* <Testimonials /> */}
 
       {/* work commands */}
       <WorkCommand />
