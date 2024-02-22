@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaRegHeart } from "react-icons/fa6";
 import Dropdown from "./Dropdown";
+import logo from '../../../public/images/Logo.png'
+import profileImage from '../../../public/images/profile.jpg'
 
 const Navbar = () => {
 
@@ -39,7 +41,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="flex  items-center">
-                        <Image className="w-10" src={'https://i.ibb.co/Sy34qfd/Logo.png'} width={500} height={500} alt="Website logo" />
+                        <Image className="w-10" src={logo} width={500} height={500} alt="Website logo" />
                         <h2 className="text-xl font-bold text-[#040404]">BookPartyPlace</h2>
                     </div>
                 </div>
@@ -52,7 +54,7 @@ const Navbar = () => {
                         <FaRegHeart className="text-4xl text-[#BCBFBA] hidden md:flex" />
                         <div className="avatar">
                             <div className="w-10 rounded-full">
-                                <Image src={'https://i.ibb.co/k3twN21/7c81e16cc1f60c3091c8fd5e7d764f3b.jpg'} alt="profile image" width={500} height={500} />
+                                <Image src={profileImage} alt="profile image" width={500} height={500} />
                             </div>
                         </div>
                     </div>
