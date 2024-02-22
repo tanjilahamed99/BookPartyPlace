@@ -21,7 +21,7 @@ const Home = async () => {
   return (
     <div>
 
-      {/* Navbar */}
+      {/* Navbar */ }
       < Navbar />
 
       <div className="">
