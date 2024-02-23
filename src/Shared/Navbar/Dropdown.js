@@ -3,6 +3,20 @@ import allDropdownText from "./dropDownText";
 
 const Dropdown = () => {
   const { weddingText } = allDropdownText;
+  const {
+    PELLI_KODUKU,
+    PELLI_KUTHURU,
+    WEDDING_CEREMONY,
+    WEDDING_RECEPTION,
+    WEDDING_VENUES,
+    MEHENDI_CELEBRATION,
+    HALDI_EVENT,
+    RING_CEREMONY,
+    HONEYMOON_PLACES,
+    KALYANA_MANDAPAM,
+    INDIAN_SANGEET_WEDDING,
+    PRE_WEDDING_CEREMONY,
+  } = weddingText;
 
   return (
     <div
@@ -19,40 +33,40 @@ const Dropdown = () => {
       <div role="tabpanel" className="tab-content py-10 w-full ">
         <ul className="grid grid-cols-3 gap-4 text-lg text-[#040404] w-full">
           <li>
-            <Link href={"/"}>Pelli Kuthuru</Link>
+            <Link href={"/"}>{PELLI_KODUKU}</Link>
           </li>
           <li>
-            <Link href={"/"}>Pelli Koduku</Link>
+            <Link href={"/"}>{PELLI_KUTHURU}</Link>
           </li>
           <li>
-            <Link href={"/"}>Wedding Ceremony</Link>
+            <Link href={"/"}>{WEDDING_CEREMONY}</Link>
           </li>
           <li>
-            <Link href={"/"}>Wedding Venues</Link>
+            <Link href={"/"}>{WEDDING_VENUES}</Link>
           </li>
           <li>
-            <Link href={"/"}>Mehendi Celebrations</Link>
+            <Link href={"/"}>{WEDDING_RECEPTION}</Link>
           </li>
           <li>
-            <Link href={"/"}>Haldi Event</Link>
+            <Link href={"/"}>{MEHENDI_CELEBRATION}</Link>
           </li>
           <li>
-            <Link href={"/"}>Ring Ceremony</Link>
+            <Link href={"/"}>{HALDI_EVENT}</Link>
           </li>
           <li>
-            <Link href={"/"}>Honeymoon Places</Link>
+            <Link href={"/"}>{RING_CEREMONY}</Link>
           </li>
           <li>
-            <Link href={"/"}>Kalyana Mandapam</Link>
+            <Link href={"/"}>{HONEYMOON_PLACES}</Link>
           </li>
           <li>
-            <Link href={"/"}>Wedding Reception</Link>
+            <Link href={"/"}>{KALYANA_MANDAPAM}</Link>
           </li>
           <li>
-            <Link href={"/"}>Indian Sangeet Wedding</Link>
+            <Link href={"/"}>{INDIAN_SANGEET_WEDDING}</Link>
           </li>
           <li>
-            <Link href={"/"}>Pre-Wedding Ceremoney</Link>
+            <Link href={"/"}>{PRE_WEDDING_CEREMONY}</Link>
           </li>
         </ul>
       </div>
@@ -149,7 +163,7 @@ const Dropdown = () => {
         name="my_tabs_1"
         role="tab"
         className="tab mx-auto pb-10 font-semibold  text-xl  text-primary-text-gray flex justify-center w-fit"
-        aria-label="Corporate Events"
+        aria-label="Birthday Party"
       />
       <div role="tabpanel" className="tab-content py-10 w-full">
         <ul className="grid grid-cols-3 gap-4 text-lg text-[#040404]">
@@ -170,7 +184,7 @@ const Dropdown = () => {
         name="my_tabs_1"
         role="tab"
         className="tab mx-auto pb-10 font-semibold  text-xl  text-primary-text-gray flex justify-center w-fit"
-        aria-label="Corporate Events"
+        aria-label="Photo/ Filmshoot"
       />
       <div role="tabpanel" className="tab-content py-10 w-full">
         <ul className="grid grid-cols-3 gap-4 text-lg text-[#040404]">
@@ -203,7 +217,7 @@ const Dropdown = () => {
         name="my_tabs_1"
         role="tab"
         className="tab mx-auto pb-10 font-semibold  text-xl  text-primary-text-gray flex justify-center w-fit"
-        aria-label="Corporate Events"
+        aria-label="Workshop"
       />
       <div role="tabpanel" className="tab-content py-10 w-full">
         <ul className="grid grid-cols-3 gap-4 text-lg text-[#040404]">
