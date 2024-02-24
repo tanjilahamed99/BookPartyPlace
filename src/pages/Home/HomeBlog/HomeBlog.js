@@ -1,62 +1,62 @@
 import DisplayBlogData from "@/Shared/DisplayBlogData/DisplayBlogData";
 import SectionButton from "@/Shared/SectionButton/SectionButton";
+import homeBlogAllText from "./homeBlogText";
 
-const HomeBlog =  ({data}) => {
+const HomeBlog = ({ data }) => {
+  const {
+    TITLE,
+    DESC,
+    BTN,
+    WEDDING,
+    CORPORATE_BLOG,
+    ENGAGEMENT_CEREMONY,
+    PARTIES,
+    TEAM_BUILDING,
+    PHOTO_SHOOTS,
+  } = homeBlogAllText;
 
+  return (
+    <div>
+      <h2 className="md:text-2xl text-lg font-bold mb-2 text-[#040404] text-center ">
+        {TITLE}
+      </h2>
+      <p className="text-[#535552] text-center">{DESC}</p>
 
-    return (
-        <div>
-            <h2 className='md:text-2xl text-lg font-bold mb-2 text-[#040404] text-center '>Checkout our Blogs</h2>
-            <p className="text-[#535552] text-center">
-                get Inspired with the latest Trends and advice from our experts
-            </p>
+      {/* filter */}
+      <div className="flex gap-5 flex-wrap justify-center mt-5">
+        <button className="bg-white rounded-l-full rounded-r-full border-[#BCBFBA] px-8 py-2 hover:bg-primary-color active:bg-primary-color border-2  text-[#040404] text-xl">
+          {WEDDING}
+        </button>
+        <button className="bg-white rounded-l-full rounded-r-full border-[#BCBFBA] px-8 py-2 hover:bg-primary-color active:bg-primary-color border-2  text-[#040404] text-xl">
+          {CORPORATE_BLOG}
+        </button>
+        <button className="bg-white rounded-l-full rounded-r-full border-[#BCBFBA] px-8 py-2 hover:bg-primary-color active:bg-primary-color border-2  text-[#040404] text-xl">
+          {ENGAGEMENT_CEREMONY}
+        </button>
+        <button className="bg-white rounded-l-full rounded-r-full border-[#BCBFBA] px-8 py-2 hover:bg-primary-color active:bg-primary-color border-2  text-[#040404] text-xl">
+          {PARTIES}
+        </button>
+        <button className="bg-white rounded-l-full rounded-r-full border-[#BCBFBA] px-8 py-2 hover:bg-primary-color active:bg-primary-color border-2  text-[#040404] text-xl">
+          {TEAM_BUILDING}
+        </button>
+        <button className="bg-white rounded-l-full rounded-r-full border-[#BCBFBA] px-8 py-2 hover:bg-primary-color active:bg-primary-color border-2  text-[#040404] text-xl">
+          {PHOTO_SHOOTS}
+        </button>
+      </div>
 
-            {/* filter */}
-            <div className="flex gap-5 flex-wrap justify-center mt-5">
-                <button
-                    className="bg-white rounded-l-full rounded-r-full border-[#BCBFBA] px-8 py-2 active:bg-primary-color border-2  text-[#040404] text-xl">
-                    Wedding
-                </button>
-                <button
-                    className="bg-white rounded-l-full rounded-r-full border-[#BCBFBA] px-8 py-2 active:bg-primary-color border-2  text-[#040404] text-xl">
-                    Wedding
-                </button>
-                <button
-                    className="bg-white rounded-l-full rounded-r-full border-[#BCBFBA] px-8 py-2 active:bg-primary-color border-2  text-[#040404] text-xl">
-                    Wedding
-                </button>
-                <button
-                    className="bg-white rounded-l-full rounded-r-full border-[#BCBFBA] px-8 py-2 active:bg-primary-color border-2  text-[#040404] text-xl">
-                    Wedding
-                </button>
-                <button
-                    className="bg-white rounded-l-full rounded-r-full border-[#BCBFBA] px-8 py-2 active:bg-primary-color border-2  text-[#040404] text-xl">
-                    Wedding
-                </button>
-                <button
-                    className="bg-white rounded-l-full rounded-r-full border-[#BCBFBA] px-8 py-2 active:bg-primary-color border-2  text-[#040404] text-xl">
-                    Wedding
-                </button>
-                <button
-                    className="bg-white rounded-l-full rounded-r-full border-[#BCBFBA] px-8 py-2 active:bg-primary-color border-2  text-[#040404] text-xl">
-                    Wedding
-                </button>
-            </div>
+      {/* display blog data here*/}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-10 lg:gap-5 xl:gap-10 mt-10">
+        {data?.slice(0, 3).map((i) => (
+          <DisplayBlogData key={i._id} data={i}></DisplayBlogData>
+        ))}
+      </div>
 
-            {/* display blog data here*/}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-10 lg:gap-5 xl:gap-10 mt-10">
-                {
-                    data?.slice(0, 3).map(i => <DisplayBlogData key={i._id} data={i}></DisplayBlogData>)
-                }
-
-            </div>
-
-            {/* see more button */}
-            <div className="flex justify-center mt-5">
-                <SectionButton text={'See More'} />
-            </div>
-        </div>
-    );
+      {/* see more button */}
+      <div className="flex justify-center mt-5">
+        <SectionButton text={BTN} />
+      </div>
+    </div>
+  );
 };
 
 export default HomeBlog;
