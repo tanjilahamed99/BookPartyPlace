@@ -2,7 +2,15 @@ import Link from "next/link";
 import allDropdownText from "./dropDownText";
 
 const Dropdown = () => {
-  const { weddingText } = allDropdownText;
+  const {
+    weddingText,
+    birthdayParty,
+    corporate,
+    partiesText,
+    photoFilmShoot,
+    workshop,
+  } = allDropdownText;
+
   const {
     PELLI_KODUKU,
     PELLI_KUTHURU,
@@ -17,6 +25,49 @@ const Dropdown = () => {
     INDIAN_SANGEET_WEDDING,
     PRE_WEDDING_CEREMONY,
   } = weddingText;
+
+  const { AUDITORIUMS, TENT_HOUSE, WORK_SHOP, SEMINARS, WARE_HOUSE } = workshop;
+
+  const { BIRTHDAY_PARTY, KIDS_BIRTHDAY, FIRST_BIRTHDAY } = birthdayParty;
+
+
+  const {
+    CORPORATE_OUTING,
+    CORPORATE_PARTY,
+    CO_WORKING_SPACE,
+    CONFERENCE,
+    TEAM_DINNER,
+    TEAM_BUILDING,
+    TEAM_LUNCH,
+    EXIBITION,
+    TEAM_OUTINGS,
+  } = corporate;
+
+
+  const {
+    NEW_YEAR_PARTY,
+    CHRISTMAS_PARTY,
+    OUTDOOR_VENUE_PARTY,
+    FESTIVAL_PARTY,
+    HOLI_PARTY,
+    PRIVATE_PARTY,
+    HALLOWEEN_PARTY,
+    DINNER_PLACES,
+    BACHELORETTE_PARTY,
+    POOL_PARTY,
+    ANNIVERSARY_CELEBRATIONS,
+    OTHER_TYPES_PARTY,
+  } = partiesText;
+
+  const {
+    PHOTO_SHOOT_STUDIO,
+    MUSIC_STUDIES,
+    FILM_STUDIOS,
+    ANIMATION_STUDIOS,
+    RECORDING_STUDIOS,
+    VFX_STUDIOS,
+    DANCE_STUDIOS,
+  } = photoFilmShoot;
 
   return (
     <div
@@ -81,40 +132,40 @@ const Dropdown = () => {
       <div role="tabpanel" className="tab-content py-10 w-full">
         <ul className="grid grid-cols-3 gap-4 text-lg text-[#040404]">
           <li>
-            <Link href={"/"}>New Year Party</Link>
+            <Link href={"/"}>{NEW_YEAR_PARTY}</Link>
           </li>
           <li>
-            <Link href={"/"}>Christmas Party</Link>
+            <Link href={"/"}>{CHRISTMAS_PARTY}</Link>
           </li>
           <li>
-            <Link href={"/"}>Outdoor venue party</Link>
+            <Link href={"/"}>{OUTDOOR_VENUE_PARTY}</Link>
           </li>
           <li>
-            <Link href={"/"}>Festival Prty</Link>
+            <Link href={"/"}>{FESTIVAL_PARTY}</Link>
           </li>
           <li>
-            <Link href={"/"}>Holi party</Link>
+            <Link href={"/"}>{HOLI_PARTY}</Link>
           </li>
           <li>
-            <Link href={"/"}>Private party</Link>
+            <Link href={"/"}>{PRIVATE_PARTY}</Link>
           </li>
           <li>
-            <Link href={"/"}>Halloween party</Link>
+            <Link href={"/"}>{HALLOWEEN_PARTY}</Link>
           </li>
           <li>
-            <Link href={"/"}>Dinner places</Link>
+            <Link href={"/"}>{DINNER_PLACES}</Link>
           </li>
           <li>
-            <Link href={"/"}>Bachelor’s/ Bachelorette party</Link>
+            <Link href={"/"}>{BACHELORETTE_PARTY}</Link>
           </li>
           <li>
-            <Link href={"/"}>Pool party</Link>
+            <Link href={"/"}>{POOL_PARTY}</Link>
           </li>
           <li>
-            <Link href={"/"}>Anniversary celebrations</Link>
+            <Link href={"/"}>{ANNIVERSARY_CELEBRATIONS}</Link>
           </li>
           <li>
-            <Link href={"/"}>Other Type of Parties</Link>
+            <Link href={"/"}>{OTHER_TYPES_PARTY}</Link>
           </li>
         </ul>
       </div>
@@ -129,31 +180,31 @@ const Dropdown = () => {
       <div role="tabpanel" className="tab-content py-10 w-full">
         <ul className="grid grid-cols-3 gap-4 text-lg text-[#040404]">
           <li>
-            <Link href={"/"}>Corporate Outings</Link>
+            <Link href={"/"}>{CORPORATE_OUTING}</Link>
           </li>
           <li>
-            <Link href={"/"}>Corporate party</Link>
+            <Link href={"/"}>{CORPORATE_PARTY}</Link>
           </li>
           <li>
-            <Link href={"/"}>Co-Working Space</Link>
+            <Link href={"/"}>Co-{CO_WORKING_SPACE}</Link>
           </li>
           <li>
-            <Link href={"/"}>Conference Halls/Celebrations</Link>
+            <Link href={"/"}>{CONFERENCE}</Link>
           </li>
           <li>
-            <Link href={"/"}>Team Dinner Places</Link>
+            <Link href={"/"}>{TEAM_DINNER}</Link>
           </li>
           <li>
-            <Link href={"/"}>Team Building</Link>
+            <Link href={"/"}>{TEAM_BUILDING}</Link>
           </li>
           <li>
-            <Link href={"/"}>Team Lunch</Link>
+            <Link href={"/"}>{TEAM_LUNCH}</Link>
           </li>
           <li>
-            <Link href={"/"}>Exibition</Link>
+            <Link href={"/"}>{EXIBITION}</Link>
           </li>
           <li>
-            <Link href={"/"}>Team Outings</Link>
+            <Link href={"/"}>{TEAM_OUTINGS}</Link>
           </li>
         </ul>
       </div>
@@ -168,13 +219,13 @@ const Dropdown = () => {
       <div role="tabpanel" className="tab-content py-10 w-full">
         <ul className="grid grid-cols-3 gap-4 text-lg text-[#040404]">
           <li>
-            <Link href={"/"}>Birthday party</Link>
+            <Link href={"/"}>{BIRTHDAY_PARTY}</Link>
           </li>
           <li>
-            <Link href={"/"}>Kids Birthday party</Link>
+            <Link href={"/"}>{KIDS_BIRTHDAY}</Link>
           </li>
           <li>
-            <Link href={"/"}>1st Birthday party</Link>
+            <Link href={"/"}>{FIRST_BIRTHDAY}</Link>
           </li>
         </ul>
       </div>
@@ -189,25 +240,25 @@ const Dropdown = () => {
       <div role="tabpanel" className="tab-content py-10 w-full">
         <ul className="grid grid-cols-3 gap-4 text-lg text-[#040404]">
           <li>
-            <Link href={"/"}>Photoshoot studio</Link>
+            <Link href={"/"}>{PHOTO_SHOOT_STUDIO}</Link>
           </li>
           <li>
-            <Link href={"/"}>Music studios</Link>
+            <Link href={"/"}>{MUSIC_STUDIES}</Link>
           </li>
           <li>
-            <Link href={"/"}>Film studios</Link>
+            <Link href={"/"}>{FILM_STUDIOS}</Link>
           </li>
           <li>
-            <Link href={"/"}>Animation studios</Link>
+            <Link href={"/"}>{ANIMATION_STUDIOS}</Link>
           </li>
           <li>
-            <Link href={"/"}>Recording studios</Link>
+            <Link href={"/"}>{RECORDING_STUDIOS}</Link>
           </li>
           <li>
-            <Link href={"/"}>VFX studios</Link>
+            <Link href={"/"}>{VFX_STUDIOS}</Link>
           </li>
           <li>
-            <Link href={"/"}>Dance studios</Link>
+            <Link href={"/"}>{DANCE_STUDIOS}</Link>
           </li>
         </ul>
       </div>
@@ -222,19 +273,19 @@ const Dropdown = () => {
       <div role="tabpanel" className="tab-content py-10 w-full">
         <ul className="grid grid-cols-3 gap-4 text-lg text-[#040404]">
           <li>
-            <Link href={"/"}>Auditoriums</Link>
+            <Link href={"/"}>{AUDITORIUMS}</Link>
           </li>
           <li>
-            <Link href={"/"}>Tent house</Link>
+            <Link href={"/"}>{TENT_HOUSE}</Link>
           </li>
           <li>
-            <Link href={"/"}>Work shop</Link>
+            <Link href={"/"}>{WORK_SHOP}</Link>
           </li>
           <li>
-            <Link href={"/"}>Seminars</Link>
+            <Link href={"/"}>{SEMINARS}</Link>
           </li>
           <li>
-            <Link href={"/"}>Ware house</Link>
+            <Link href={"/"}>{WARE_HOUSE}</Link>
           </li>
         </ul>
       </div>

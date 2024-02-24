@@ -26,6 +26,22 @@ const POOL_PARTY = "Pool party";
 const ANNIVERSARY_CELEBRATIONS = "Anniversary celebrations";
 const OTHER_TYPES_PARTY = "Other Type of Parties";
 
+// corporate events
+const CORPORATE_OUTING = "Corporate Outings";
+const CORPORATE_PARTY = "Corporate party";
+const CO_WORKING_SPACE = "Co-Working Space";
+const CONFERENCE = "Conference Halls/Celebrations";
+const TEAM_DINNER = "Team Dinner Places";
+const TEAM_BUILDING = "Team Building";
+const TEAM_LUNCH = "Team Lunch";
+const EXIBITION = "Exibition";
+const TEAM_OUTINGS = "Team Outings";
+
+// Birthday Party
+const BIRTHDAY_PARTY = "Birthday party";
+const KIDS_BIRTHDAY = "Kids Birthday party";
+const FIRST_BIRTHDAY = "1st Birthday party";
+
 // Photo/ Filmshoot
 const PHOTO_SHOOT_STUDIO = "Photoshoot studio";
 const MUSIC_STUDIES = "Music studios";
@@ -72,9 +88,35 @@ const partiesText = {
   OTHER_TYPES_PARTY,
 };
 
-const photoFilmShoot = {};
+const corporate = {
+  CORPORATE_OUTING,
+  CORPORATE_PARTY,
+  CO_WORKING_SPACE,
+  CONFERENCE,
+  TEAM_DINNER,
+  TEAM_BUILDING,
+  TEAM_LUNCH,
+  EXIBITION,
+  TEAM_OUTINGS,
+};
 
-const corporateEvents = {
+const birthdayParty = {
+  BIRTHDAY_PARTY,
+  KIDS_BIRTHDAY,
+  FIRST_BIRTHDAY,
+};
+
+const photoFilmShoot = {
+  PHOTO_SHOOT_STUDIO,
+  MUSIC_STUDIES,
+  FILM_STUDIOS,
+  ANIMATION_STUDIOS,
+  RECORDING_STUDIOS,
+  VFX_STUDIOS,
+  DANCE_STUDIOS,
+};
+
+const workshop = {
   AUDITORIUMS,
   TENT_HOUSE,
   WORK_SHOP,
@@ -85,7 +127,10 @@ const corporateEvents = {
 const allDropdownText = {
   weddingText,
   partiesText,
-  corporateEvents,
+  corporate,
+  workshop,
+  photoFilmShoot,
+  birthdayParty,
 };
 
 export default allDropdownText;
