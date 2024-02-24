@@ -1,34 +1,58 @@
+import promotionAllText from "./homeAboutText";
 
 const HomeAbout = () => {
-    return (
-        <div className="my-20 space-y-5 px-5">
-            {/* about-1 */}
-            <div className="space-y-2">
-                <h2 className="text-xl font-semibold text-[#393536]">Bookingpartyplace Venues</h2>
-                <p className="text-[#616872]">Weddings, parties, corporate events, Birthday party, photo/ Filmshoot, workshop, Weddings, parties, corporate events, Birthday party, photo/ Filmshoot, workshop, Weddings, parties, corporate events, Birthday party, photo/ Filmshoot, workshop</p>
-            </div>
-            {/* about-2 */}
-            <div className="space-y-2">
-                <h2 className="text-xl font-semibold text-[#393536]">Trending Venues</h2>
-                <p className="text-[#616872]">Corporate outings, corporate party, co-working space, conference halls/celebrations, Team dinner places, Team building, Team lunch, Exibition, Team outings</p>
-            </div>
-            {/* about-3 */}
-            <div className="space-y-2">
-                <h2 className="text-xl font-semibold text-[#393536]">Vendors</h2>
-                <p className="text-[#616872]">Caterers ,  Wedding DJ, Pandits, Wedding videography, Wedding decorators, Wedding choreography, Photobooth, Wedding Invitations, Wedding Gifts, Wedding Transportation, Florists, Wedding Cakes, Care takers,</p>
-            </div>
-            {/* about-4 */}
-            <div className="space-y-2">
-                <h2 className="text-xl font-semibold text-[#393536]">Biggest Events</h2>
-                <p className="text-[#616872]">Weddings, parties, corporate events, Birthday party, photo/ Filmshoot, workshop, Weddings, parties, corporate events, Birthday party, photo/ Filmshoot, workshop, Weddings, parties, corporate events, Birthday party, photo/ Filmshoot, workshop</p>
-            </div>
-            {/* about-5 */}
-            <div className="space-y-2">
-                <h2 className="text-xl font-semibold text-[#393536]">Locations</h2>
-                <p className="text-[#616872]">Hyderabad : Hi-Tech city, Sr Nagar, Gachibowli, Kukatpally, Mehandipatnam, Medchal, AS Rao nagar, Old city, Lakdikapul</p>
-            </div>
-        </div>
-    );
+  const {
+    BOOKING_DESC,
+    BOOKING_TITLE,
+    LOCATION_DESC,
+    LOCATION_TITLE,
+    TRENDING_DESC,
+    TRENDING_TITLE,
+    VENDORS_DESC,
+    VENDORS_TITLE,
+    BIGGEST_EVENTS_DESC,
+    BIGGEST_EVENTS_TITLE,
+  } = promotionAllText;
+
+  return (
+    <div className="my-20 space-y-5 px-5">
+      {/* about-1 */}
+      <div className="space-y-2">
+        <h2 className="text-xl font-semibold text-[#393536]">
+          {BOOKING_TITLE}
+        </h2>
+        <p className="text-[#616872]">{BOOKING_DESC}</p>
+      </div>
+      {/* about-2 */}
+      <div className="space-y-2">
+        <h2 className="text-xl font-semibold text-[#393536]">
+          {TRENDING_TITLE}
+        </h2>
+        <p className="text-[#616872]">{TRENDING_DESC}</p>
+      </div>
+      {/* about-3 */}
+      <div className="space-y-2">
+        <h2 className="text-xl font-semibold text-[#393536]">
+          {VENDORS_TITLE}
+        </h2>
+        <p className="text-[#616872]">{VENDORS_DESC}</p>
+      </div>
+      {/* about-4 */}
+      <div className="space-y-2">
+        <h2 className="text-xl font-semibold text-[#393536]">
+          {BIGGEST_EVENTS_TITLE}
+        </h2>
+        <p className="text-[#616872]">{BIGGEST_EVENTS_DESC}</p>
+      </div>
+      {/* about-5 */}
+      <div className="space-y-2">
+        <h2 className="text-xl font-semibold text-[#393536]">
+          {LOCATION_TITLE}
+        </h2>
+        <p className="text-[#616872]">{LOCATION_DESC}</p>
+      </div>
+    </div>
+  );
 };
 
 export default HomeAbout;
