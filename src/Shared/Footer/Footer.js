@@ -40,7 +40,7 @@ const Footer = () => {
             placeholder="Your email"
             className="input input-bordered md:py-4 w-full"
           />
-          <div className="absolute -right-10 top-[1.8px]">
+          <div className="absolute -right-12 top-[1.8px]">
             <SectionButton text={BTN} />
           </div>
         </div>
