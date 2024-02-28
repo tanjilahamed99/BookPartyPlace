@@ -77,7 +77,10 @@ const Navbar = () => {
               height={500}
               alt="Website logo"
             />
-            <h2 className="text-xl font-bold text-[#040404]">{WEB_NAME}</h2>
+            {/* web name */}
+            <Link href={"/"}>
+              <h2 className="text-xl font-bold text-[#040404]">{WEB_NAME}</h2>
+            </Link>
           </div>
         </div>
         <div className="navbar-end flex items-center gap-10">
@@ -89,6 +92,7 @@ const Navbar = () => {
             <FaRegHeart className="text-4xl text-[#BCBFBA] hidden md:flex" />
             <div className="avatar">
               <div className="w-10 rounded-full">
+                {/* navbar image */}
                 <Image
                   src={profileImage}
                   alt="profile image"
