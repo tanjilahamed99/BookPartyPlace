@@ -108,7 +108,7 @@ const Navbar = () => {
       {/* navigation links */}
       <div className="lg:flex hidden justify-center mx-auto w-full">
         <div className="mt-2 ">
-          <hr className="w-full text-primary-text-gray lg:flex mb-5" />
+          <hr className=" text-primary-text-gray lg:flex mb-5" />
 
           {/* ul links */}
           <Dropdown />
