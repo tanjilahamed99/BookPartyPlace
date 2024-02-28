@@ -87,7 +87,7 @@ const Dropdown = () => {
         </div>
         <ul
           tabIndex={0}
-          className="dropdown-content z-[1] menu  p-2 shadow bg-base-100 rounded-box w-[700px] grid grid-cols-3 gap-3 text-[#040404] group-hover:-left-60"
+          className="dropdown-content z-[1] menu  p-2 shadow bg-base-100 rounded-box w-[1000px] grid grid-cols-3 gap-3 text-[#040404] -left-60"
         >
           <li>
             <Link href={"/"}>{PELLI_KODUKU}</Link>
