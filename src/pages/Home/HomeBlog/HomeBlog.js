@@ -3,6 +3,8 @@ import SectionButton from "@/Shared/SectionButton/SectionButton";
 import homeBlogAllText from "./homeBlogText";
 
 const HomeBlog = ({ data }) => {
+
+  // Home Blog section all text
   const {
     TITLE,
     DESC,
@@ -17,12 +19,14 @@ const HomeBlog = ({ data }) => {
 
   return (
     <div>
+      {/* home blog section title */}
       <h2 className="md:text-2xl text-lg font-bold mb-2 text-[#040404] text-center ">
         {TITLE}
       </h2>
+      {/* home blog section description */}
       <p className="text-[#535552] text-center">{DESC}</p>
 
-      {/* filter */}
+      {/* Home blog all filter */}
       <div className="flex gap-5 flex-wrap justify-center mt-5">
         <button className="bg-white rounded-l-full rounded-r-full border-[#BCBFBA] px-8 py-2 hover:bg-primary-color active:bg-primary-color border-2  text-[#040404] text-xl">
           {WEDDING}

@@ -8,6 +8,7 @@ const Promotion = ({ data }) => {
 
   return (
     <div className="my-20">
+      {/* promotion section title */}
       <SectionTitle title={TITLE} />
 
       <div>

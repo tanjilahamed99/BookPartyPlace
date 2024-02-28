@@ -8,15 +8,18 @@ const EventCategories = ({ data }) => {
 
   return (
     <div className="md:my-20 container mx-auto">
+      {/* EventCatagories title */}
       <SectionTitle title={TITLE} />
 
+      {/* EventCatagories card for mobile devices */}
       <div className="lg:hidden">
         <SuggestionSlider data={data} />
       </div>
 
-      {/* swiper js */}
+      {/* EventCatagories card for tab and laptop/desktop or larger devices */}
       <div className="lg:inline hidden">
         <div className="">
+          {/* swiper js */}
           <SwiperSlider data={data} />
         </div>
       </div>

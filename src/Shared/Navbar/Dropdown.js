@@ -2,6 +2,7 @@ import Link from "next/link";
 import allDropdownText from "./dropDownText";
 
 const Dropdown = () => {
+  // All the navigation text
   const {
     weddingText,
     birthdayParty,
@@ -11,6 +12,7 @@ const Dropdown = () => {
     workshop,
   } = allDropdownText;
 
+  // Wedding text
   const {
     PELLI_KODUKU,
     PELLI_KUTHURU,
@@ -26,11 +28,13 @@ const Dropdown = () => {
     PRE_WEDDING_CEREMONY,
   } = weddingText;
 
+  // workshop text
   const { AUDITORIUMS, TENT_HOUSE, WORK_SHOP, SEMINARS, WARE_HOUSE } = workshop;
 
+  // BirthdayParty text
   const { BIRTHDAY_PARTY, KIDS_BIRTHDAY, FIRST_BIRTHDAY } = birthdayParty;
 
-
+  // Corporate text
   const {
     CORPORATE_OUTING,
     CORPORATE_PARTY,
@@ -43,7 +47,7 @@ const Dropdown = () => {
     TEAM_OUTINGS,
   } = corporate;
 
-
+  // Parties text
   const {
     NEW_YEAR_PARTY,
     CHRISTMAS_PARTY,
@@ -59,6 +63,7 @@ const Dropdown = () => {
     OTHER_TYPES_PARTY,
   } = partiesText;
 
+  // Photo Film Shoot text
   const {
     PHOTO_SHOOT_STUDIO,
     MUSIC_STUDIES,
@@ -74,6 +79,7 @@ const Dropdown = () => {
       role="tablist"
       className="tabs tabs-bordered w-[100%] mx-auto justify-center"
     >
+      {/* wadding navigation */}
       <input
         type="radio"
         name="my_tabs_1"
@@ -81,6 +87,8 @@ const Dropdown = () => {
         className="tab mx-auto pb-10 font-semibold  text-xl  text-primary-text-gray  w-fit"
         aria-label="Weddings"
       />
+
+      {/* wadding navigation link */}
       <div role="tabpanel" className="tab-content py-10 w-full ">
         <ul className="grid grid-cols-3 gap-4 text-lg text-[#040404] w-full">
           <li>
@@ -122,6 +130,7 @@ const Dropdown = () => {
         </ul>
       </div>
 
+      {/* Parties navigation */}
       <input
         type="radio"
         name="my_tabs_1"
@@ -170,6 +179,7 @@ const Dropdown = () => {
         </ul>
       </div>
 
+      {/* Corporate Events navigation */}
       <input
         type="radio"
         name="my_tabs_1"
@@ -208,7 +218,8 @@ const Dropdown = () => {
           </li>
         </ul>
       </div>
-
+      
+      {/* Birthday Party navigation */}
       <input
         type="radio"
         name="my_tabs_1"
@@ -230,6 +241,7 @@ const Dropdown = () => {
         </ul>
       </div>
 
+      {/* Photo/ Filmshoot navigation */}
       <input
         type="radio"
         name="my_tabs_1"
@@ -263,6 +275,7 @@ const Dropdown = () => {
         </ul>
       </div>
 
+      {/* Workshop navigation */}
       <input
         type="radio"
         name="my_tabs_1"

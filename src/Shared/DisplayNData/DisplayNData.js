@@ -5,6 +5,7 @@ const DisplayNData = ({ data }) => {
   return (
     <div>
       <div className="rounded-2xl shadow-2xl shadow-[#0404041A] bg-white pb-4">
+        {/* image component */}
         <Image
           className="w-full h-[100px]   md:w-[250px] md:h-[200px] xl:h-[250px] rounded-t-2xl"
           src={data?.img}

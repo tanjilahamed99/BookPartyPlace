@@ -8,6 +8,7 @@ const UniqueVenues = ({ data }) => {
 
   return (
     <div className="my-20">
+      {/* Unique Venues section title */}
       <SectionTitle title={TITLE} />
 
       {/* sliders for big screen*/}

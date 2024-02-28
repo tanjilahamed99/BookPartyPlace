@@ -21,6 +21,7 @@ import Image from "next/image";
 const TestimonialsSlider = ({ view }) => {
   return (
     <div className="relative ">
+      {/* slider main functionality */}
       <Swiper
         spaceBetween={10}
         slidesPerView={view}
@@ -37,6 +38,7 @@ const TestimonialsSlider = ({ view }) => {
         modules={[Pagination, Navigation, HashNavigation]}
         className="mySwiper w-[90%]"
       >
+        {/* dynamic testimonial card */}
         {/* {
                     data.map((i, idx) => <SwiperSlide className='md:py-20 py-10 px-6 md:px-2 lg:px-1' key={idx} data-hash={`slide${idx}}`}>
 
@@ -45,6 +47,7 @@ const TestimonialsSlider = ({ view }) => {
                     </SwiperSlide>)
                 } */}
 
+        {/* static testimonial card */}
         <SwiperSlide className="md:py-20 py-10 px-6 md:px-2 lg:px-1">
           <div className="border-[#BCBFBA] border relative">
             <Image
@@ -207,6 +210,7 @@ const TestimonialsSlider = ({ view }) => {
         </SwiperSlide>
       </Swiper>
 
+      {/* custom arrow button */}
       <div className="flex gap-3 left-0 md:left-1 top-[46%] absolute">
         <button className="custom-swiper-button-prev-testimonial">
           <IoIosArrowBack className=" bg-primary-color rounded-full text-4xl p-2" />

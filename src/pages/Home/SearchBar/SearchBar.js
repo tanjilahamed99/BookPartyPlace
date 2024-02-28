@@ -6,6 +6,7 @@ const SearchBar = () => {
 
   return (
     <div className="md:my-10 my-5">
+      {/* title */}
       <h2 className="md:text-4xl text-xl  font-bold text-center text-[#040404] md:leading-[52px]">
         {SEARCH_TITLE}
       </h2>

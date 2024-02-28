@@ -1,6 +1,8 @@
 import promotionAllText from "./homeAboutText";
 
 const HomeAbout = () => {
+
+  // Home About section title
   const {
     BOOKING_DESC,
     BOOKING_TITLE,
