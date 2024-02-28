@@ -75,9 +75,8 @@ const Dropdown = () => {
   } = photoFilmShoot;
 
   return (
-    <div className="">
+    <div className="flex gap-5">
       {/* wadding navigation */}
-
       <div className="dropdown dropdown-hover  group">
         <div
           tabIndex={0}
@@ -88,9 +87,8 @@ const Dropdown = () => {
         </div>
         <ul
           tabIndex={0}
-          className="dropdown-content z-[1] menu  p-2 shadow bg-base-100 rounded-box w-[700px] grid grid-cols-3 gap-4 text-[#040404] group-hover:-left-60"
+          className="dropdown-content z-[1] menu  p-2 shadow bg-base-100 rounded-box w-[700px] grid grid-cols-3 gap-3 text-[#040404] group-hover:-left-60"
         >
-
           <li>
             <Link href={"/"}>{PELLI_KODUKU}</Link>
           </li>
@@ -129,387 +127,20 @@ const Dropdown = () => {
           </li>
         </ul>
       </div>
-      <div className="dropdown dropdown-hover  group">
-        <div
-          tabIndex={0}
-          role="button"
-          className=" font-semibold  text-xl  text-primary-text-gray p-2"
-        >
-          Weddings
-        </div>
-        <ul
-          tabIndex={0}
-          className="dropdown-content z-[1] menu  p-2 shadow bg-base-100 rounded-box w-[700px] grid grid-cols-3 gap-4 text-[#040404] group-hover:-left-60"
-        >
-
-          <li>
-            <Link href={"/"}>{PELLI_KODUKU}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{PELLI_KUTHURU}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{WEDDING_CEREMONY}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{WEDDING_VENUES}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{WEDDING_RECEPTION}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{MEHENDI_CELEBRATION}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{HALDI_EVENT}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{RING_CEREMONY}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{HONEYMOON_PLACES}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{KALYANA_MANDAPAM}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{INDIAN_SANGEET_WEDDING}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{PRE_WEDDING_CEREMONY}</Link>
-          </li>
-        </ul>
-      </div>
-      <div className="dropdown dropdown-hover  group">
-        <div
-          tabIndex={0}
-          role="button"
-          className=" font-semibold  text-xl  text-primary-text-gray p-2"
-        >
-          Weddings
-        </div>
-        <ul
-          tabIndex={0}
-          className="dropdown-content z-[1] menu  p-2 shadow bg-base-100 rounded-box w-[700px] grid grid-cols-3 gap-4 text-[#040404] group-hover:-left-60"
-        >
-
-          <li>
-            <Link href={"/"}>{PELLI_KODUKU}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{PELLI_KUTHURU}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{WEDDING_CEREMONY}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{WEDDING_VENUES}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{WEDDING_RECEPTION}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{MEHENDI_CELEBRATION}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{HALDI_EVENT}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{RING_CEREMONY}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{HONEYMOON_PLACES}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{KALYANA_MANDAPAM}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{INDIAN_SANGEET_WEDDING}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{PRE_WEDDING_CEREMONY}</Link>
-          </li>
-        </ul>
-      </div>
-      <div className="dropdown dropdown-hover  group">
-        <div
-          tabIndex={0}
-          role="button"
-          className=" font-semibold  text-xl  text-primary-text-gray p-2"
-        >
-          Weddings
-        </div>
-        <ul
-          tabIndex={0}
-          className="dropdown-content z-[1] menu  p-2 shadow bg-base-100 rounded-box w-[700px] grid grid-cols-3 gap-4 text-[#040404] group-hover:-left-60"
-        >
-
-          <li>
-            <Link href={"/"}>{PELLI_KODUKU}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{PELLI_KUTHURU}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{WEDDING_CEREMONY}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{WEDDING_VENUES}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{WEDDING_RECEPTION}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{MEHENDI_CELEBRATION}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{HALDI_EVENT}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{RING_CEREMONY}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{HONEYMOON_PLACES}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{KALYANA_MANDAPAM}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{INDIAN_SANGEET_WEDDING}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{PRE_WEDDING_CEREMONY}</Link>
-          </li>
-        </ul>
-      </div>
-      <div className="dropdown dropdown-hover  group">
-        <div
-          tabIndex={0}
-          role="button"
-          className=" font-semibold  text-xl  text-primary-text-gray p-2"
-        >
-          Weddings
-        </div>
-        <ul
-          tabIndex={0}
-          className="dropdown-content z-[1] menu  p-2 shadow bg-base-100 rounded-box w-[700px] grid grid-cols-3 gap-4 text-[#040404] group-hover:-left-60"
-        >
-
-          <li>
-            <Link href={"/"}>{PELLI_KODUKU}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{PELLI_KUTHURU}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{WEDDING_CEREMONY}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{WEDDING_VENUES}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{WEDDING_RECEPTION}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{MEHENDI_CELEBRATION}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{HALDI_EVENT}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{RING_CEREMONY}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{HONEYMOON_PLACES}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{KALYANA_MANDAPAM}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{INDIAN_SANGEET_WEDDING}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{PRE_WEDDING_CEREMONY}</Link>
-          </li>
-        </ul>
-      </div>
-      <div className="dropdown dropdown-hover  group">
-        <div
-          tabIndex={0}
-          role="button"
-          className=" font-semibold  text-xl  text-primary-text-gray p-2"
-        >
-          Weddings
-        </div>
-        <ul
-          tabIndex={0}
-          className="dropdown-content z-[1] menu  p-2 shadow bg-base-100 rounded-box w-[700px] grid grid-cols-3 gap-4 text-[#040404] group-hover:-left-60"
-        >
-
-          <li>
-            <Link href={"/"}>{PELLI_KODUKU}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{PELLI_KUTHURU}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{WEDDING_CEREMONY}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{WEDDING_VENUES}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{WEDDING_RECEPTION}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{MEHENDI_CELEBRATION}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{HALDI_EVENT}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{RING_CEREMONY}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{HONEYMOON_PLACES}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{KALYANA_MANDAPAM}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{INDIAN_SANGEET_WEDDING}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{PRE_WEDDING_CEREMONY}</Link>
-          </li>
-        </ul>
-      </div>
-      <div className="dropdown dropdown-hover  group">
-        <div
-          tabIndex={0}
-          role="button"
-          className=" font-semibold  text-xl  text-primary-text-gray p-2"
-        >
-          Weddings
-        </div>
-        <ul
-          tabIndex={0}
-          className="dropdown-content z-[1] menu  p-2 shadow bg-base-100 rounded-box w-[700px] grid grid-cols-3 gap-4 text-[#040404] group-hover:-left-60"
-        >
-
-          <li>
-            <Link href={"/"}>{PELLI_KODUKU}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{PELLI_KUTHURU}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{WEDDING_CEREMONY}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{WEDDING_VENUES}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{WEDDING_RECEPTION}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{MEHENDI_CELEBRATION}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{HALDI_EVENT}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{RING_CEREMONY}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{HONEYMOON_PLACES}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{KALYANA_MANDAPAM}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{INDIAN_SANGEET_WEDDING}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{PRE_WEDDING_CEREMONY}</Link>
-          </li>
-        </ul>
-      </div>
-      <div className="dropdown dropdown-hover  group">
-        <div
-          tabIndex={0}
-          role="button"
-          className=" font-semibold  text-xl  text-primary-text-gray p-2"
-        >
-          Weddings
-        </div>
-        <ul
-          tabIndex={0}
-          className="dropdown-content z-[1] menu  p-2 shadow bg-base-100 rounded-box w-[700px] grid grid-cols-3 gap-4 text-[#040404] group-hover:-left-60"
-        >
-
-          <li>
-            <Link href={"/"}>{PELLI_KODUKU}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{PELLI_KUTHURU}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{WEDDING_CEREMONY}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{WEDDING_VENUES}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{WEDDING_RECEPTION}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{MEHENDI_CELEBRATION}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{HALDI_EVENT}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{RING_CEREMONY}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{HONEYMOON_PLACES}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{KALYANA_MANDAPAM}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{INDIAN_SANGEET_WEDDING}</Link>
-          </li>
-          <li>
-            <Link href={"/"}>{PRE_WEDDING_CEREMONY}</Link>
-          </li>
-        </ul>
-      </div>
-
-      {/* <input
-        type="radio"
-        name="my_tabs_1"
-        role="tab"
-        className="tab mx-auto pb-10 font-semibold  text-xl  text-primary-text-gray  w-fit"
-        aria-label="Weddings"
-      /> */}
-
-      {/* wadding navigation link */}
-      {/* <div role="tabpanel" className="tab-content py-10 w-full ">
-        <ul className="grid grid-cols-3 gap-4 text-lg text-[#040404] w-full"></ul>
-      </div> */}
 
       {/* Parties navigation */}
-      {/* <input
-        type="radio"
-        name="my_tabs_1"
-        role="tab"
-        className="tab mx-auto pb-10 font-semibold  text-xl  text-primary-text-gray flex justify-center w-fit"
-        aria-label="Parties"
-      />
-      <div role="tabpanel" className="tab-content py-10 w-full">
-        <ul className="grid grid-cols-3 gap-4 text-lg text-[#040404]">
+      <div className="dropdown dropdown-hover  group">
+        <div
+          tabIndex={0}
+          role="button"
+          className=" font-semibold  text-xl  text-primary-text-gray p-2"
+        >
+          Parties
+        </div>
+        <ul
+          tabIndex={0}
+          className="dropdown-content z-[1] menu  p-2 shadow bg-base-100 rounded-box w-[700px] grid grid-cols-3 gap-3 text-[#040404] group-hover:-left-60"
+        >
           <li>
             <Link href={"/"}>{NEW_YEAR_PARTY}</Link>
           </li>
@@ -547,18 +178,21 @@ const Dropdown = () => {
             <Link href={"/"}>{OTHER_TYPES_PARTY}</Link>
           </li>
         </ul>
-      </div> */}
+      </div>
 
       {/* Corporate Events navigation */}
-      {/* <input
-        type="radio"
-        name="my_tabs_1"
-        role="tab"
-        className="tab mx-auto pb-10 font-semibold  text-xl  text-primary-text-gray flex justify-center w-fit"
-        aria-label="Corporate Events"
-      />
-      <div role="tabpanel" className="tab-content py-10 w-full">
-        <ul className="grid grid-cols-3 gap-4 text-lg text-[#040404]">
+      <div className="dropdown dropdown-hover  group">
+        <div
+          tabIndex={0}
+          role="button"
+          className=" font-semibold  text-xl  text-primary-text-gray p-2"
+        >
+          Corporate Events
+        </div>
+        <ul
+          tabIndex={0}
+          className="dropdown-content z-[1] menu  p-2 shadow bg-base-100 rounded-box w-[700px] grid grid-cols-3 gap-3 text-[#040404] group-hover:-left-60"
+        >
           <li>
             <Link href={"/"}>{CORPORATE_OUTING}</Link>
           </li>
@@ -587,18 +221,21 @@ const Dropdown = () => {
             <Link href={"/"}>{TEAM_OUTINGS}</Link>
           </li>
         </ul>
-      </div> */}
+      </div>
 
       {/* Birthday Party navigation */}
-      {/* <input
-        type="radio"
-        name="my_tabs_1"
-        role="tab"
-        className="tab mx-auto pb-10 font-semibold  text-xl  text-primary-text-gray flex justify-center w-fit"
-        aria-label="Birthday Party"
-      />
-      <div role="tabpanel" className="tab-content py-10 w-full">
-        <ul className="grid grid-cols-3 gap-4 text-lg text-[#040404]">
+      <div className="dropdown dropdown-hover  group">
+        <div
+          tabIndex={0}
+          role="button"
+          className=" font-semibold  text-xl  text-primary-text-gray p-2"
+        >
+          Birthday Party
+        </div>
+        <ul
+          tabIndex={0}
+          className="dropdown-content z-[1] menu  p-2 shadow bg-base-100 rounded-box w-[700px] grid grid-cols-3 gap-3 text-[#040404] group-hover:-left-60"
+        >
           <li>
             <Link href={"/"}>{BIRTHDAY_PARTY}</Link>
           </li>
@@ -609,18 +246,21 @@ const Dropdown = () => {
             <Link href={"/"}>{FIRST_BIRTHDAY}</Link>
           </li>
         </ul>
-      </div> */}
+      </div>
 
       {/* Photo/ Filmshoot navigation */}
-      {/* <input
-        type="radio"
-        name="my_tabs_1"
-        role="tab"
-        className="tab mx-auto pb-10 font-semibold  text-xl  text-primary-text-gray flex justify-center w-fit"
-        aria-label="Photo/ Filmshoot"
-      />
-      <div role="tabpanel" className="tab-content py-10 w-full">
-        <ul className="grid grid-cols-3 gap-4 text-lg text-[#040404]">
+      <div className="dropdown dropdown-hover  group">
+        <div
+          tabIndex={0}
+          role="button"
+          className=" font-semibold  text-xl  text-primary-text-gray p-2"
+        >
+          Photo/ Filmshoot
+        </div>
+        <ul
+          tabIndex={0}
+          className="dropdown-content z-[1] menu  p-2 shadow bg-base-100 rounded-box w-[700px] grid grid-cols-3 gap-3 text-[#040404] group-hover:-left-60"
+        >
           <li>
             <Link href={"/"}>{PHOTO_SHOOT_STUDIO}</Link>
           </li>
@@ -643,18 +283,21 @@ const Dropdown = () => {
             <Link href={"/"}>{DANCE_STUDIOS}</Link>
           </li>
         </ul>
-      </div> */}
+      </div>
 
       {/* Workshop navigation */}
-      {/* <input
-        type="radio"
-        name="my_tabs_1"
-        role="tab"
-        className="tab mx-auto pb-10 font-semibold  text-xl  text-primary-text-gray flex justify-center w-fit"
-        aria-label="Workshop"
-      />
-      <div role="tabpanel" className="tab-content py-10 w-full">
-        <ul className="grid grid-cols-3 gap-4 text-lg text-[#040404]">
+      <div className="dropdown dropdown-hover  group">
+        <div
+          tabIndex={0}
+          role="button"
+          className=" font-semibold  text-xl  text-primary-text-gray p-2"
+        >
+          Workshop
+        </div>
+        <ul
+          tabIndex={0}
+          className="dropdown-content z-[1] menu  p-2 shadow bg-base-100 rounded-box w-[700px] grid grid-cols-3 gap-3 text-[#040404] group-hover:-left-60"
+        >
           <li>
             <Link href={"/"}>{AUDITORIUMS}</Link>
           </li>
@@ -671,7 +314,7 @@ const Dropdown = () => {
             <Link href={"/"}>{WARE_HOUSE}</Link>
           </li>
         </ul>
-      </div> */}
+      </div>
     </div>
   );
 };
