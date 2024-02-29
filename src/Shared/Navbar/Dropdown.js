@@ -87,7 +87,7 @@ const Dropdown = () => {
         </div>
         <ul
           tabIndex={0}
-          className="dropdown-content z-[1] menu  p-2 shadow bg-base-100 rounded-box w-[1000px] grid grid-cols-3 gap-3 text-[#040404] -left-60"
+          className="dropdown-content z-[1] menu  p-2 shadow bg-base-100 rounded-box w-[880px]   grid grid-cols-3  text-[#040404] group-hover:left-0 gap-3"
         >
           <li>
             <Link href={"/"}>{PELLI_KODUKU}</Link>
@@ -139,7 +139,7 @@ const Dropdown = () => {
         </div>
         <ul
           tabIndex={0}
-          className="dropdown-content z-[1] menu  p-2 shadow bg-base-100 rounded-box w-[700px] grid grid-cols-3 gap-3 text-[#040404] group-hover:-left-60"
+          className="dropdown-content z-[1] menu  p-2 shadow bg-base-100 rounded-box w-[880px]  grid grid-cols-3 gap-3 text-[#040404] group-hover:-left-32"
         >
           <li>
             <Link href={"/"}>{NEW_YEAR_PARTY}</Link>
@@ -191,7 +191,7 @@ const Dropdown = () => {
         </div>
         <ul
           tabIndex={0}
-          className="dropdown-content z-[1] menu  p-2 shadow bg-base-100 rounded-box w-[700px] grid grid-cols-3 gap-3 text-[#040404] group-hover:-left-60"
+          className="dropdown-content z-[1] menu  p-2 shadow bg-base-100 rounded-box w-[880px]  grid grid-cols-3 gap-3 text-[#040404] group-hover:-left-56"
         >
           <li>
             <Link href={"/"}>{CORPORATE_OUTING}</Link>
@@ -234,7 +234,7 @@ const Dropdown = () => {
         </div>
         <ul
           tabIndex={0}
-          className="dropdown-content z-[1] menu  p-2 shadow bg-base-100 rounded-box w-[700px] grid grid-cols-3 gap-3 text-[#040404] group-hover:-left-60"
+          className="dropdown-content z-[1] menu  p-2 shadow  bg-base-100 rounded-box w-[880px]  grid grid-cols-3 gap-3 text-[#040404] group-hover:-right-80"
         >
           <li>
             <Link href={"/"}>{BIRTHDAY_PARTY}</Link>
@@ -259,7 +259,7 @@ const Dropdown = () => {
         </div>
         <ul
           tabIndex={0}
-          className="dropdown-content z-[1] menu  p-2 shadow bg-base-100 rounded-box w-[700px] grid grid-cols-3 gap-3 text-[#040404] group-hover:-left-60"
+          className="dropdown-content z-[1] menu  p-2 shadow bg-base-100 rounded-box w-[880px]  grid grid-cols-3 gap-3 text-[#040404] group-hover:-right-32"
         >
           <li>
             <Link href={"/"}>{PHOTO_SHOOT_STUDIO}</Link>
@@ -296,7 +296,7 @@ const Dropdown = () => {
         </div>
         <ul
           tabIndex={0}
-          className="dropdown-content z-[1] menu  p-2 shadow bg-base-100 rounded-box w-[700px] grid grid-cols-3 gap-3 text-[#040404] group-hover:-left-60"
+          className="dropdown-content z-[1] menu  p-2 shadow bg-base-100 rounded-box w-[880px]  grid grid-cols-3 gap-3 text-[#040404] group-hover:right-0"
         >
           <li>
             <Link href={"/"}>{AUDITORIUMS}</Link>
