@@ -7,7 +7,7 @@ const DisplayNData = ({ data }) => {
     <div>
       <div className="rounded-2xl shadow-2xl shadow-[#0404041A] bg-white pb-4">
         {/* image component */}
-        <ImageComponent src={data.img} />
+        <ImageComponent height={'h-[200px]'} width={'w-[250px]'} mdHeight={'h-[150px]'} src={data.img} />
 
         <h2 className="text-center md:text-xl mt-3  text-[10px]">
           {data?.roomType}

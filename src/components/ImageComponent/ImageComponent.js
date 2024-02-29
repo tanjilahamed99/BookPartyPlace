@@ -1,11 +1,12 @@
 import Image from "next/image";
 import PropTypes from "prop-types";
 
-const ImageComponent = ({ src }) => {
+const ImageComponent = ({ src, width, height,mdHeight,nHeight }) => {
+
   return (
     <div>
       <Image
-        className="w-full h-[100px]   md:w-[250px] md:h-[200px] lg:h-[180px] xl:h-[250px] rounded-t-2xl"
+        className={`w-full h-[100px] ${nHeight}   md:${width} md:h-[200px] lg:${mdHeight} xl:${height} rounded-t-2xl`}
         height={500}
         width={500}
         src={src}
