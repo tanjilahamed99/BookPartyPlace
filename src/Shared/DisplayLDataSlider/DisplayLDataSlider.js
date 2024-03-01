@@ -9,6 +9,7 @@ import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import DisplayLData from "../DisplayLData/DisplayLData";
+import { useGetPhotosQuery } from "@/redux/features/PhotoSlice/photoSlice";
 
 const DisplayLDataSlider = ({ data, view }) => {
   const [setSwiperRef] = useState(null);
