@@ -1,9 +1,8 @@
 import { GoSearch } from "react-icons/go";
-import allText from "./searchText";
+import AllSearchText from "./searchText";
 
 const SearchBar = () => {
-  const { SEARCH_TITLE } = allText;
-
+  const { SEARCH_TITLE } = AllSearchText();
   return (
     <div className="md:my-10 my-5">
       {/* title */}

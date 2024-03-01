@@ -1,10 +1,10 @@
 import DisplayLData from "@/Shared/DisplayLData/DisplayLData";
 import DisplayLDataSlider from "@/Shared/DisplayLDataSlider/DisplayLDataSlider";
 import SectionTitle from "@/Shared/SectionTitle/SectionTitle";
-import allText from "./uniqueText";
+import AllUniqueVenuesText from "./uniqueText";
 
 const UniqueVenues = ({ data }) => {
-  const { TITLE } = allText;
+  const { TITLE } = AllUniqueVenuesText;
 
   return (
     <div className="my-20">

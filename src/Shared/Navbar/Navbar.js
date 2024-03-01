@@ -1,20 +1,13 @@
-"use client"
-
 import Image from "next/image";
 import Link from "next/link";
 import { FaRegHeart } from "react-icons/fa6";
 import Dropdown from "./Dropdown";
 import logo from "../../../public/images/Logo.png";
 import profileImage from "../../../public/images/profile.jpg";
+import allNavText from "./allNavText";
 
-import navText from "./navText";
-import { useGetPhotosQuery } from "@/redux/features/PhotoSlice/photoSlice";
 
 const Navbar = () => {
-
-  const {data} = useGetPhotosQuery()
-
-  console.log(data)
 
   const {
     WEB_NAME,
@@ -24,7 +17,8 @@ const Navbar = () => {
     BIRTHDAY_PARTY,
     PHOTO_FILM_SHOOT,
     WORK_SHOP,
-  } = navText;
+  } = allNavText;
+
 
   const ulLinks = (
     <>
@@ -48,6 +42,8 @@ const Navbar = () => {
       </li>
     </>
   );
+
+
 
   return (
     <div>

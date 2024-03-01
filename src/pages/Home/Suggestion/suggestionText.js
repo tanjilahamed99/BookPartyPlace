@@ -1,7 +1,6 @@
 const TITLE = "What are you looking for ?";
-
-const allText = {
-  TITLE,
+const AllSuggestionText = () => {
+  return { TITLE };
 };
 
-export default allText;
+export default AllSuggestionText;

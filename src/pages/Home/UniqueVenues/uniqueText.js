@@ -1,7 +1,7 @@
 const TITLE = "Unique Venues for you";
 
-const allText = {
-  TITLE,
+const AllUniqueVenuesText = () => {
+  return { TITLE };
 };
 
-export default allText;
+export default AllUniqueVenuesText;

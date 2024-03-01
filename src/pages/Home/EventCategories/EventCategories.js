@@ -1,10 +1,10 @@
 import SectionTitle from "@/Shared/SectionTitle/SectionTitle";
 import SuggestionSlider from "../Suggestion/SuggestionSlider";
 import SwiperSlider from "./SwiperSlider";
-import allText from "./eventText";
+import AllEventText from "./eventText";
 
 const EventCategories = ({ data }) => {
-  const { TITLE } = allText;
+  const { TITLE } = AllEventText();
 
   return (
     <div className="md:my-20 container mx-auto">

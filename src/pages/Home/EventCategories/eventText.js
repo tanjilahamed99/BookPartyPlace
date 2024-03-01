@@ -1,7 +1,7 @@
+// Event categories text
 const TITLE = "Explore Event Categories";
-
-const allText = {
-  TITLE,
+const AllEventText = () => {
+  return { TITLE };
 };
 
-export default allText;
+export default AllEventText;
