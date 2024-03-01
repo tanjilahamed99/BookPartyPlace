@@ -1,9 +1,10 @@
 import { Lato } from "next/font/google";
 import "./globals.css";
+import Providers from "@/redux/Providers";
 
 const Loto = Lato({
   subsets: ["latin"],
-  weight: ["100", "300", "400", "700", "900"]
+  weight: ["100", "300", "400", "700", "900"],
 });
 
 export const metadata = {
@@ -14,7 +15,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html className="container mx-auto" lang="en">
-      <body className={Loto.className}>{children}</body>
+      <body className={Loto.className}>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }
