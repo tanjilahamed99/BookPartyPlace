@@ -1,5 +1,4 @@
 import ImageComponent from "@/components/ImageComponent/ImageComponent";
-import Image from "next/image";
 import PropTypes from "prop-types";
 
 const DisplayNData = ({ data }) => {

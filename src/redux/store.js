@@ -1,7 +1,7 @@
 "use client";
 
 import { configureStore } from "@reduxjs/toolkit";
-import { setupListeners } from '@reduxjs/toolkit/query'
+// import { setupListeners } from "@reduxjs/toolkit/query";
 import photoSlice from "./features/PhotoSlice/photoSlice";
 
 const store = configureStore({
@@ -13,6 +13,6 @@ const store = configureStore({
     getDefaultMiddleware().concat(photoSlice.middleware),
 });
 
-setupListeners(store.dispatch)
+// setupListeners(store.dispatch);
 
 export default store;

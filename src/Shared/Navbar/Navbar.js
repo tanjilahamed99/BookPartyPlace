@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 import Link from "next/link";
 import { FaRegHeart } from "react-icons/fa6";
@@ -6,8 +8,14 @@ import logo from "../../../public/images/Logo.png";
 import profileImage from "../../../public/images/profile.jpg";
 
 import navText from "./navText";
+import { useGetPhotosQuery } from "@/redux/features/PhotoSlice/photoSlice";
 
 const Navbar = () => {
+
+  const {data} = useGetPhotosQuery()
+
+  console.log(data)
+
   const {
     WEB_NAME,
     WADDING,

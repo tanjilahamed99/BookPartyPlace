@@ -1,11 +1,11 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 const photoSlice = createApi({
-  reducerPath: "photos",
-  baseQuery: fetchBaseQuery({ baseUrl: "https://luxe-next-server.vercel.app" }),
+  reducerPath: "photo",
+  baseQuery: fetchBaseQuery({ baseUrl: "https://todays-blog-server.vercel.app" }),
   endpoints: (builder) => ({
     getPhotos: builder.query({
-      query: () => "/rooms",
+      query: () => '/blogs',
     }),
   }),
 });
