@@ -75,7 +75,7 @@ const Dropdown = () => {
   } = photoFilmShoot;
 
   return (
-    <div className="flex gap-5">
+    <div className="flex gap-5 overflow-x-clip">
       {/* wadding navigation */}
       <div className="dropdown dropdown-hover  group">
         <div
