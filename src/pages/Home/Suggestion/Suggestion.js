@@ -24,13 +24,23 @@ const Suggestion = ({ data }) => {
         <DisplayNData data={{ img: suggestionImage1, type: "Farm House" }} />
         <DisplayNData data={{ img: suggestionImage2, type: "Resorts" }} />
         <DisplayNData data={{ img: suggestionImage3, type: "Banquet Hall" }} />
-        <DisplayNData data={{ img: suggestionImage4, type: "Party Lawns.jpg" }} />
+        <DisplayNData
+          data={{ img: suggestionImage4, type: "Party Lawns.jpg" }}
+        />
         <DisplayNData data={{ img: suggestionImage5, type: "Other" }} />
       </div>
 
       {/* suggestion card for lab and laptop or other larger devices */}
       <div className="lg:hidden">
-        <SuggestionSlider data={data} />
+        <SuggestionSlider
+          data={{
+            img1: suggestionImage1,
+            img2: suggestionImage2,
+            img3: suggestionImage3,
+            img4: suggestionImage4,
+            img5: suggestionImage5,
+          }}
+        />
       </div>
     </div>
   );
