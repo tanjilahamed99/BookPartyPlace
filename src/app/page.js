@@ -19,8 +19,8 @@ const Home = async () => {
   return (
     <div>
       {/* Navbar */}
-      < Navbar />
-      
+      <Navbar />
+
       {/* Search bar / search section */}
       <SearchBar />
 
@@ -33,9 +33,6 @@ const Home = async () => {
       {/* Unique Venues*/}
       <UniqueVenues data={data} />
 
-      {/* Testimonial */}
-      <Testimonials />
-
       {/* work commands */}
       <WorkCommand />
 
@@ -46,7 +43,10 @@ const Home = async () => {
       <HomeBlog data={data} />
 
       {/* promotion */}
-      <Promotion data={data} />
+      <Promotion data={data} />  
+
+      {/* Testimonial */}
+      <Testimonials />
 
       {/* Home About */}
       <HomeAbout />
