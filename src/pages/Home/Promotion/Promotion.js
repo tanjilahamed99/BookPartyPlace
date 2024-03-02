@@ -64,9 +64,13 @@ const Promotion = ({ data }) => {
 
       {/* Grid layout for small device  */}
       <div className=" grid grid-cols-2 items-center gap-4 mx-3 md:hidden">
-        {data?.map((i) => (
+        {/* {data?.map((i) => (
           <DisplayLData key={i._id} data={i} />
-        ))}
+        ))} */}
+        <DisplayLData data={{ img: promotionImg1, _id: 1 }} />
+        <DisplayLData data={{ img: promotionImg2, _id: 2 }} />
+        <DisplayLData data={{ img: promotionImg3, _id: 3 }} />
+        <DisplayLData data={{ img: promotionImg4, _id: 4 }} />
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ const DisplayNData = ({ data }) => {
 
   return (
     <div>
-      <div className="rounded-2xl shadow-2xl shadow-[#0404041A] bg-white pb-4">
+      <div className="rounded-2xl shadow-2xl shadow-[#0404041A] bg-white md:pb-4 pb-2">
         {/* image component */}
         <ImageComponent
           height={"h-[200px]"}
@@ -14,7 +14,7 @@ const DisplayNData = ({ data }) => {
           src={data.img}
         />
 
-        <h2 className="text-center md:text-xl mt-3  text-[10px]">
+        <h2 className="text-center md:text-xl md:mt-3 mt-2  text-[10px] text-black font-semibold">
           {data?.type}
         </h2>
       </div>

@@ -2,11 +2,11 @@ import DisplayLData from "@/components/Shared/DisplayLData/DisplayLData";
 import DisplayLDataSlider from "@/components/Shared/DisplayLDataSlider/DisplayLDataSlider";
 import SectionTitle from "@/components/Shared/DisplayBlogData/SectionTitle/SectionTitle";
 import AllEventByVenuesText from "../../../lib/eventByVenuesText";
-import eventCatagoriesImg1 from '../../../../public/images/Promotion/wtttttrh.jpg'
-import eventCatagoriesImg2 from '../../../../public/images/Promotion/unnamed 1.png'
-import eventCatagoriesImg3 from '../../../../public/images/Promotion/rnsyr.jpg'
-import eventCatagoriesImg4 from '../../../../public/images/Promotion/Mi7CNy9_gCo.jpg'
-import eventCatagoriesImg5 from '../../../../public/images/Promotion/images 1.png'
+import eventCatagoriesImg1 from "../../../../public/images/Promotion/wtttttrh.jpg";
+import eventCatagoriesImg2 from "../../../../public/images/Promotion/unnamed 1.png";
+import eventCatagoriesImg3 from "../../../../public/images/Promotion/rnsyr.jpg";
+import eventCatagoriesImg4 from "../../../../public/images/Promotion/Mi7CNy9_gCo.jpg";
+import eventCatagoriesImg5 from "../../../../public/images/Promotion/images 1.png";
 
 const EventByVenues = ({ data }) => {
   const { TITLE } = AllEventByVenuesText;
@@ -58,9 +58,13 @@ const EventByVenues = ({ data }) => {
 
       {/* Grid layout for small device  */}
       <div className=" grid grid-cols-2 items-center gap-4 mx-3 md:hidden">
-        {data?.map((i) => (
+        {/* {data?.map((i) => (
           <DisplayLData key={i._id} data={i} />
-        ))}
+        ))} */}
+        <DisplayLData data={{ img: eventCatagoriesImg1, _id: 1 }} />
+        <DisplayLData data={{ img: eventCatagoriesImg2, _id: 2 }} />
+        <DisplayLData data={{ img: eventCatagoriesImg3, _id: 3 }} />
+        <DisplayLData data={{ img: eventCatagoriesImg4, _id: 4 }} />
       </div>
     </div>
   );

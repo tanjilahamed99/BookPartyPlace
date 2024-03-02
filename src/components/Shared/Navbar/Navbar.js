@@ -105,14 +105,14 @@ const Navbar = () => {
       </div>
 
       {/* navigation links */}
-      <hr className=" text-primary-text-gray border lg:flex mb-5" />
+      <hr className=" text-primary-text-gray border lg:flex mb-5  hidden" />
       <div className="lg:flex hidden justify-center mx-auto w-full">
         <div className="mt-2 ">
           {/* ul links */}
           <Dropdown />
         </div>
       </div>
-      <hr className=" text-primary-text-gray border lg:flex mt-5" />
+      <hr className=" text-primary-text-gray border lg:flex mt-5 hidden" />
     </div>
   );
 };

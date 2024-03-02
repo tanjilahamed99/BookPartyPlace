@@ -70,13 +70,13 @@ const ImageSlider = ({ data, id }) => {
       </Swiper>
 
       {/* custom slider button */}
-      <div className="flex gap-3 md:left-5 left-1 md:top-24 top-[50px] absolute z-10">
+      <div className="flex gap-3 md:left-5 left-1 md:top-24 top-[50px] absolute z-10 text-black">
         <button className={`custom-swiper-button-prev-${id}`}>
           <IoIosArrowBack className=" bg-primary-color rounded-full md:text-4xl md:p-2 p-1 text-2xl" />
         </button>
       </div>
 
-      <div className="flex gap-3 md:right-5 right-1 md:top-24 top-[50px]  absolute z-10">
+      <div className="flex gap-3 md:right-5 right-1 md:top-24 top-[50px]  absolute z-10 text-black">
         <button className={`custom-swiper-button-next-${id}`}>
           <IoIosArrowForward className=" bg-primary-color rounded-full md:text-4xl md:p-2 p-1 text-2xl" />
         </button>

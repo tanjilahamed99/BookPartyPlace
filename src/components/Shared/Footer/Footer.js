@@ -42,10 +42,10 @@ const Footer = () => {
           <input
             type="text"
             placeholder="Your your email"
-            className=" border  rounded-md py-2 md:py-3 w-full pl-4"
+            className=" border  rounded-md py-2 md:py-3 w-full pl-4 bg-white"
           />
           {/* footer section button */}
-          <div className="absolute -right-12 md:top-[3px] top-[2px]">
+          <div className="absolute -right-12 md:top-[3px] top-[0.7px]">
             <SectionButton text={BTN} />
           </div>
         </div>
@@ -70,12 +70,12 @@ const Footer = () => {
       </div>
       <div className="">
         {/* footer icons */}
-        <div className="flex gap-6 items-center">
-          <FaFacebookF className="bg-[#61687233] text-4xl p-2 rounded-xl" />
-          <FaTwitter className="bg-[#61687233] text-4xl p-2 rounded-xl" />
-          <FaInstagram className="bg-[#61687233] text-4xl p-2 rounded-xl" />
-          <FaLinkedinIn className="bg-[#61687233] text-4xl p-2 rounded-xl" />
-          <GrYoutube className="bg-[#61687233] text-4xl p-2 rounded-xl" />
+        <div className="flex gap-6 items-center ">
+          <FaFacebookF className="bg-[#61687233] text-4xl p-2 rounded-xl text-black" />
+          <FaTwitter className="bg-[#61687233] text-4xl p-2 rounded-xl text-black" />
+          <FaInstagram className="bg-[#61687233] text-4xl p-2 rounded-xl text-black" />
+          <FaLinkedinIn className="bg-[#61687233] text-4xl p-2 rounded-xl text-black" />
+          <GrYoutube className="bg-[#61687233] text-4xl p-2 rounded-xl text-black" />
         </div>
         <p className="text-[#535552] mt-3">{RIGHTS}</p>
       </div>
