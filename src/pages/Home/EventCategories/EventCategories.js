@@ -1,4 +1,4 @@
-import SectionTitle from "@/Shared/SectionTitle/SectionTitle";
+import SectionTitle from "@/components/Shared/DisplayBlogData/SectionTitle/SectionTitle";
 import SuggestionSlider from "../Suggestion/SuggestionSlider";
 import SwiperSlider from "./SwiperSlider";
 import AllEventByVenuesText from "@/lib/eventByVenuesText";

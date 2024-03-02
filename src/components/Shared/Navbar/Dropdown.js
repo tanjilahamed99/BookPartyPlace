@@ -1,5 +1,5 @@
 import Link from "next/link";
-import allDropdownText from "./dropDownText";
+import allDropdownText from "../../../lib/dropDownText";
 
 const Dropdown = () => {
   // All the navigation text

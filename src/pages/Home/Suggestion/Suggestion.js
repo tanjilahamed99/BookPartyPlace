@@ -1,5 +1,5 @@
-import DisplayNData from "@/Shared/DisplayNData/DisplayNData";
-import SectionTitle from "@/Shared/SectionTitle/SectionTitle";
+import DisplayNData from "@/components/Shared/DisplayNData/DisplayNData";
+import SectionTitle from "@/components/Shared/DisplayBlogData/SectionTitle/SectionTitle";
 import SuggestionSlider from "./SuggestionSlider";
 import AllSuggestionText from "@/lib/SuggestionText";
 

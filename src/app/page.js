@@ -1,6 +1,6 @@
 import UseAllSuggestionData from "@/Hooks/UseAllSuggestionData";
-import Footer from "@/Shared/Footer/Footer";
-import Navbar from "@/Shared/Navbar/Navbar";
+import Footer from "@/components/Shared/Footer/Footer";
+import Navbar from "@/components/Shared/Navbar/Navbar";
 import EventCategories from "@/pages/Home/EventCategories/EventCategories";
 import EventByVenues from "@/pages/Home/EventsByVenues/EventByVenues";
 import HomeAbout from "@/pages/Home/HomeAbout/HomeAbout";
@@ -42,6 +42,7 @@ const Home = async () => {
       <Testimonials />
 
       {/* work commands */}
+      
       <WorkCommand />
 
       {/* Home contact */}

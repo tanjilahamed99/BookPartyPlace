@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import DisplayNData from "@/Shared/DisplayNData/DisplayNData";
+import DisplayNData from "@/components/Shared/DisplayNData/DisplayNData";
 
 const SwiperSlider = ({ data }) => {
   const [setSwiperRef] = useState(null);

@@ -4,8 +4,8 @@ import Link from "next/link";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { GrYoutube } from "react-icons/gr";
-import logo from "../../../public/images/Logo.png";
-import footerAllText from "./footerText";
+import logo from "../../../../public/images/Logo.png";
+import footerAllText from "../../../lib/footerText";
 
 const Footer = () => {
   // footer all text

@@ -1,5 +1,5 @@
-import DisplayBlogData from "@/Shared/DisplayBlogData/DisplayBlogData";
-import SectionButton from "@/Shared/SectionButton/SectionButton";
+import DisplayBlogData from "@/components/Shared/DisplayBlogData/DisplayBlogData";
+import SectionButton from "@/components/Shared/SectionButton/SectionButton";
 import AllHomeBlogText from "../../../lib/homeBlogText";
 
 const HomeBlog = ({ data }) => {

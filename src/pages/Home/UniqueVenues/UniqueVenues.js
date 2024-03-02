@@ -1,6 +1,6 @@
-import DisplayLData from "@/Shared/DisplayLData/DisplayLData";
-import DisplayLDataSlider from "@/Shared/DisplayLDataSlider/DisplayLDataSlider";
-import SectionTitle from "@/Shared/SectionTitle/SectionTitle";
+import DisplayLData from "@/components/Shared/DisplayLData/DisplayLData";
+import DisplayLDataSlider from "@/components/Shared/DisplayLDataSlider/DisplayLDataSlider";
+import SectionTitle from "@/components/Shared/DisplayBlogData/SectionTitle/SectionTitle";
 import AllUniqueVenuesText from "../../../lib/uniqueText";
 
 const UniqueVenues = ({ data }) => {

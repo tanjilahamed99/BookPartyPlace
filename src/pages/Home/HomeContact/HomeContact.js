@@ -1,4 +1,4 @@
-import SectionButton from "@/Shared/SectionButton/SectionButton";
+import SectionButton from "@/components/Shared/SectionButton/SectionButton";
 import Image from "next/image";
 import React from "react";
 import contactImage from "../../../../public/images/contact.jpg";

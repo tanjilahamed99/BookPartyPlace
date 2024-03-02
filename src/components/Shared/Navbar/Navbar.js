@@ -2,9 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaRegHeart } from "react-icons/fa6";
 import Dropdown from "./Dropdown";
-import logo from "../../../public/images/Logo.png";
-import profileImage from "../../../public/images/profile.jpg";
-import allNavText from "./allNavText";
+import logo from "../../../../public/images/Logo.png";
+import profileImage from "../../../../public/images/profile.jpg";
+import allNavText from "../../../lib/allNavText";
 
 
 const Navbar = () => {
@@ -47,7 +47,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="navbar ">
+      <div className="navbar">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
