@@ -6,9 +6,7 @@ import logo from "../../../../public/images/Logo.png";
 import profileImage from "../../../../public/images/profile.jpg";
 import allNavText from "../../../lib/allNavText";
 
-
 const Navbar = () => {
-
   const {
     WEB_NAME,
     WADDING,
@@ -18,7 +16,6 @@ const Navbar = () => {
     PHOTO_FILM_SHOOT,
     WORK_SHOP,
   } = allNavText;
-
 
   const ulLinks = (
     <>
@@ -42,8 +39,6 @@ const Navbar = () => {
       </li>
     </>
   );
-
-
 
   return (
     <div>
@@ -110,14 +105,14 @@ const Navbar = () => {
       </div>
 
       {/* navigation links */}
+      <hr className=" text-primary-text-gray border lg:flex mb-5" />
       <div className="lg:flex hidden justify-center mx-auto w-full">
         <div className="mt-2 ">
-          <hr className=" text-primary-text-gray lg:flex mb-5" />
-
           {/* ul links */}
           <Dropdown />
         </div>
       </div>
+      <hr className=" text-primary-text-gray border lg:flex mt-5" />
     </div>
   );
 };

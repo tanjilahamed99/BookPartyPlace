@@ -6,7 +6,7 @@ import AllHomeContactText from "../../../lib/homeContactText";
 
 const HomeContact = () => {
   // home contact text
-  const { BTN, DESC, TITLE } = AllHomeContactText;
+  const { BTN, DESC1, DESC2, TITLE } = AllHomeContactText;
 
   return (
     <div className="flex flex-col-reverse  md:flex-row justify-around items-center  gap-7 md:gap-0 px-1">
@@ -16,7 +16,10 @@ const HomeContact = () => {
           {TITLE}
         </h2>
         {/* contact section description  */}
-        <h3 className="text-[#535552]">{DESC}</h3>
+        <div>
+          <h3 className="text-[#535552]">{DESC1}</h3>
+          <h3 className="text-[#535552]">{DESC2}</h3>
+        </div>
         {/* contact section button  */}
         <SectionButton text={BTN} />
       </div>

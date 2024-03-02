@@ -22,8 +22,8 @@ const Footer = () => {
   } = footerAllText;
 
   return (
-    <footer className="mt-20 mb-5  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:gap-20 lg:gap-10 gap-10 lg:items-center px-5">
-      <div className=" col-span-1">
+    <footer className="mt-20 mb-5  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  lg:gap-10 gap-10 lg:items-center px-5">
+      <div className=" ">
         <div className="flex items-center">
           {/* image component */}
           <Image
@@ -41,7 +41,7 @@ const Footer = () => {
         <div className="lg:w-[80%]  mt-5 relative w-[80%]">
           <input
             type="text"
-            placeholder="Your email"
+            placeholder="Your your email"
             className=" border  rounded-md py-2 md:py-3 w-full pl-4"
           />
           {/* footer section button */}
@@ -68,7 +68,7 @@ const Footer = () => {
           <h1>{OFFERS}</h1>
         </Link>
       </div>
-      <div className="col-span-1">
+      <div className="">
         {/* footer icons */}
         <div className="flex gap-6 items-center">
           <FaFacebookF className="bg-[#61687233] text-4xl p-2 rounded-xl" />
