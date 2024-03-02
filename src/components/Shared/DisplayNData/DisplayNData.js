@@ -2,7 +2,6 @@ import ImageComponent from "@/components/ImageComponent/ImageComponent";
 import PropTypes from "prop-types";
 
 const DisplayNData = ({ data }) => {
-  console.log(data);
 
   return (
     <div>
@@ -16,7 +15,7 @@ const DisplayNData = ({ data }) => {
         />
 
         <h2 className="text-center md:text-xl mt-3  text-[10px]">
-          {/* {data?.roomType} */}
+          {data?.type}
         </h2>
       </div>
     </div>
@@ -25,6 +24,7 @@ const DisplayNData = ({ data }) => {
 
 DisplayNData.propTypes = {
   data: PropTypes.object,
+  // data: PropTypes.string,
 };
 
 export default DisplayNData;

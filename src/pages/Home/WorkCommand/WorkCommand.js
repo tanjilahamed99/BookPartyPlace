@@ -16,7 +16,7 @@ const WorkCommand = () => {
   } = workCommandAllText;
 
   return (
-    <div className="my-20">
+    <div className="">
       {/* work command section title */}
       <h2 className="text-2xl font-bold mb-3 text-[#040404] text-center">
         {TITLE}

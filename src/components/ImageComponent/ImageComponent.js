@@ -1,5 +1,5 @@
 import Image from "next/image";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 
 const ImageComponent = ({ src, width, height,mdHeight,nHeight }) => {
 
@@ -16,8 +16,8 @@ const ImageComponent = ({ src, width, height,mdHeight,nHeight }) => {
   );
 };
 
-ImageComponent.propTypes = {
-  src: PropTypes.string,
-};
+// ImageComponent.propTypes = {
+//   src: PropTypes.string,
+// };
 
 export default ImageComponent;

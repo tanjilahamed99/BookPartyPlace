@@ -11,7 +11,7 @@ import suggestionImage5 from "../../../../public/images/SeggetionImages/Card 7.p
 const Suggestion = ({ data }) => {
   const { TITLE } = AllSuggestionText;
   return (
-    <div className="md:my-20 my-10 container mx-auto px-1">
+    <div className="container mx-auto px-1">
       <SectionTitle title={TITLE} />
 
       {/* suggestion card for mobile devices */}
@@ -20,8 +20,14 @@ const Suggestion = ({ data }) => {
           <DisplayNData key={i._id} data={i}></DisplayNData>
         ))} */}
 
-        <DisplayNData data={{ img: suggestionImage1 }} />
+        {/* static data */}
+        <DisplayNData data={{ img: suggestionImage1, type: "Farm House" }} />
+        <DisplayNData data={{ img: suggestionImage2, type: "Resorts" }} />
+        <DisplayNData data={{ img: suggestionImage3, type: "Banquet Hall" }} />
+        <DisplayNData data={{ img: suggestionImage4, type: "Party Lawns.jpg" }} />
+        <DisplayNData data={{ img: suggestionImage5, type: "Other" }} />
       </div>
+
       {/* suggestion card for lab and laptop or other larger devices */}
       <div className="lg:hidden">
         <SuggestionSlider data={data} />

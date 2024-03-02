@@ -17,7 +17,7 @@ const HomeAbout = () => {
   } = AllHomeAboutText;
 
   return (
-    <div className="my-20 space-y-5 px-5">
+    <div className=" space-y-5 px-5">
       {/* about-1 */}
       <div className="space-y-2">
         <h2 className="text-xl font-semibold text-[#393536]">

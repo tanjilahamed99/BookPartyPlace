@@ -7,7 +7,7 @@ const EventCategories = ({ data }) => {
   const { TITLE } = AllEventByVenuesText;
 
   return (
-    <div className="md:my-20 container mx-auto px-1">
+    <div className=" container mx-auto px-1">
       {/* EventCatagories title */}
       <SectionTitle title={TITLE} />
 

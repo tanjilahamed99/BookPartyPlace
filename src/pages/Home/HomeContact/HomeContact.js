@@ -9,7 +9,7 @@ const HomeContact = () => {
   const { BTN, DESC, TITLE } = AllHomeContactText;
 
   return (
-    <div className="flex flex-col-reverse  md:flex-row justify-around items-center my-20 gap-7 md:gap-0 px-1">
+    <div className="flex flex-col-reverse  md:flex-row justify-around items-center  gap-7 md:gap-0 px-1">
       <div className="space-y-3 clear-start text-center md:text-start">
         {/* contact section title  */}
         <h2 className="md:text-2xl text-lg  font-bold text-[#040404]">

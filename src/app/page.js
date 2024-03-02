@@ -24,35 +24,37 @@ const Home = async () => {
       {/* Search bar / search section */}
       <SearchBar />
 
-      {/* suggestion component */}
-      <Suggestion data={data} />
+      <div className=" space-y-16 md:space-y-20">
+        {/* suggestion component */}
+        <Suggestion data={data} />
 
-      {/* event categories */}
-      <EventCategories data={data} />
+        {/* event categories */}
+        <EventCategories data={data} />
 
-      {/* Unique Venues*/}
-      <UniqueVenues data={data} />
+        {/* Unique Venues*/}
+        <UniqueVenues data={data} />
 
-      {/* work commands */}
-      <WorkCommand />
+        {/* work commands */}
+        <WorkCommand />
 
-      {/* Home contact */}
-      <HomeContact />
+        {/* Home contact */}
+        <HomeContact />
 
-      {/* Home blog section */}
-      <HomeBlog data={data} />
+        {/* Home blog section */}
+        <HomeBlog data={data} />
 
-      {/* promotion */}
-      <Promotion data={data} />  
+        {/* promotion */}
+        <Promotion data={data} />
 
-      {/* Testimonial */}
-      <Testimonials />
+        {/* Testimonial */}
+        <Testimonials />
 
-      {/* Home About */}
-      <HomeAbout />
+        {/* Home About */}
+        <HomeAbout />
 
-      {/* Events Published b Venues */}
-      <EventByVenues data={data} />
+        {/* Events Published b Venues */}
+        <EventByVenues data={data} />
+      </div>
 
       {/* footer */}
       <Footer />
