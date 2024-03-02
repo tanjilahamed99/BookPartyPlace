@@ -27,7 +27,7 @@ const HomeBlog = ({ data }) => {
       <p className="text-[#535552] text-center">{DESC}</p>
 
       {/* Home blog all filter */}
-      <div className="flex lg:gap-5 md:gap-3 justify-center mt-5 overflow-scroll">
+      <div className="flex lg:gap-5 md:gap-3 justify-center mt-5 overflow-x-auto">
         <button className="bg-white rounded-none btn  md:rounded-l-full md:rounded-r-full border-[#BCBFBA] md:px-8 md:py-2 hover:bg-primary-color active:bg-primary-color border md:border-2  text-[#040404] md:text-xl text-sm p-1 ml-[280px] md:ml-[455px] lg:ml-[250px] xl:ml-0">
           {WEDDING}
         </button>
@@ -49,7 +49,7 @@ const HomeBlog = ({ data }) => {
       </div>
 
       {/* display blog data here*/}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-10 lg:gap-5 xl:gap-10 md:mt-10 mt-5">
+      <div className="grid grid-cols-2  lg:grid-cols-3 items-center gap-2 md:gap-10 lg:gap-5 xl:gap-10 md:mt-10 mt-5">
         {data?.slice(0, 3).map((i) => (
           <DisplayBlogData key={i._id} data={i}></DisplayBlogData>
         ))}

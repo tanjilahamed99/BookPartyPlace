@@ -7,7 +7,7 @@ const UniqueVenues = ({ data }) => {
   const { TITLE } = AllUniqueVenuesText;
 
   return (
-    <div className="my-20">
+    <div className="my-20 px-2">
       {/* Unique Venues section title */}
       <SectionTitle title={TITLE} />
 
