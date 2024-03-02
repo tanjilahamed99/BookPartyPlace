@@ -22,9 +22,9 @@ const Footer = () => {
   } = footerAllText;
 
   return (
-    <footer className="footer mt-20  flex flex-col lg:flex-row xl:gap-20 lg:gap-5 lg:items-center px-5">
-      <div className="lg:w-1/3 mx-auto w-full">
-        <div className="flex  items-center">
+    <footer className="mt-20 mb-5  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:gap-20 lg:gap-10 gap-10 lg:items-center px-5">
+      <div className=" col-span-1">
+        <div className="flex items-center">
           {/* image component */}
           <Image
             className="w-10"
@@ -38,20 +38,20 @@ const Footer = () => {
         </div>
         {/* footer section description */}
         <h2>{DESC}</h2>
-        <div className="lg:w-[80%]  mt-5 relative w-[90%]">
+        <div className="lg:w-[80%]  mt-5 relative w-[80%]">
           <input
             type="text"
             placeholder="Your email"
-            className="input input-bordered md:py-4 w-full"
+            className=" border  rounded-md py-2 md:py-3 w-full pl-4"
           />
           {/* footer section button */}
-          <div className="absolute -right-12 top-[1.8px]">
+          <div className="absolute -right-12 md:top-[3px] top-[2px]">
             <SectionButton text={BTN} />
           </div>
         </div>
       </div>
       {/* footer all the navigation link */}
-      <div className="text-[#040404] font-semibold md:text-xl  grid grid-cols-3 gap-5 lg:w-1/3 mx-auto w-full">
+      <div className="text-[#040404] font-semibold md:text-xl lg:text-[17px] xl:text-lg  grid grid-cols-3 lg:gap-5 gap-5 ">
         <Link href={"/"}>
           <h1>{CONTACT}</h1>
         </Link>
@@ -68,7 +68,7 @@ const Footer = () => {
           <h1>{OFFERS}</h1>
         </Link>
       </div>
-      <div className=" lg:w-1/3 mx-auto w-full">
+      <div className="col-span-1">
         {/* footer icons */}
         <div className="flex gap-6 items-center">
           <FaFacebookF className="bg-[#61687233] text-4xl p-2 rounded-xl" />
