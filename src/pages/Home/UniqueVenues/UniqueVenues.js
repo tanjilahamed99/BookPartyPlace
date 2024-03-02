@@ -1,7 +1,7 @@
 import DisplayLData from "@/Shared/DisplayLData/DisplayLData";
 import DisplayLDataSlider from "@/Shared/DisplayLDataSlider/DisplayLDataSlider";
 import SectionTitle from "@/Shared/SectionTitle/SectionTitle";
-import AllUniqueVenuesText from "./uniqueText";
+import AllUniqueVenuesText from "../../../lib/uniqueText";
 
 const UniqueVenues = ({ data }) => {
   const { TITLE } = AllUniqueVenuesText;

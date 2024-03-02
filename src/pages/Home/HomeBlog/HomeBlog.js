@@ -1,6 +1,6 @@
 import DisplayBlogData from "@/Shared/DisplayBlogData/DisplayBlogData";
 import SectionButton from "@/Shared/SectionButton/SectionButton";
-import homeBlogAllText from "./homeBlogText";
+import AllHomeBlogText from "../../../lib/homeBlogText";
 
 const HomeBlog = ({ data }) => {
 
@@ -15,7 +15,7 @@ const HomeBlog = ({ data }) => {
     PARTIES,
     TEAM_BUILDING,
     PHOTO_SHOOTS,
-  } = homeBlogAllText;
+  } = AllHomeBlogText;
 
   return (
     <div>

@@ -18,7 +18,7 @@ const LOCATION_TITLE = "Locations";
 const LOCATION_DESC =
   "Hyderabad : Hi-Tech city, Sr Nagar, Gachibowli, Kukatpally, Mehandipatnam, Medchal, AS Rao nagar, Old city, Lakdikapul";
 
-const promotionAllText = {
+const AllHomeAboutText = {
   BOOKING_DESC,
   BOOKING_TITLE,
   LOCATION_DESC,
@@ -31,4 +31,4 @@ const promotionAllText = {
   BIGGEST_EVENTS_TITLE,
 };
 
-export default promotionAllText
+export default AllHomeAboutText;

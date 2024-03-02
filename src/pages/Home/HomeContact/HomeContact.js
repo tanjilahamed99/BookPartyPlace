@@ -2,11 +2,11 @@ import SectionButton from "@/Shared/SectionButton/SectionButton";
 import Image from "next/image";
 import React from "react";
 import contactImage from "../../../../public/images/contact.jpg";
-import homeContactAllText from "./homeContactText";
+import AllHomeContactText from "../../../lib/homeContactText";
 
 const HomeContact = () => {
   // home contact text
-  const { BTN, DESC, TITLE } = homeContactAllText;
+  const { BTN, DESC, TITLE } = AllHomeContactText;
 
   return (
     <div className="flex flex-col-reverse  md:flex-row justify-around items-center my-20 gap-7 md:gap-0">

@@ -18,7 +18,7 @@ const THREE = 3;
 const THREE_TITLE = "Create Memories";
 const THREE_DESC = " Create a memorable experience at a lovely space and enjoy";
 
-const workCommandAllText = {
+const AllWorkCommandText = {
   TITLE,
   ONE,
   ONE_DESC,
@@ -31,4 +31,4 @@ const workCommandAllText = {
   THREE_TITLE,
 };
 
-export default workCommandAllText;
+export default AllWorkCommandText;

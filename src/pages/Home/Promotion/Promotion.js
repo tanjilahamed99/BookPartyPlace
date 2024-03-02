@@ -1,10 +1,10 @@
 import DisplayLData from "@/Shared/DisplayLData/DisplayLData";
 import DisplayLDataSlider from "@/Shared/DisplayLDataSlider/DisplayLDataSlider";
 import SectionTitle from "@/Shared/SectionTitle/SectionTitle";
-import promotionAllText from "./promotionText";
+import AllPromotionText from "../../../lib/promotionText";
 
 const Promotion = ({ data }) => {
-  const { TITLE } = promotionAllText;
+  const { TITLE } = AllPromotionText;
 
   return (
     <div className="my-20">

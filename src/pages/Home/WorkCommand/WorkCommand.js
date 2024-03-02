@@ -1,4 +1,4 @@
-import workCommandAllText from "./workCommandText";
+import workCommandAllText from "../../../lib/workCommandText";
 
 // work command section all the text
 const WorkCommand = () => {

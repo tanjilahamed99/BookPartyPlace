@@ -1,4 +1,4 @@
-import promotionAllText from "./homeAboutText";
+import AllHomeAboutText from "../../../lib/homeAboutText";
 
 const HomeAbout = () => {
 
@@ -14,7 +14,7 @@ const HomeAbout = () => {
     VENDORS_TITLE,
     BIGGEST_EVENTS_DESC,
     BIGGEST_EVENTS_TITLE,
-  } = promotionAllText;
+  } = AllHomeAboutText;
 
   return (
     <div className="my-20 space-y-5 px-5">

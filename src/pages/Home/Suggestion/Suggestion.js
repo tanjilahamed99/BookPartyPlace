@@ -1,10 +1,10 @@
 import DisplayNData from "@/Shared/DisplayNData/DisplayNData";
 import SectionTitle from "@/Shared/SectionTitle/SectionTitle";
 import SuggestionSlider from "./SuggestionSlider";
-import AllSuggestionText from "./SuggestionText";
+import AllSuggestionText from "@/lib/SuggestionText";
 
 const Suggestion = ({ data }) => {
-  const { TITLE } = AllSuggestionText();
+  const { TITLE } = AllSuggestionText;
   return (
     <div className="md:my-20 my-10 container mx-auto">
       <SectionTitle title={TITLE} />

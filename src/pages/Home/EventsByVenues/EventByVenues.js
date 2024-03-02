@@ -1,11 +1,10 @@
-import UseAllSuggestionData from "@/Hooks/UseAllSuggestionData";
 import DisplayLData from "@/Shared/DisplayLData/DisplayLData";
 import DisplayLDataSlider from "@/Shared/DisplayLDataSlider/DisplayLDataSlider";
 import SectionTitle from "@/Shared/SectionTitle/SectionTitle";
-import eventAllText from "./eventText";
+import AllEventByVenuesText from "../../../lib/eventByVenuesText";
 
 const EventByVenues = ({ data }) => {
-  const { TITLE } = eventAllText;
+  const { TITLE } = AllEventByVenuesText;
 
   return (
     <div className="my-20">

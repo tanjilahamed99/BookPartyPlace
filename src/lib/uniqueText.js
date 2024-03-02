@@ -1,7 +1,5 @@
 const TITLE = "Unique Venues for you";
 
-const AllUniqueVenuesText = () => {
-  return { TITLE };
-};
+const AllUniqueVenuesText = { TITLE };
 
 export default AllUniqueVenuesText;
