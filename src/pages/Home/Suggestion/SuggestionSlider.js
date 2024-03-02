@@ -13,7 +13,7 @@ const SuggestionSlider = ({ data }) => {
     slides: { origin: "center", perView: 3, spacing: 10 },
     range: {
       min: 5,
-      max: data.length,
+      max: 12,
     },
   });
 

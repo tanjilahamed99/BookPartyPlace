@@ -18,7 +18,7 @@ const HomeBlog = ({ data }) => {
   } = AllHomeBlogText;
 
   return (
-    <div>
+    <div className="px-2">
       {/* home blog section title */}
       <h2 className="md:text-2xl text-lg font-bold mb-2 text-[#040404] text-center ">
         {TITLE}
@@ -27,29 +27,29 @@ const HomeBlog = ({ data }) => {
       <p className="text-[#535552] text-center">{DESC}</p>
 
       {/* Home blog all filter */}
-      <div className="flex gap-5 flex-wrap justify-center mt-5">
-        <button className="bg-white rounded-l-full rounded-r-full border-[#BCBFBA] px-8 py-2 hover:bg-primary-color active:bg-primary-color border-2  text-[#040404] text-xl">
+      <div className="flex lg:gap-5 md:gap-3 justify-center mt-5 overflow-scroll">
+        <button className="bg-white rounded-none btn  md:rounded-l-full md:rounded-r-full border-[#BCBFBA] md:px-8 md:py-2 hover:bg-primary-color active:bg-primary-color border md:border-2  text-[#040404] md:text-xl text-sm p-1 ml-[280px] md:ml-[455px] lg:ml-[250px] xl:ml-0">
           {WEDDING}
         </button>
-        <button className="bg-white rounded-l-full rounded-r-full border-[#BCBFBA] px-8 py-2 hover:bg-primary-color active:bg-primary-color border-2  text-[#040404] text-xl">
+        <button className="bg-white rounded-none btn  md:rounded-l-full md:rounded-r-full border-[#BCBFBA] md:px-8 md:py-2 hover:bg-primary-color active:bg-primary-color border md:border-2  text-[#040404] md:text-xl text-sm p-1">
           {CORPORATE_BLOG}
         </button>
-        <button className="bg-white rounded-l-full rounded-r-full border-[#BCBFBA] px-8 py-2 hover:bg-primary-color active:bg-primary-color border-2  text-[#040404] text-xl">
+        <button className="bg-white rounded-none btn  md:rounded-l-full md:rounded-r-full border-[#BCBFBA] md:px-8 md:py-2 hover:bg-primary-color active:bg-primary-color border md:border-2  text-[#040404] md:text-xl text-sm p-1">
           {ENGAGEMENT_CEREMONY}
         </button>
-        <button className="bg-white rounded-l-full rounded-r-full border-[#BCBFBA] px-8 py-2 hover:bg-primary-color active:bg-primary-color border-2  text-[#040404] text-xl">
+        <button className="bg-white rounded-none btn  md:rounded-l-full md:rounded-r-full border-[#BCBFBA] md:px-8 md:py-2 hover:bg-primary-color active:bg-primary-color border md:border-2  text-[#040404] md:text-xl text-sm p-1">
           {PARTIES}
         </button>
-        <button className="bg-white rounded-l-full rounded-r-full border-[#BCBFBA] px-8 py-2 hover:bg-primary-color active:bg-primary-color border-2  text-[#040404] text-xl">
+        <button className="bg-white rounded-none btn  md:rounded-l-full md:rounded-r-full border-[#BCBFBA] md:px-8 md:py-2 hover:bg-primary-color active:bg-primary-color border md:border-2  text-[#040404] md:text-xl text-sm p-1">
           {TEAM_BUILDING}
         </button>
-        <button className="bg-white rounded-l-full rounded-r-full border-[#BCBFBA] px-8 py-2 hover:bg-primary-color active:bg-primary-color border-2  text-[#040404] text-xl">
+        <button className="bg-white rounded-none btn  md:rounded-l-full md:rounded-r-full border-[#BCBFBA] md:px-8 md:py-2 hover:bg-primary-color active:bg-primary-color border md:border-2  text-[#040404] md:text-xl text-sm p-1">
           {PHOTO_SHOOTS}
         </button>
       </div>
 
       {/* display blog data here*/}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-10 lg:gap-5 xl:gap-10 mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-10 lg:gap-5 xl:gap-10 md:mt-10 mt-5">
         {data?.slice(0, 3).map((i) => (
           <DisplayBlogData key={i._id} data={i}></DisplayBlogData>
         ))}
