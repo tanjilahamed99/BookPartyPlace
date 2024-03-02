@@ -2,6 +2,11 @@ import DisplayLData from "@/components/Shared/DisplayLData/DisplayLData";
 import DisplayLDataSlider from "@/components/Shared/DisplayLDataSlider/DisplayLDataSlider";
 import SectionTitle from "@/components/Shared/DisplayBlogData/SectionTitle/SectionTitle";
 import AllEventByVenuesText from "../../../lib/eventByVenuesText";
+import eventCatagoriesImg1 from '../../../../public/images/Promotion/wtttttrh.jpg'
+import eventCatagoriesImg2 from '../../../../public/images/Promotion/unnamed 1.png'
+import eventCatagoriesImg3 from '../../../../public/images/Promotion/rnsyr.jpg'
+import eventCatagoriesImg4 from '../../../../public/images/Promotion/Mi7CNy9_gCo.jpg'
+import eventCatagoriesImg5 from '../../../../public/images/Promotion/images 1.png'
 
 const EventByVenues = ({ data }) => {
   const { TITLE } = AllEventByVenuesText;
@@ -13,17 +18,41 @@ const EventByVenues = ({ data }) => {
       <div>
         {/* big screen /xl */}
         <div className="hidden xl:inline">
-          <DisplayLDataSlider view={3.5} data={data} />
+          <DisplayLDataSlider
+            view={3.5}
+            data={{
+              img1: eventCatagoriesImg1,
+              img2: eventCatagoriesImg2,
+              img3: eventCatagoriesImg3,
+              img4: eventCatagoriesImg4,
+            }}
+          />
         </div>
 
         {/* large screen / lg  */}
         <div className="hidden lg:inline xl:hidden">
-          <DisplayLDataSlider view={3} data={data} />
+          <DisplayLDataSlider
+            view={3}
+            data={{
+              img1: eventCatagoriesImg1,
+              img2: eventCatagoriesImg2,
+              img3: eventCatagoriesImg3,
+              img4: eventCatagoriesImg4,
+            }}
+          />
         </div>
 
         {/* medium screen / md */}
         <div className="hidden md:inline lg:hidden">
-          <DisplayLDataSlider view={2.3} data={data} />
+          <DisplayLDataSlider
+            view={2.3}
+            data={{
+              img1: eventCatagoriesImg1,
+              img2: eventCatagoriesImg2,
+              img3: eventCatagoriesImg3,
+              img4: eventCatagoriesImg4,
+            }}
+          />
         </div>
       </div>
 

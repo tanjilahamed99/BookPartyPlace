@@ -9,7 +9,6 @@ import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import DisplayLData from "../DisplayLData/DisplayLData";
-import { useGetPhotosQuery } from "@/redux/features/PhotoSlice/photoSlice";
 
 const DisplayLDataSlider = ({ data, view }) => {
   const [setSwiperRef] = useState(null);
@@ -28,12 +27,26 @@ const DisplayLDataSlider = ({ data, view }) => {
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >
+        {/* dynamic  */}
         {/* data facing for display card */}
-        {data?.map((i, idx) => (
+        {/* {data?.map((i, idx) => (
           <SwiperSlide key={i._id}>
             <DisplayLData data={i} />
           </SwiperSlide>
-        ))}
+        ))} */}
+
+        <SwiperSlide>
+          <DisplayLData data={{ img: data?.img1, _id: 1 }} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <DisplayLData data={{ img: data?.img2, _id: 2 }} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <DisplayLData data={{ img: data?.img3, _id: 3 }} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <DisplayLData data={{ img: data?.img4, _id: 4 }} />
+        </SwiperSlide>
       </Swiper>
 
       {/* custom arrow Button */}

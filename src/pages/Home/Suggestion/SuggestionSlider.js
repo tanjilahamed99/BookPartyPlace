@@ -34,27 +34,27 @@ const SuggestionSlider = ({ data }) => {
       <div
         className={`keen-slider__slide number-slide1 rounded-2xl shadow-2xl shadow-[#0404041A] py-4`}
       >
-        <DisplayNData data={{ img: data.img1, type: "Farm House" }} />
+        <DisplayNData data={{ img: data?.img1, type: "Farm House" }} />
       </div>
       <div
         className={`keen-slider__slide number-slide2 rounded-2xl shadow-2xl shadow-[#0404041A] py-4`}
       >
-        <DisplayNData data={{ img: data.img2, type: "Resorts" }} />
+        <DisplayNData data={{ img: data?.img2, type: "Resorts" }} />
       </div>
       <div
         className={`keen-slider__slide number-slide3 rounded-2xl shadow-2xl shadow-[#0404041A] py-4`}
       >
-        <DisplayNData data={{ img: data.img3, type: "Banquet Hall" }} />
+        <DisplayNData data={{ img: data?.img3, type: "Banquet Hall" }} />
       </div>
       <div
         className={`keen-slider__slide number-slide4 rounded-2xl shadow-2xl shadow-[#0404041A] py-4`}
       >
-        <DisplayNData data={{ img: data.img4, type: "Party Lawns.jpg" }} />
+        <DisplayNData data={{ img: data?.img4, type: "Party Lawns.jpg" }} />
       </div>
       <div
         className={`keen-slider__slide number-slide5 rounded-2xl shadow-2xl shadow-[#0404041A] py-4`}
       >
-        <DisplayNData data={{ img: data.img5, type: "Other" }} />
+        <DisplayNData data={{ img: data?.img5, type: "Other" }} />
       </div>
     </div>
   );

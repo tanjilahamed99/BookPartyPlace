@@ -11,7 +11,6 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Pagination, Navigation, HashNavigation } from "swiper/modules";
-import Image from "next/image";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import ImageComponent from "@/components/ImageComponent/ImageComponent";
 
