@@ -7,7 +7,7 @@ const DisplayBlogData = ({ data }) => {
     <div className="border border-[#BCBFBA] p-2 rounded-xl">
       <div className="rounded-2xl pb-4">
         {/* image component */}
-        <ImageComponent src={data?.img} width={"w-full"} height={"h-[200px]"} />
+        <ImageComponent src={data?.img} width={"w-full"} nHeight={'h-[200px]'} height={"h-[200px]"} />
 
         {/* i use static data for displaying card */}
         <div className="md:px-3 pb-1 mt-3 space-y-2">

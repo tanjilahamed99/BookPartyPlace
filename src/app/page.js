@@ -13,27 +13,21 @@ import Testimonials from "@/pages/Home/Testimonials/Testimonials";
 import UniqueVenues from "@/pages/Home/UniqueVenues/UniqueVenues";
 import WorkCommand from "@/pages/Home/WorkCommand/WorkCommand";
 
-
 const Home = async () => {
-
-  const data = await UseAllSuggestionData()
+  const data = await UseAllSuggestionData();
 
   return (
     <div>
-
-      {/* Navbar */ }
+      {/* Navbar */}
       < Navbar />
+      {/* Search bar / search section */}
+      <SearchBar />
 
-      <div className="">
-        {/* Search bar / search section */}
-        <SearchBar />
+      {/* suggestion component */}
+      <Suggestion data={data} />
 
-        {/* suggestion component */}
-        <Suggestion data={data} />
-
-        {/* event categories */}
-        <EventCategories data={data} />
-      </div>
+      {/* event categories */}
+      <EventCategories data={data} />
 
       {/* Unique Venues*/}
       <UniqueVenues data={data} />
@@ -42,7 +36,6 @@ const Home = async () => {
       <Testimonials />
 
       {/* work commands */}
-      
       <WorkCommand />
 
       {/* Home contact */}
@@ -62,9 +55,8 @@ const Home = async () => {
 
       {/* footer */}
       <Footer />
-
-    </div >
+    </div>
   );
-}
+};
 
-export default Home
+export default Home;
