@@ -18,7 +18,7 @@ const HomeBlog = ({ data }) => {
   } = AllHomeBlogText;
 
   return (
-    <div className="px-2">
+    <div className="px-1">
       {/* home blog section title */}
       <h2 className="md:text-2xl text-lg font-bold mb-2 text-[#040404] text-center ">
         {TITLE}

@@ -20,6 +20,7 @@ const Home = async () => {
     <div>
       {/* Navbar */}
       < Navbar />
+      
       {/* Search bar / search section */}
       <SearchBar />
 

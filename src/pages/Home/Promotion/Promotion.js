@@ -7,7 +7,7 @@ const Promotion = ({ data }) => {
   const { TITLE } = AllPromotionText;
 
   return (
-    <div className="my-20 px-2">
+    <div className="my-20 px-1">
       {/* promotion section title */}
       <SectionTitle title={TITLE} />
 

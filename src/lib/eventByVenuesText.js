@@ -1,4 +1,4 @@
-const TITLE = "Promotions near your area";
+const TITLE = "Explore Event Categories";
 
 const AllEventByVenuesText = { TITLE };
 

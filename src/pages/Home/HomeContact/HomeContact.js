@@ -1,7 +1,7 @@
 import SectionButton from "@/components/Shared/SectionButton/SectionButton";
 import Image from "next/image";
 import React from "react";
-import contactImage from "../../../../public/images/contact.jpg";
+import contactImage from "../../../../public/images/HomeContact/Need Help for planning your venue .jpg";
 import AllHomeContactText from "../../../lib/homeContactText";
 
 const HomeContact = () => {
@@ -9,7 +9,7 @@ const HomeContact = () => {
   const { BTN, DESC, TITLE } = AllHomeContactText;
 
   return (
-    <div className="flex flex-col-reverse  md:flex-row justify-around items-center my-20 gap-7 md:gap-0 px-2">
+    <div className="flex flex-col-reverse  md:flex-row justify-around items-center my-20 gap-7 md:gap-0 px-1">
       <div className="space-y-3 clear-start text-center md:text-start">
         {/* contact section title  */}
         <h2 className="md:text-2xl text-lg  font-bold text-[#040404]">

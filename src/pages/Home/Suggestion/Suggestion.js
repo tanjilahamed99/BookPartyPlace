@@ -5,8 +5,10 @@ import AllSuggestionText from "@/lib/SuggestionText";
 
 const Suggestion = ({ data }) => {
   const { TITLE } = AllSuggestionText;
+
+
   return (
-    <div className="md:my-20 my-10 container mx-auto px-2">
+    <div className="md:my-20 my-10 container mx-auto px-1">
       <SectionTitle title={TITLE} />
 
       {/* suggestion card for mobile devices */}
