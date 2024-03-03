@@ -1,10 +1,13 @@
+import Link from "next/link";
 import AllHomeAboutText from "../../../lib/homeAboutText";
 
 const HomeAbout = () => {
-
   // Home About section title
   const {
-    BOOKING_DESC,
+    BOOKING_DESC1,
+    BOOKING_DESC2,
+    BOOKING_DESC3,
+    BOOKING_DESC4,
     BOOKING_TITLE,
     LOCATION_DESC,
     LOCATION_TITLE,
@@ -23,28 +26,39 @@ const HomeAbout = () => {
         <h2 className="text-xl font-semibold text-[#393536]">
           {BOOKING_TITLE}
         </h2>
-        <p className="text-[#616872] hover:font-semibold cursor-pointer">{BOOKING_DESC}</p>
+        <p className="text-[#616872] hover:font-semibold cursor-pointer">
+          <Link href={'/'}> {BOOKING_DESC1}</Link>
+          <Link href={'/'}> {BOOKING_DESC2}</Link>
+          <Link href={'/'}> {BOOKING_DESC3}</Link>
+          <Link href={'/'}> {BOOKING_DESC4}</Link>
+        </p>
       </div>
       {/* about-2 */}
       <div className="space-y-2">
         <h2 className="text-xl font-semibold text-[#393536]">
           {TRENDING_TITLE}
         </h2>
-        <p className="text-[#616872] hover:font-semibold cursor-pointer">{TRENDING_DESC}</p>
+        <p className="text-[#616872] hover:font-semibold cursor-pointer">
+          {TRENDING_DESC}
+        </p>
       </div>
       {/* about-3 */}
       <div className="space-y-2">
         <h2 className="text-xl font-semibold text-[#393536]">
           {VENDORS_TITLE}
         </h2>
-        <p className="text-[#616872] hover:font-semibold cursor-pointer">{VENDORS_DESC}</p>
+        <p className="text-[#616872] hover:font-semibold cursor-pointer">
+          {VENDORS_DESC}
+        </p>
       </div>
       {/* about-4 */}
       <div className="space-y-2">
         <h2 className="text-xl font-semibold text-[#393536]">
           {BIGGEST_EVENTS_TITLE}
         </h2>
-        <p className="text-[#616872] hover:font-semibold cursor-pointer">{BIGGEST_EVENTS_DESC}</p>
+        <p className="text-[#616872] hover:font-semibold cursor-pointer">
+          {BIGGEST_EVENTS_DESC}
+        </p>
       </div>
       {/* about-5 */}
       <div className="space-y-2">

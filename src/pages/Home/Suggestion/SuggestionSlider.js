@@ -6,6 +6,7 @@ import "keen-slider/keen-slider.min.css";
 import DisplayNData from "@/components/Shared/DisplayNData/DisplayNData";
 
 const SuggestionSlider = ({ data }) => {
+
   // keen slider functionality
   const [sliderRef] = useKeenSlider({
     loop: true,
@@ -13,7 +14,7 @@ const SuggestionSlider = ({ data }) => {
     slides: { origin: "center", perView: 3, spacing: 10 },
     range: {
       min: 1,
-      max: 10,
+      max: 3,
     },
   });
 
@@ -26,7 +27,7 @@ const SuggestionSlider = ({ data }) => {
           key={i._id}
           className={`keen-slider__slide number-slide${idx} rounded-2xl shadow-2xl shadow-[#0404041A] py-4`}
         >
-          <DisplayNData data={{}}></DisplayNData>
+          <DisplayNData data={i}></DisplayNData>
         </div>
       ))} */}
 

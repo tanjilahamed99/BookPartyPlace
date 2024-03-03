@@ -48,7 +48,8 @@ const TestimonialsSlider = ({ view }) => {
                 } */}
 
         {/* static testimonial card */}
-        <SwiperSlide className="md:py-20 py-10 px-6 md:px-2 lg:px-1">
+
+        <SwiperSlide className="md:py-20 py-10 px-7 md:px-2 lg:px-1 z-50 border-2 border-black">
           <div className="border-[#BCBFBA] border relative">
             <Image
               className="absolute rounded-full md:w-32 md:h-32 md:-top-20 -top-10 xl:left-[32%] lg:left-[28%] md:left-[30%] left-[33%] z-10 h-20 w-20"
@@ -58,7 +59,7 @@ const TestimonialsSlider = ({ view }) => {
               height={500}
             />
 
-            <div className="text-center md:pt-14 pt-12  px-2 pb-5 space-y-3">
+            <div className="text-center md:pt-14 pt-12  px-2 pb-5 space-y-2">
               <div>
                 <h2 className="text-[#040404] font-semibold">Atif</h2>
                 <h2 className="text-sm text-[#040404]">
@@ -80,7 +81,7 @@ const TestimonialsSlider = ({ view }) => {
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="md:py-20 py-10 px-6 md:px-2 lg:px-1">
+        <SwiperSlide className="md:py-20 py-10 px-7 md:px-2 lg:px-1 z-10 border-2 border-black">
           <div className="border-[#BCBFBA] border relative">
             <Image
               className="absolute rounded-full md:w-32 md:h-32 md:-top-20 -top-10 xl:left-[32%] lg:left-[28%] md:left-[30%] left-[33%] z-10 h-20 w-20"
@@ -90,7 +91,7 @@ const TestimonialsSlider = ({ view }) => {
               height={500}
             />
 
-            <div className="text-center md:pt-14 pt-12  px-2 pb-5 space-y-3">
+            <div className="text-center md:pt-14 pt-12  px-2 pb-5 space-y-2">
               <div>
                 <h2 className="text-[#040404] font-semibold">Atif</h2>
                 <h2 className="text-sm text-[#040404]">
@@ -112,7 +113,7 @@ const TestimonialsSlider = ({ view }) => {
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="md:py-20 py-10 px-6 md:px-2 lg:px-1">
+        <SwiperSlide className="md:py-20 py-10 px-7 md:px-2 lg:px-1 z-10 border-2 border-black">
           <div className="border-[#BCBFBA] border relative">
             <Image
               className="absolute rounded-full md:w-32 md:h-32 md:-top-20 -top-10 xl:left-[32%] lg:left-[28%] md:left-[30%] left-[33%] z-10 h-20 w-20"
@@ -122,7 +123,7 @@ const TestimonialsSlider = ({ view }) => {
               height={500}
             />
 
-            <div className="text-center md:pt-14 pt-12  px-2 pb-5 space-y-3">
+            <div className="text-center md:pt-14 pt-12  px-2 pb-5 space-y-2">
               <div>
                 <h2 className="text-[#040404] font-semibold">Atif</h2>
                 <h2 className="text-sm text-[#040404]">
@@ -144,7 +145,7 @@ const TestimonialsSlider = ({ view }) => {
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="md:py-20 py-10 px-6 md:px-2 lg:px-1">
+        <SwiperSlide className="md:py-20 py-10 px-7 md:px-2 lg:px-1 z-10 border-2 border-black">
           <div className="border-[#BCBFBA] border relative">
             <Image
               className="absolute rounded-full md:w-32 md:h-32 md:-top-20 -top-10 xl:left-[32%] lg:left-[28%] md:left-[30%] left-[33%] z-10 h-20 w-20"
@@ -154,7 +155,7 @@ const TestimonialsSlider = ({ view }) => {
               height={500}
             />
 
-            <div className="text-center md:pt-14 pt-12  px-2 pb-5 space-y-3">
+            <div className="text-center md:pt-14 pt-12  px-2 pb-5 space-y-2">
               <div>
                 <h2 className="text-[#040404] font-semibold">Atif</h2>
                 <h2 className="text-sm text-[#040404]">
@@ -176,7 +177,7 @@ const TestimonialsSlider = ({ view }) => {
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="md:py-20 py-10 px-6 md:px-2 lg:px-1">
+        <SwiperSlide className="md:py-20 py-10 px-7 md:px-2 lg:px-1 z-10 border-2 border-black">
           <div className="border-[#BCBFBA] border relative">
             <Image
               className="absolute rounded-full md:w-32 md:h-32 md:-top-20 -top-10 xl:left-[32%] lg:left-[28%] md:left-[30%] left-[33%] z-10 h-20 w-20"
@@ -186,7 +187,7 @@ const TestimonialsSlider = ({ view }) => {
               height={500}
             />
 
-            <div className="text-center md:pt-14 pt-12  px-2 pb-5 space-y-3">
+            <div className="text-center md:pt-14 pt-12  px-2 pb-5 space-y-2">
               <div>
                 <h2 className="text-[#040404] font-semibold">Atif</h2>
                 <h2 className="text-sm text-[#040404]">
@@ -208,16 +209,17 @@ const TestimonialsSlider = ({ view }) => {
             </div>
           </div>
         </SwiperSlide>
+        
       </Swiper>
 
       {/* custom arrow button */}
-      <div className="flex gap-3 left-0 md:left-1 top-[46%] absolute text-black">
+      <div className="flex gap-3 left-1 md:left-1 top-[46%] absolute text-black z-10">
         <button className="custom-swiper-button-prev-testimonial">
           <IoIosArrowBack className=" bg-primary-color rounded-full text-4xl p-2" />
         </button>
       </div>
 
-      <div className="flex gap-3 right-0  md:right-1 top-[46%] absolute text-black">
+      <div className="flex gap-3 right-1  md:right-1 top-[46%] absolute text-black z-0">
         <button className="custom-swiper-button-next-testimonial">
           <IoIosArrowForward className=" bg-primary-color rounded-full text-4xl p-2" />
         </button>

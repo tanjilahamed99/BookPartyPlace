@@ -1,6 +1,12 @@
 const BOOKING_TITLE = "Booking party place Venues";
-const BOOKING_DESC =
-  "Weddings, parties, corporate events, Birthday party, photo/ Filmshoot, workshop, Weddings, parties, corporate events, Birthday party, photo/ Filmshoot, workshop, Weddings, parties, corporate events, Birthday party, photo/ Filmshoot, workshop";
+const BOOKING_DESC1 =
+  "Weddings, parties, corporate events, Birthday party, photo/ ";
+
+const BOOKING_DESC2 =
+  "Filmshoot, workshop, Weddings, parties, corporate events, Birthday party, photo";
+const BOOKING_DESC3 =
+  "/ Filmshoot, workshop, Weddings, parties, corporate events, Birthday party, photo";
+const BOOKING_DESC4 = "/ Filmshoot, workshop";
 
 const TRENDING_TITLE = "Trending Venues";
 const TRENDING_DESC =
@@ -19,7 +25,10 @@ const LOCATION_DESC =
   "Hyderabad : Hi-Tech city, Sr Nagar, Gachibowli, Kukatpally, Mehandipatnam, Medchal, AS Rao nagar, Old city, Lakdikapul";
 
 const AllHomeAboutText = {
-  BOOKING_DESC,
+  BOOKING_DESC1,
+  BOOKING_DESC2,
+  BOOKING_DESC3,
+  BOOKING_DESC4,
   BOOKING_TITLE,
   LOCATION_DESC,
   LOCATION_TITLE,

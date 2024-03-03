@@ -10,6 +10,9 @@ import suggestionImage5 from "../../../../public/images/SeggetionImages/Card 7.p
 
 const Suggestion = ({ data }) => {
   const { TITLE } = AllSuggestionText;
+
+  const suggestionData = [];
+
   return (
     <div className="container mx-auto px-1">
       <SectionTitle title={TITLE} />
