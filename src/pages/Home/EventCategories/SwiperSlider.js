@@ -10,7 +10,7 @@ import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import DisplayNData from "@/components/Shared/DisplayNData/DisplayNData";
-import eventCategoryImg1 from "../../../../public/images/ExploreEvent/01 Weddings.jpg";
+import eventCategoryImg1 from "../../../../public/images/ExploreEvent/01 Weddings .jpg";
 import eventCategoryImg2 from "../../../../public/images/ExploreEvent/02 Birthday party .jpg";
 import eventCategoryImg3 from "../../../../public/images/ExploreEvent/03 Festivals.jpg";
 import eventCategoryImg4 from "../../../../public/images/ExploreEvent/04 Performances.jpg";

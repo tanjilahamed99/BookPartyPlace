@@ -28,9 +28,9 @@ const HomeBlog = ({ data }) => {
       {/* home blog section description */}
       <p className="text-[#535552] text-center">{DESC}</p>
 
-      {/* Home blog all filter */}
-      <div className="flex lg:gap-5 gap-1 justify-center mt-10 overflow-x-auto">
-        <button className="bg-white rounded-none btn  md:rounded-l-full md:rounded-r-full border-[#BCBFBA] md:px-8 md:py-2 hover:bg-primary-color active:bg-primary-color border md:border-2  text-[#040404] md:text-xl text-sm p-1 ml-[280px] md:ml-[455px] lg:ml-[250px] xl:ml-0">
+      {/* Home blog all filter ml-[290px] md:ml-[420px] lg:ml-[250px] xl:ml-0*/}
+      <div className="flex lg:gap-5 gap-1 justify-center mt-10 overflow-x-auto pl-[295px] md:pl-[410px] lg:pl-[240px] xl:pl-0 ">
+        <button className="bg-white rounded-none btn  md:rounded-l-full md:rounded-r-full border-[#BCBFBA] md:px-8 md:py-2 hover:bg-primary-color active:bg-primary-color border md:border-2  text-[#040404] md:text-xl text-sm p-1 ">
           {WEDDING}
         </button>
         <button className="bg-white rounded-none btn  md:rounded-l-full md:rounded-r-full border-[#BCBFBA] md:px-8 md:py-2 hover:bg-primary-color active:bg-primary-color border md:border-2  text-[#040404] md:text-xl text-sm p-1">

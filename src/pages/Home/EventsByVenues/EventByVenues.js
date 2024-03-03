@@ -12,7 +12,7 @@ const EventByVenues = ({ data }) => {
   const { TITLE } = AllEventByVenuesText;
 
   return (
-    <div className="">
+    <div className="px-1">
       <SectionTitle title={TITLE} />
 
       <div>
