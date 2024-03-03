@@ -2,11 +2,11 @@ import SectionTitle from "@/components/Shared/DisplayBlogData/SectionTitle/Secti
 import SuggestionSlider from "../Suggestion/SuggestionSlider";
 import SwiperSlider from "./SwiperSlider";
 import AllEventByVenuesText from "@/lib/eventByVenuesText";
-import eventCategoryImg1 from '../../../../public/images/ExploreEvent/01 Weddings.jpg'
-import eventCategoryImg2 from '../../../../public/images/ExploreEvent/02 Birthday party .jpg'
-import eventCategoryImg3 from '../../../../public/images/ExploreEvent/03 Festivals.jpg'
-import eventCategoryImg4 from '../../../../public/images/ExploreEvent/04 Performances.jpg'
-import eventCategoryImg5 from '../../../../public/images/ExploreEvent/05 Family Gatherings .jpg'
+import eventCategoryImg1 from "../../../../public/images/ExploreEvent/01 Weddings.jpg";
+import eventCategoryImg2 from "../../../../public/images/ExploreEvent/02 Birthday party .jpg";
+import eventCategoryImg3 from "../../../../public/images/ExploreEvent/03 Festivals.jpg";
+import eventCategoryImg4 from "../../../../public/images/ExploreEvent/04 Performances.jpg";
+import eventCategoryImg5 from "../../../../public/images/ExploreEvent/05 Family Gatherings .jpg";
 
 const EventCategories = ({ data }) => {
   const { TITLE } = AllEventByVenuesText;
@@ -21,10 +21,15 @@ const EventCategories = ({ data }) => {
         <SuggestionSlider
           data={{
             img1: eventCategoryImg1,
+            text1: "Weddings",
+            text2: " Birthday party",
+            text3: " Festivals",
+            text4: "Performances",
+            text5: "Family Gatherings",
             img2: eventCategoryImg2,
             img3: eventCategoryImg3,
             img4: eventCategoryImg4,
-            img5: eventCategoryImg5
+            img5: eventCategoryImg5,
           }}
         />
       </div>

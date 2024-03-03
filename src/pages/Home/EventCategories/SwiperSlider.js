@@ -15,6 +15,7 @@ import eventCategoryImg2 from "../../../../public/images/ExploreEvent/02 Birthda
 import eventCategoryImg3 from "../../../../public/images/ExploreEvent/03 Festivals.jpg";
 import eventCategoryImg4 from "../../../../public/images/ExploreEvent/04 Performances.jpg";
 import eventCategoryImg5 from "../../../../public/images/ExploreEvent/05 Family Gatherings .jpg";
+import eventCategoryImg6 from "../../../../public/images/Promotion/AsLrdByMDng.jpg";
 
 const SwiperSlider = ({ data }) => {
   const [setSwiperRef] = useState(null);
@@ -42,28 +43,34 @@ const SwiperSlider = ({ data }) => {
         ))} */}
 
         <SwiperSlide>
-          <DisplayNData data={{ img: eventCategoryImg1 }}></DisplayNData>
+          <DisplayNData
+            data={{ img: eventCategoryImg1, type: "Weddings" }}
+          ></DisplayNData>
         </SwiperSlide>
         <SwiperSlide>
-          <DisplayNData data={{ img: eventCategoryImg2 }}></DisplayNData>
+          <DisplayNData
+            data={{ img: eventCategoryImg2, type: "Birthday party" }}
+          ></DisplayNData>
         </SwiperSlide>
         <SwiperSlide>
-          <DisplayNData data={{ img: eventCategoryImg3 }}></DisplayNData>
+          <DisplayNData
+            data={{ img: eventCategoryImg3, type: "Festivals" }}
+          ></DisplayNData>
         </SwiperSlide>
         <SwiperSlide>
-          <DisplayNData data={{ img: eventCategoryImg4 }}></DisplayNData>
+          <DisplayNData
+            data={{ img: eventCategoryImg4, type: "Performances" }}
+          ></DisplayNData>
         </SwiperSlide>
         <SwiperSlide>
-          <DisplayNData data={{ img: eventCategoryImg5 }}></DisplayNData>
+          <DisplayNData
+            data={{ img: eventCategoryImg5, type: "Family Gatherings" }}
+          ></DisplayNData>
         </SwiperSlide>
         <SwiperSlide>
-          <DisplayNData data={{ img: eventCategoryImg4 }}></DisplayNData>
-        </SwiperSlide>
-        <SwiperSlide>
-          <DisplayNData data={{ img: eventCategoryImg2 }}></DisplayNData>
-        </SwiperSlide>
-        <SwiperSlide>
-          <DisplayNData data={{ img: eventCategoryImg1 }}></DisplayNData>
+          <DisplayNData
+            data={{ img: eventCategoryImg6, type: "Other" }}
+          ></DisplayNData>
         </SwiperSlide>
       </Swiper>
 

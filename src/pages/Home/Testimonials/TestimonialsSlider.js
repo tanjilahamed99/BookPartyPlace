@@ -211,13 +211,13 @@ const TestimonialsSlider = ({ view }) => {
       </Swiper>
 
       {/* custom arrow button */}
-      <div className="flex gap-3 left-0 md:left-1 top-[46%] absolute">
+      <div className="flex gap-3 left-0 md:left-1 top-[46%] absolute text-black">
         <button className="custom-swiper-button-prev-testimonial">
           <IoIosArrowBack className=" bg-primary-color rounded-full text-4xl p-2" />
         </button>
       </div>
 
-      <div className="flex gap-3 right-0  md:right-1 top-[46%] absolute">
+      <div className="flex gap-3 right-0  md:right-1 top-[46%] absolute text-black">
         <button className="custom-swiper-button-next-testimonial">
           <IoIosArrowForward className=" bg-primary-color rounded-full text-4xl p-2" />
         </button>

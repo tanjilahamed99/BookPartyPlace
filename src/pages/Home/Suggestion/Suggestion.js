@@ -24,9 +24,7 @@ const Suggestion = ({ data }) => {
         <DisplayNData data={{ img: suggestionImage1, type: "Farm House" }} />
         <DisplayNData data={{ img: suggestionImage2, type: "Resorts" }} />
         <DisplayNData data={{ img: suggestionImage3, type: "Banquet Hall" }} />
-        <DisplayNData
-          data={{ img: suggestionImage4, type: "Party Lawns.jpg" }}
-        />
+        <DisplayNData data={{ img: suggestionImage4, type: "Party Lawns" }} />
         <DisplayNData data={{ img: suggestionImage5, type: "Other" }} />
       </div>
 
@@ -39,6 +37,11 @@ const Suggestion = ({ data }) => {
             img3: suggestionImage3,
             img4: suggestionImage4,
             img5: suggestionImage5,
+            text1: "Farm House",
+            text2: " Resorts",
+            text3: " Banquet Hall",
+            text4: "Party Lawns",
+            text5: "Other",
           }}
         />
       </div>

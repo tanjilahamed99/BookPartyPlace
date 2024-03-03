@@ -17,7 +17,7 @@ const SearchBar = () => {
           placeholder="Type here"
           className="input input-bordered md:py-7 bg-white w-full rounded-r-full rounded-l-full"
         />
-        <GoSearch className="absolute md:right-2 md:top-1 top-2 right-2 bg-primary-color rounded-full md:text-5xl text-3xl md:p-2 p-1" />
+        <GoSearch className="absolute md:right-2 md:top-1 top-2 right-2 text-black bg-primary-color rounded-full md:text-5xl text-3xl md:p-2 p-1" />
       </div>
     </div>
   );
