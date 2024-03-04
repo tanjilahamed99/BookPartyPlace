@@ -5,7 +5,7 @@ const DisplayNData = ({ data }) => {
 
   return (
     <div>
-      <div className="rounded-2xl shadow-2xl shadow-[#0404041A] bg-white md:pb-4 pb-2">
+      <div className="rounded-2xl md:shadow-2xl md:shadow-[#0404041A] bg-white md:pb-4 ">
         {/* image component */}
         <ImageComponent
           height={"h-[200px]"}

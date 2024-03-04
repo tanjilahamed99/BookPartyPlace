@@ -1,11 +1,9 @@
 "use client";
 
 import PropTypes from "prop-types";
-import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
 import DisplayNData from "@/components/Shared/DisplayNData/DisplayNData";
 
 const SuggestionSlider = ({ data }) => {
@@ -30,7 +28,8 @@ const SuggestionSlider = ({ data }) => {
         pagination={{
           clickable: true,
         }}
-        className="mySwiper"
+        onSetTransition={10000}
+        className="mySwiper scroll-smooth"
       >
         <SwiperSlide>
           {" "}
