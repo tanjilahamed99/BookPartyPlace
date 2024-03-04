@@ -42,10 +42,17 @@ const BIGGEST_EVENTS_TITLE = "Biggest Events";
 const BIGGEST_EVENTS_DESC =
   "Weddings, parties, corporate events, Birthday party, photo/ Filmshoot, workshop, Weddings, parties, corporate events, Birthday party, photo/ Filmshoot, workshop, Weddings, parties, corporate events, Birthday party, photo/ Filmshoot, workshop";
 
-
 const LOCATION_TITLE = "Locations";
-const LOCATION_DESC =
-  "Hyderabad : Hi-Tech city, Sr Nagar, Gachibowli, Kukatpally, Mehandipatnam, Medchal, AS Rao nagar, Old city, Lakdikapul";
+const HYDERABAD = "Hyderabad";
+const HI_TECH_CITY = "Hi-Tech city";
+const SR_NAGAR = "Sr Nagar";
+const GACHIBOWLI = "Gachibowli";
+const KUKATPALLY = "Kukatpally";
+const MEHANDIPATNAM = "Mehandipatnam";
+const MEDCHAL = " Medchal";
+const AS_RAO_NAGAR = "AS Rao nagar";
+const OLD_CITY = "Old city";
+const LAKDIKAPUL = "Lakdikapul";
 
 const bookingPartyPlace = {
   BOOKING_TITLE,
@@ -58,7 +65,6 @@ const bookingPartyPlace = {
   FILM_SHOOT,
   WORK_SHOP,
 };
-
 
 const trending = {
   TRENDING_TITLE,
@@ -91,7 +97,6 @@ const vendors = {
   CARE_TAKERS,
 };
 
-
 const biggestEvents = {
   BIGGEST_EVENTS_TITLE,
   WEDDING,
@@ -104,13 +109,26 @@ const biggestEvents = {
   WORK_SHOP,
 };
 
+const location = {
+  LOCATION_TITLE,
+  HYDERABAD,
+  HI_TECH_CITY,
+  SR_NAGAR,
+  GACHIBOWLI,
+  KUKATPALLY,
+  MEHANDIPATNAM,
+  MEDCHAL,
+  AS_RAO_NAGAR,
+  OLD_CITY,
+  LAKDIKAPUL,
+};
+
 const AllHomeAboutText = {
   bookingPartyPlace,
   trending,
   vendors,
-  LOCATION_DESC,
-  LOCATION_TITLE,
-  biggestEvents
+  location,
+  biggestEvents,
 };
 
 export default AllHomeAboutText;
