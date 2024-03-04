@@ -4,68 +4,382 @@ import AllHomeAboutText from "../../../lib/homeAboutText";
 const HomeAbout = () => {
   // Home About section title
   const {
-    BOOKING_DESC1,
-    BOOKING_DESC2,
-    BOOKING_DESC3,
-    BOOKING_DESC4,
-    BOOKING_TITLE,
+    bookingPartyPlace,
+    trending,
+    vendors,
     LOCATION_DESC,
     LOCATION_TITLE,
-    TRENDING_DESC,
-    TRENDING_TITLE,
-    VENDORS_DESC,
-    VENDORS_TITLE,
-    BIGGEST_EVENTS_DESC,
-    BIGGEST_EVENTS_TITLE,
+    biggestEvents,
   } = AllHomeAboutText;
+
+  const {
+    BOOKING_TITLE,
+    WEDDING,
+    PARTIES,
+    CORPORATE,
+    EVENTS,
+    BIRTHDAY_PARTY,
+    PHOTO,
+    FILM_SHOOT,
+    WORK_SHOP,
+  } = bookingPartyPlace;
+
+  const {
+    TRENDING_TITLE,
+    CORPORATE_OUTING,
+    CORPORATE_PARTY,
+    CO_WORKING_SPACE,
+    CONFERENCE_HALLS,
+    CELEBRATIONS,
+    TEAM_DINNER_PLACES,
+    TEAM_BUILDING,
+    TEAM_LUNCH,
+    EXIBITINO,
+    TEAM_OUTING,
+  } = trending;
+
+  const {
+    VENDORS_TITLE,
+    CATERERS,
+    WEDDING_DJ,
+    PANDITS,
+    WEDDING_VIDEO_GRAPHY,
+    WEDDING_DECORATORS,
+    WEDDING_CHOROGRAPHY,
+    PHOTO_BOOTH,
+    WEDDING_INVITATIONS,
+    WEDDING_GIFTS,
+    WEDDING_TRANSPORTATION,
+    FLORISTS,
+    WEDDING_CAKE,
+    CARE_TAKERS,
+  } = vendors;
+
+  const { BIGGEST_EVENTS_TITLE } = biggestEvents;
 
   return (
     <div className=" space-y-5 px-5">
+
       {/* about-1 */}
       <div className="space-y-2">
         <h2 className="text-xl font-semibold text-[#393536]">
           {BOOKING_TITLE}
         </h2>
-        <p className="text-[#616872] hover:font-semibold cursor-pointer">
-          <Link href={'/'}> {BOOKING_DESC1}</Link>
-          <Link href={'/'}> {BOOKING_DESC2}</Link>
-          <Link href={'/'}> {BOOKING_DESC3}</Link>
-          <Link href={'/'}> {BOOKING_DESC4}</Link>
+        <p className="text-[#616872] space-x-[2px] font-medium">
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {WEDDING}
+          </Link>
+          ,
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {PARTIES}
+          </Link>
+          ,
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {CORPORATE}
+          </Link>
+          ,
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {EVENTS}
+          </Link>
+          ,
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {BIRTHDAY_PARTY}
+          </Link>
+          ,
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {PHOTO}
+          </Link>
+          /
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {FILM_SHOOT}
+          </Link>
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {WORK_SHOP}
+          </Link>
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {WEDDING}
+          </Link>
+          ,
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {PARTIES}
+          </Link>
+          ,
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {CORPORATE}
+          </Link>
+          ,
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {EVENTS}
+          </Link>
+          ,
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {BIRTHDAY_PARTY}
+          </Link>
+          ,
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {PHOTO}
+          </Link>
+          /
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {FILM_SHOOT}
+          </Link>
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {WORK_SHOP}
+          </Link>
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {WEDDING}
+          </Link>
+          ,
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {PARTIES}
+          </Link>
+          ,
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {CORPORATE}
+          </Link>
+          ,
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {EVENTS}
+          </Link>
+          ,
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {BIRTHDAY_PARTY}
+          </Link>
+          ,
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {PHOTO}
+          </Link>
+          /
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {FILM_SHOOT}
+          </Link>
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {WORK_SHOP}
+          </Link>
         </p>
       </div>
+
       {/* about-2 */}
+      {/* trending */}
       <div className="space-y-2">
         <h2 className="text-xl font-semibold text-[#393536]">
           {TRENDING_TITLE}
         </h2>
-        <p className="text-[#616872] hover:font-semibold cursor-pointer">
-          {TRENDING_DESC}
+        <p className="text-[#616872] space-x-[2px]">
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {CORPORATE_OUTING}
+          </Link>
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {CORPORATE_PARTY}
+          </Link>
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {CO_WORKING_SPACE}
+          </Link>
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {CONFERENCE_HALLS}
+          </Link>
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {CELEBRATIONS}
+          </Link>
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {TEAM_DINNER_PLACES}
+          </Link>
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {TEAM_BUILDING}
+          </Link>
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {TEAM_LUNCH}
+          </Link>
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {EXIBITINO}
+          </Link>
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {TEAM_OUTING}
+          </Link>
         </p>
       </div>
+
+
       {/* about-3 */}
+      {/* vendors */}
       <div className="space-y-2">
         <h2 className="text-xl font-semibold text-[#393536]">
           {VENDORS_TITLE}
         </h2>
-        <p className="text-[#616872] hover:font-semibold cursor-pointer">
-          {VENDORS_DESC}
+        <p className="text-[#616872] font-medium space-x-[2px]">
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>{CATERERS} </Link>,
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>{WEDDING_DJ} </Link>,
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>{PANDITS} </Link>,
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>{WEDDING_VIDEO_GRAPHY} </Link>,
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>{WEDDING_DECORATORS} </Link>,
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>{WEDDING_CHOROGRAPHY} </Link>,
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>{PHOTO_BOOTH} </Link>,
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>{WEDDING_INVITATIONS} </Link>,
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>{WEDDING_GIFTS} </Link>,
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>{WEDDING_TRANSPORTATION} </Link>,
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>{FLORISTS} </Link>,
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>{WEDDING_CAKE} </Link>,
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>{CARE_TAKERS} </Link>
         </p>
       </div>
+
       {/* about-4 */}
+      {/* biggest event */}
       <div className="space-y-2">
         <h2 className="text-xl font-semibold text-[#393536]">
           {BIGGEST_EVENTS_TITLE}
         </h2>
-        <p className="text-[#616872] hover:font-semibold cursor-pointer">
-          {BIGGEST_EVENTS_DESC}
+        <p className="text-[#616872] space-x-[2px] font-medium">
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {WEDDING}
+          </Link>
+          ,
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {PARTIES}
+          </Link>
+          ,
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {CORPORATE}
+          </Link>
+          ,
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {EVENTS}
+          </Link>
+          ,
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {BIRTHDAY_PARTY}
+          </Link>
+          ,
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {PHOTO}
+          </Link>
+          /
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {FILM_SHOOT}
+          </Link>
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {WORK_SHOP}
+          </Link>
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {WEDDING}
+          </Link>
+          ,
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {PARTIES}
+          </Link>
+          ,
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {CORPORATE}
+          </Link>
+          ,
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {EVENTS}
+          </Link>
+          ,
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {BIRTHDAY_PARTY}
+          </Link>
+          ,
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {PHOTO}
+          </Link>
+          /
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {FILM_SHOOT}
+          </Link>
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {WORK_SHOP}
+          </Link>
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {WEDDING}
+          </Link>
+          ,
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {PARTIES}
+          </Link>
+          ,
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {CORPORATE}
+          </Link>
+          ,
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {EVENTS}
+          </Link>
+          ,
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {BIRTHDAY_PARTY}
+          </Link>
+          ,
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {PHOTO}
+          </Link>
+          /
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {FILM_SHOOT}
+          </Link>
+          <Link className="hover:font-semibold cursor-pointer" href={"/"}>
+            {" "}
+            {WORK_SHOP}
+          </Link>
         </p>
       </div>
       {/* about-5 */}
       <div className="space-y-2">
-        <h2 className="text-xl font-semibold text-[#393536]">
+        <h2 className="text-xl font-semibold text-[#393536] ">
           {LOCATION_TITLE}
         </h2>
-        <p className="text-[#616872] ">{LOCATION_DESC}</p>
+        <p className="text-[#616872] hover:font-semibold cursor-pointer">
+          {LOCATION_DESC}
+        </p>
       </div>
     </div>
   );

@@ -1,43 +1,116 @@
+// booking related text
 const BOOKING_TITLE = "Booking party place Venues";
-const BOOKING_DESC1 =
-  "Weddings, parties, corporate events, Birthday party, photo/ ";
+const WEDDING = "Weddings";
+const PARTIES = " parties";
+const CORPORATE = " corporate";
+const EVENTS = " events";
+const BIRTHDAY_PARTY = " Birthday party";
+const PHOTO = " Photos";
+const FILM_SHOOT = " Filmshoot";
+const WORK_SHOP = " workshop";
 
-const BOOKING_DESC2 =
-  "Filmshoot, workshop, Weddings, parties, corporate events, Birthday party, photo";
-const BOOKING_DESC3 =
-  "/ Filmshoot, workshop, Weddings, parties, corporate events, Birthday party, photo";
-const BOOKING_DESC4 = "/ Filmshoot, workshop";
-
+// trending related text
 const TRENDING_TITLE = "Trending Venues";
-const TRENDING_DESC =
-  "Corporate outings, corporate party, co-working space, conference halls/celebrations, Team dinner places, Team building, Team lunch, Exibition, Team outings";
+const CORPORATE_OUTING = " Corporate outings";
+const CORPORATE_PARTY = " corporate party";
+const CO_WORKING_SPACE = " co-working space";
+const CONFERENCE_HALLS = " conference halls";
+const CELEBRATIONS = " celebrations";
+const TEAM_DINNER_PLACES = " Team dinner places";
+const TEAM_BUILDING = " Team building";
+const TEAM_LUNCH = " Team lunch";
+const EXIBITINO = " Exibition";
+const TEAM_OUTING = " Team outings";
 
+// vendors related text
 const VENDORS_TITLE = "Vendors";
-const VENDORS_DESC =
-  "Caterers ,  Wedding DJ, Pandits, Wedding videography, Wedding decorators, Wedding choreography, Photobooth, Wedding Invitations, Wedding Gifts, Wedding Transportation, Florists, Wedding Cakes, Care takers,";
+const CATERERS = "Caterers";
+const WEDDING_DJ = "Wedding DJ";
+const PANDITS = "Pandits";
+const WEDDING_VIDEO_GRAPHY = "Wedding videography";
+const WEDDING_DECORATORS = "Wedding decorators";
+const WEDDING_CHOROGRAPHY = "Wedding choreography";
+const PHOTO_BOOTH = "Photobooth";
+const WEDDING_INVITATIONS = "Wedding Invitations";
+const WEDDING_GIFTS = "Wedding Gifts";
+const WEDDING_TRANSPORTATION = "Wedding Transportation";
+const FLORISTS = "Florists";
+const WEDDING_CAKE = "Wedding Cakes";
+const CARE_TAKERS = "Care takers";
 
 const BIGGEST_EVENTS_TITLE = "Biggest Events";
 const BIGGEST_EVENTS_DESC =
   "Weddings, parties, corporate events, Birthday party, photo/ Filmshoot, workshop, Weddings, parties, corporate events, Birthday party, photo/ Filmshoot, workshop, Weddings, parties, corporate events, Birthday party, photo/ Filmshoot, workshop";
 
+
 const LOCATION_TITLE = "Locations";
 const LOCATION_DESC =
   "Hyderabad : Hi-Tech city, Sr Nagar, Gachibowli, Kukatpally, Mehandipatnam, Medchal, AS Rao nagar, Old city, Lakdikapul";
 
-const AllHomeAboutText = {
-  BOOKING_DESC1,
-  BOOKING_DESC2,
-  BOOKING_DESC3,
-  BOOKING_DESC4,
+const bookingPartyPlace = {
   BOOKING_TITLE,
+  WEDDING,
+  PARTIES,
+  CORPORATE,
+  EVENTS,
+  BIRTHDAY_PARTY,
+  PHOTO,
+  FILM_SHOOT,
+  WORK_SHOP,
+};
+
+
+const trending = {
+  TRENDING_TITLE,
+  CORPORATE_OUTING,
+  CORPORATE_PARTY,
+  CO_WORKING_SPACE,
+  CONFERENCE_HALLS,
+  CELEBRATIONS,
+  TEAM_DINNER_PLACES,
+  TEAM_BUILDING,
+  TEAM_LUNCH,
+  EXIBITINO,
+  TEAM_OUTING,
+};
+
+const vendors = {
+  VENDORS_TITLE,
+  CATERERS,
+  WEDDING_DJ,
+  PANDITS,
+  WEDDING_VIDEO_GRAPHY,
+  WEDDING_DECORATORS,
+  WEDDING_CHOROGRAPHY,
+  PHOTO_BOOTH,
+  WEDDING_INVITATIONS,
+  WEDDING_GIFTS,
+  WEDDING_TRANSPORTATION,
+  FLORISTS,
+  WEDDING_CAKE,
+  CARE_TAKERS,
+};
+
+
+const biggestEvents = {
+  BIGGEST_EVENTS_TITLE,
+  WEDDING,
+  PARTIES,
+  CORPORATE,
+  EVENTS,
+  BIRTHDAY_PARTY,
+  PHOTO,
+  FILM_SHOOT,
+  WORK_SHOP,
+};
+
+const AllHomeAboutText = {
+  bookingPartyPlace,
+  trending,
+  vendors,
   LOCATION_DESC,
   LOCATION_TITLE,
-  TRENDING_DESC,
-  TRENDING_TITLE,
-  VENDORS_DESC,
-  VENDORS_TITLE,
-  BIGGEST_EVENTS_DESC,
-  BIGGEST_EVENTS_TITLE,
+  biggestEvents
 };
 
 export default AllHomeAboutText;
