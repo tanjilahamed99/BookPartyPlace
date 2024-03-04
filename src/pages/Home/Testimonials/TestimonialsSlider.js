@@ -4,19 +4,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import testimonialImage from "../../../../public/images/testimonial.jpg";
 
 // import required modules
 import { Pagination, Navigation, HashNavigation } from "swiper/modules";
 import {
   IoIosArrowBack,
   IoIosArrowForward,
-  IoIosStar,
-  IoIosStarOutline,
 } from "react-icons/io";
-// import TestimonialCard from '@/Shared/TestimonialCard/TestimonialCard';
-import Rating from "react-rating";
-import Image from "next/image";
 import TestimonialCard from "@/components/Shared/TestimonialCard/TestimonialCard";
 
 const TestimonialsSlider = ({ view, pagination, data }) => {
@@ -38,6 +32,7 @@ const TestimonialsSlider = ({ view, pagination, data }) => {
         }}
         modules={[Pagination, Navigation, HashNavigation]}
         className="mySwiper w-[90%]"
+        onSetTransition={1000}
       >
         {/* dynamic testimonial card */}
         {data?.map((i, idx) => (

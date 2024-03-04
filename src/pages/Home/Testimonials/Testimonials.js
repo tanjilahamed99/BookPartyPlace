@@ -57,12 +57,12 @@ const Testimonials = () => {
 
       {/* medium screen */}
       <div className="hidden md:inline lg:hidden">
-        <TestimonialsSlider view={2} pagination={true} />
+        <TestimonialsSlider data={testimonialData} view={2} pagination={true} />
       </div>
 
       {/* small screen */}
       <div className="md:hidden">
-        <TestimonialsSlider view={1.1} pagination={false} />
+        <TestimonialsSlider data={testimonialData} view={1.1} pagination={false} />
       </div>
     </div>
   );
