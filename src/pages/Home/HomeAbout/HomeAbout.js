@@ -422,7 +422,7 @@ const HomeAbout = () => {
         <h2 className="text-xl font-semibold text-[#393536] ">
           {LOCATION_TITLE}
         </h2>
-        <p className="text-[#616872] font-medium space-x-[2px]">
+        <p className="text-[#616872] font-medium space-x-[2px] flex flex-wrap">
           <Link href={"/"} className="hover:font-semibold cursor-pointer">
             {HYDERABAD}:
           </Link>

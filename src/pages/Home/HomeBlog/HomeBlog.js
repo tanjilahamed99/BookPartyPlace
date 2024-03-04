@@ -4,6 +4,7 @@ import AllHomeBlogText from "../../../lib/homeBlogText";
 import blogImage1 from "../../../../public/images/HomeBlog/Card 01.png";
 import blogImage2 from "../../../../public/images/HomeBlog/Card 02.png";
 import blogImage3 from "../../../../public/images/HomeBlog/Card 03.png";
+import blogImage4 from "../../../../public/images/Blog/01 Corporate Blogs/ergegh.png";
 
 const HomeBlog = ({ data }) => {
   // Home Blog section all text
@@ -18,6 +19,41 @@ const HomeBlog = ({ data }) => {
     TEAM_BUILDING,
     PHOTO_SHOOTS,
   } = AllHomeBlogText;
+
+  const blogData = [
+    {
+      img: blogImage1,
+      title: "Best Night Photo at Alpha",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula",
+      published: "Feb 10,2024",
+      rating: 4.5,
+      postedBy: "Angelina",
+    },
+    {
+      img: blogImage2,
+      title: "Best Night Photo at Alpha",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula",
+      published: "Feb 10,2024",
+      rating: 4.5,
+      postedBy: "Angelina",
+    },
+    {
+      img: blogImage3,
+      title: "Best Night Photo at Alpha",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula",
+      published: "Feb 10,2024",
+      rating: 4.5,
+      postedBy: "Angelina",
+    },
+    {
+      img: blogImage4,
+      title: "Best Night Photo at Alpha",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula",
+      published: "Feb 10,2024",
+      rating: 4.5,
+      postedBy: "Angelina",
+    },
+  ];
 
   return (
     <div className="px-1">
@@ -51,14 +87,16 @@ const HomeBlog = ({ data }) => {
       </div>
 
       {/* display blog data here*/}
-      <div className="grid grid-cols-2  lg:grid-cols-3 items-center gap-2 md:gap-10 lg:gap-5 xl:gap-10 md:mt-10 mt-5">
-        {/* {data?.slice(0, 3).map((i) => (
-          <DisplayBlogData key={i._id} data={i}></DisplayBlogData>
-        ))} */}
+      <div className="grid grid-cols-2  lg:hidden lg:grid-cols-3 items-center gap-2 md:gap-10 lg:gap-5 xl:gap-10 md:mt-10 mt-5">
+          {blogData?.map((i) => (
+            <DisplayBlogData key={i._id} data={i}></DisplayBlogData>
+          ))}
+      </div>
 
-        <DisplayBlogData data={{ img: blogImage1 }}></DisplayBlogData>
-        <DisplayBlogData data={{ img: blogImage2 }}></DisplayBlogData>
-        <DisplayBlogData data={{ img: blogImage3 }}></DisplayBlogData>
+      <div className="lg:grid grid-cols-2 hidden  lg:grid-cols-3 items-center gap-2 md:gap-10 lg:gap-5 xl:gap-10 md:mt-10 mt-5">
+          {blogData?.slice(0,3).map((i) => (
+            <DisplayBlogData key={i._id} data={i}></DisplayBlogData>
+          ))}
       </div>
 
       {/* see more button */}
