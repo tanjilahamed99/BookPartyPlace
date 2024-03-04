@@ -10,6 +10,49 @@ import uniqueVenuesImg4 from "../../../../public/images/UniqueVenues/Card 04.png
 const UniqueVenues = ({ data }) => {
   const { TITLE } = AllUniqueVenuesText;
 
+  const uniqueVenuesData = [
+    {
+      img: uniqueVenuesImg1,
+      title: "Party Place",
+      rating: 4.5,
+      location: "Kukkatpally, Hyderabad, TS",
+      desc: " Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      people: "200-300",
+      price: 50000,
+      _id:1
+    },
+    {
+      img: uniqueVenuesImg2,
+      title: "Party Place",
+      rating: 4.5,
+      location: "Kukkatpally, Hyderabad, TS",
+      desc: " Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      people: "200-300",
+      price: 50000,
+      _id:2
+    },
+    {
+      img: uniqueVenuesImg3,
+      title: "Party Place",
+      rating: 4.5,
+      location: "Kukkatpally, Hyderabad, TS",
+      desc: " Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      people: "200-300",
+      price: 50000,
+      _id:3
+    },
+    {
+      img: uniqueVenuesImg4,
+      title: "Party Place",
+      rating: 4.5,
+      location: "Kukkatpally, Hyderabad, TS",
+      desc: " Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      people: "200-300",
+      price: 50000,
+      _id:4
+    },
+  ];
+
   return (
     <div className=" px-1">
       {/* Unique Venues section title */}
@@ -21,12 +64,8 @@ const UniqueVenues = ({ data }) => {
         <div className="hidden xl:inline">
           <DisplayLDataSlider
             view={3.5}
-            data={{
-              img1:uniqueVenuesImg1,
-              img2:uniqueVenuesImg2,
-              img3:uniqueVenuesImg3,
-              img4:uniqueVenuesImg4
-            }}
+            
+            mainData={uniqueVenuesData}
           />
         </div>
 
@@ -34,12 +73,8 @@ const UniqueVenues = ({ data }) => {
         <div className="hidden lg:inline xl:hidden">
           <DisplayLDataSlider
             view={3}
-            data={{
-              img1:uniqueVenuesImg1,
-              img2:uniqueVenuesImg2,
-              img3:uniqueVenuesImg3,
-              img4:uniqueVenuesImg4
-            }}
+           
+            mainData={uniqueVenuesData}
           />
         </div>
 
@@ -47,12 +82,7 @@ const UniqueVenues = ({ data }) => {
         <div className="hidden md:inline lg:hidden">
           <DisplayLDataSlider
             view={2.3}
-            data={{
-              img1: uniqueVenuesImg1,
-              img2: uniqueVenuesImg2,
-              img3: uniqueVenuesImg3,
-              img4: uniqueVenuesImg4
-            }}
+            mainData={uniqueVenuesData}
           />
         </div>
       </div>
@@ -60,15 +90,9 @@ const UniqueVenues = ({ data }) => {
       {/* Grid layout for small device  */}
       <div className=" grid grid-cols-2 items-center gap-4 mx-3 md:hidden">
         {/* dynamic card data */}
-        {/* {data?.map((i) => (
+        {uniqueVenuesData?.map((i) => (
           <DisplayLData key={i._id} data={i} />
-        ))} */}
-
-        {/* static card data */}
-        <DisplayLData data={{ img: uniqueVenuesImg1, _id: 1 }} />
-        <DisplayLData data={{ img: uniqueVenuesImg2, _id: 2 }} />
-        <DisplayLData data={{ img: uniqueVenuesImg3, _id: 3 }} />
-        <DisplayLData data={{ img: uniqueVenuesImg4, _id: 4 }} />
+        ))}
       </div>
     </div>
   );

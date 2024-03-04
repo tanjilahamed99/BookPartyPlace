@@ -11,6 +11,30 @@ import eventCategoryImg5 from "../../../../public/images/ExploreEvent/05 Family 
 const EventCategories = ({ data }) => {
   const { TITLE } = AllEventByVenuesText;
 
+  const eventCategoryData = [
+    {
+      img: eventCategoryImg1,
+      type: "Wedding",
+    },
+    {
+      img: eventCategoryImg2,
+      type: "Birthday Party",
+    },
+    {
+      img: eventCategoryImg3,
+      type: "Festivals",
+    },
+    {
+      img: eventCategoryImg4,
+      type: "Performances",
+    },
+    {
+      img: eventCategoryImg5,
+      type: "Family Gatherings",
+    }
+  ];
+
+
   return (
     <div className=" container mx-auto px-1">
       {/* EventCatagories title */}
@@ -19,18 +43,7 @@ const EventCategories = ({ data }) => {
       {/* EventCatagories card for mobile devices */}
       <div className="lg:hidden">
         <SuggestionSlider
-          data={{
-            img1: eventCategoryImg1,
-            text1: "Weddings",
-            text2: " Birthday party",
-            text3: " Festivals",
-            text4: "Performances",
-            text5: "Family Gatherings",
-            img2: eventCategoryImg2,
-            img3: eventCategoryImg3,
-            img4: eventCategoryImg4,
-            img5: eventCategoryImg5,
-          }}
+          mainData={eventCategoryData}
         />
       </div>
 

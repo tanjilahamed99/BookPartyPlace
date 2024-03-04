@@ -47,8 +47,6 @@ const TestimonialsSlider = ({ view,pagination }) => {
                     </SwiperSlide>)
                 } */}
 
-        {/* static testimonial card */}
-
         <SwiperSlide className="md:py-20 py-10 px-0 md:px-2 lg:px-1">
           <div className="border-[#BCBFBA] border relative">
             <Image

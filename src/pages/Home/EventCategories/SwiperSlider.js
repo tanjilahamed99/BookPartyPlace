@@ -31,6 +31,7 @@ const SwiperSlider = ({ data }) => {
           prevEl: ".custom-swiper-button-prev",
           nextEl: ".custom-swiper-button-next",
         }}
+        onSetTransition={10000}
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >

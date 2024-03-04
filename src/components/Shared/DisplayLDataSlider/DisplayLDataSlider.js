@@ -10,7 +10,7 @@ import { Pagination, Navigation } from "swiper/modules";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import DisplayLData from "../DisplayLData/DisplayLData";
 
-const DisplayLDataSlider = ({ data, view }) => {
+const DisplayLDataSlider = ({ data, view,mainData }) => {
   const [setSwiperRef] = useState(null);
 
   return (
@@ -24,18 +24,19 @@ const DisplayLDataSlider = ({ data, view }) => {
           prevEl: ".custom-swiper-button-prev-lData",
           nextEl: ".custom-swiper-button-next-lData",
         }}
+        onSetTransition={10000}
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >
         {/* dynamic  */}
         {/* data facing for display card */}
-        {/* {data?.map((i, idx) => (
+        {mainData?.map((i) => (
           <SwiperSlide key={i._id}>
             <DisplayLData data={i} />
           </SwiperSlide>
-        ))} */}
+        ))}
 
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <DisplayLData data={{ img: data?.img1, _id: 1 }} />
         </SwiperSlide>
         <SwiperSlide>
@@ -46,7 +47,7 @@ const DisplayLDataSlider = ({ data, view }) => {
         </SwiperSlide>
         <SwiperSlide>
           <DisplayLData data={{ img: data?.img4, _id: 4 }} />
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
 
       {/* custom arrow Button */}

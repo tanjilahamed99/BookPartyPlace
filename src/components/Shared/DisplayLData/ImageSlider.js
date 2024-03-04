@@ -36,7 +36,7 @@ const ImageSlider = ({ data, id }) => {
         <SwiperSlide data-hash="slide1">
           {/* image component */}
           <ImageComponent
-            src={data?.img}
+            src={data?.img?.src}
             height="h-[200px]"
             mdHeight={"h-[200px]"}
             width="w-full"
@@ -48,7 +48,7 @@ const ImageSlider = ({ data, id }) => {
         <SwiperSlide data-hash="slide1">
           {/* image component */}
           <ImageComponent
-            src={data?.img}
+            src={data?.img?.src}
             height="h-[200px]"
             mdHeight={"h-[200px]"}
             width="w-full"
@@ -60,7 +60,7 @@ const ImageSlider = ({ data, id }) => {
         <SwiperSlide data-hash="slide1">
           {/* image component */}
           <ImageComponent
-            src={data?.img}
+            src={data?.img?.src}
             height="h-[200px]"
             mdHeight={"h-[200px]"}
             width="w-full"
