@@ -13,17 +13,17 @@ const Testimonials = () => {
 
       {/* larger screen */}
       <div className="hidden lg:inline">
-        <TestimonialsSlider view={3} />
+        <TestimonialsSlider view={3} pagination={true} />
       </div>
 
       {/* medium screen */}
       <div className="hidden md:inline lg:hidden">
-        <TestimonialsSlider view={2} />
+        <TestimonialsSlider view={2} pagination={true}/>
       </div>
 
       {/* small screen */}
       <div className="md:hidden">
-        <TestimonialsSlider view={1} />
+        <TestimonialsSlider view={1.1} pagination={false}/>
       </div>
     </div>
   );

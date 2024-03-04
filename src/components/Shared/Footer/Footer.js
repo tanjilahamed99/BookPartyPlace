@@ -38,14 +38,14 @@ const Footer = () => {
         </div>
         {/* footer section description */}
         <h2>{DESC}</h2>
-        <div className="lg:w-[80%]  mt-5 relative w-[80%]">
+        <div className="lg:w-[70%]  mt-5 relative w-[80%]">
           <input
-            type="text"
+            type="email"
             placeholder="Your your email"
-            className=" border  rounded-md py-2 md:py-3 w-full pl-4 bg-white"
+            className=" border  rounded-md py-2 md:py-3 w-full px-4 bg-white"
           />
           {/* footer section button */}
-          <div className="absolute -right-12 md:top-[3px] top-[0.7px]">
+          <div className="absolute -right-[110px] md:-top-[0.5px] top-[0.7px]">
             <SectionButton text={BTN} />
           </div>
         </div>

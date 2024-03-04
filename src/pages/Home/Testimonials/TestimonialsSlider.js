@@ -18,7 +18,7 @@ import {
 import Rating from "react-rating";
 import Image from "next/image";
 
-const TestimonialsSlider = ({ view }) => {
+const TestimonialsSlider = ({ view,pagination }) => {
   return (
     <div className="relative ">
       {/* slider main functionality */}
@@ -29,7 +29,7 @@ const TestimonialsSlider = ({ view }) => {
           watchState: true,
         }}
         pagination={{
-          clickable: true,
+          clickable: pagination,
         }}
         navigation={{
           prevEl: ".custom-swiper-button-prev-testimonial",
@@ -49,7 +49,7 @@ const TestimonialsSlider = ({ view }) => {
 
         {/* static testimonial card */}
 
-        <SwiperSlide className="md:py-20 py-10 px-7 md:px-2 lg:px-1">
+        <SwiperSlide className="md:py-20 py-10 px-0 md:px-2 lg:px-1">
           <div className="border-[#BCBFBA] border relative">
             <Image
               className="absolute rounded-full md:w-32 md:h-32 md:-top-20 -top-10 xl:left-[32%] lg:left-[28%] md:left-[30%] left-[33%] z-10 h-20 w-20"
@@ -81,7 +81,7 @@ const TestimonialsSlider = ({ view }) => {
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="md:py-20 py-10 px-7 md:px-2 lg:px-1">
+        <SwiperSlide className="md:py-20 py-10 px-0 md:px-2 lg:px-1">
           <div className="border-[#BCBFBA] border relative">
             <Image
               className="absolute rounded-full md:w-32 md:h-32 md:-top-20 -top-10 xl:left-[32%] lg:left-[28%] md:left-[30%] left-[33%] z-10 h-20 w-20"
@@ -113,7 +113,7 @@ const TestimonialsSlider = ({ view }) => {
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="md:py-20 py-10 px-7 md:px-2 lg:px-1">
+        <SwiperSlide className="md:py-20 py-10 px-0 md:px-2 lg:px-1">
           <div className="border-[#BCBFBA] border relative">
             <Image
               className="absolute rounded-full md:w-32 md:h-32 md:-top-20 -top-10 xl:left-[32%] lg:left-[28%] md:left-[30%] left-[33%] z-10 h-20 w-20"
@@ -145,7 +145,7 @@ const TestimonialsSlider = ({ view }) => {
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="md:py-20 py-10 px-7 md:px-2 lg:px-1">
+        <SwiperSlide className="md:py-20 py-10 px-0 md:px-2 lg:px-1">
           <div className="border-[#BCBFBA] border relative">
             <Image
               className="absolute rounded-full md:w-32 md:h-32 md:-top-20 -top-10 xl:left-[32%] lg:left-[28%] md:left-[30%] left-[33%] z-10 h-20 w-20"
@@ -177,7 +177,7 @@ const TestimonialsSlider = ({ view }) => {
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="md:py-20 py-10 px-7 md:px-2 lg:px-1">
+        <SwiperSlide className="md:py-20 py-10 px-0 md:px-2 lg:px-1">
           <div className="border-[#BCBFBA] border relative">
             <Image
               className="absolute rounded-full md:w-32 md:h-32 md:-top-20 -top-10 xl:left-[32%] lg:left-[28%] md:left-[30%] left-[33%] z-10 h-20 w-20"
