@@ -17,8 +17,9 @@ import {
 // import TestimonialCard from '@/Shared/TestimonialCard/TestimonialCard';
 import Rating from "react-rating";
 import Image from "next/image";
+import TestimonialCard from "@/components/Shared/TestimonialCard/TestimonialCard";
 
-const TestimonialsSlider = ({ view,pagination }) => {
+const TestimonialsSlider = ({ view, pagination, data }) => {
   return (
     <div className="relative ">
       {/* slider main functionality */}
@@ -39,175 +40,42 @@ const TestimonialsSlider = ({ view,pagination }) => {
         className="mySwiper w-[90%]"
       >
         {/* dynamic testimonial card */}
-        {/* {
-                    data.map((i, idx) => <SwiperSlide className='md:py-20 py-10 px-6 md:px-2 lg:px-1' key={idx} data-hash={`slide${idx}}`}>
-
-                        <TestimonialCard data={i} />
-
-                    </SwiperSlide>)
-                } */}
-
-        <SwiperSlide className="md:py-20 py-10 px-0 md:px-2 lg:px-1">
-          <div className="border-[#BCBFBA] border relative">
-            <Image
-              className="absolute rounded-full md:w-32 md:h-32 md:-top-20 -top-10 xl:left-[32%] lg:left-[28%] md:left-[30%] left-[33%] z-10 h-20 w-20"
-              src={testimonialImage}
-              alt="testimonials image"
-              width={500}
-              height={500}
-            />
-
-            <div className="text-center md:pt-14 pt-12  px-2 pb-5 space-y-2">
-              <div>
-                <h2 className="text-[#040404] font-semibold">Atif</h2>
-                <h2 className="text-sm text-[#040404]">
-                  Position, Company name
-                </h2>
-              </div>
-              <p className="text-[#535552] text-sm md:text-base">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
-                massa mi. Aliquam in hendrerit urna. Pellentesque sit amet
-                sapien fringilla,
-              </p>
-              <Rating
-                placeholderRating={3.5}
-                emptySymbol={<IoIosStarOutline />}
-                placeholderSymbol={<IoIosStar />}
-                fullSymbol={<IoIosStar />}
-                className="text-[#FFBE00] text-xl "
+        {data?.map((i, idx) => (
+          <SwiperSlide
+            className="md:py-20 py-10 px-6 md:px-2 lg:px-1"
+            key={idx}
+            data-hash={`slide${idx}}`}
+          >
+            {/* <div className="border-[#BCBFBA] border relative">
+              <Image
+                className="absolute rounded-full md:w-32 md:h-32 md:-top-20 -top-10 xl:left-[32%] lg:left-[28%] md:left-[30%] left-[33%] z-10 h-20 w-20"
+                src={i?.img?.src}
+                alt="testimonials image"
+                width={500}
+                height={500}
               />
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="md:py-20 py-10 px-0 md:px-2 lg:px-1">
-          <div className="border-[#BCBFBA] border relative">
-            <Image
-              className="absolute rounded-full md:w-32 md:h-32 md:-top-20 -top-10 xl:left-[32%] lg:left-[28%] md:left-[30%] left-[33%] z-10 h-20 w-20"
-              src={testimonialImage}
-              alt="testimonials image"
-              width={500}
-              height={500}
-            />
 
-            <div className="text-center md:pt-14 pt-12  px-2 pb-5 space-y-2">
-              <div>
-                <h2 className="text-[#040404] font-semibold">Atif</h2>
-                <h2 className="text-sm text-[#040404]">
-                  Position, Company name
-                </h2>
+              <div className="text-center md:pt-14 pt-12  px-2 pb-5 space-y-2">
+                <div>
+                  <h2 className="text-[#040404] font-semibold">{data?.name}</h2>
+                  <h2 className="text-sm text-[#040404]">{data?.position}</h2>
+                </div>
+                <p className="text-[#535552] text-sm md:text-base">
+                  {data?.desc}
+                </p>
+                <Rating
+                  placeholderRating={data?.rating}
+                  emptySymbol={<IoIosStarOutline />}
+                  placeholderSymbol={<IoIosStar />}
+                  fullSymbol={<IoIosStar />}
+                  className="text-[#FFBE00] text-xl "
+                />
               </div>
-              <p className="text-[#535552] text-sm md:text-base">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
-                massa mi. Aliquam in hendrerit urna. Pellentesque sit amet
-                sapien fringilla,
-              </p>
-              <Rating
-                placeholderRating={3.5}
-                emptySymbol={<IoIosStarOutline />}
-                placeholderSymbol={<IoIosStar />}
-                fullSymbol={<IoIosStar />}
-                className="text-[#FFBE00] text-xl "
-              />
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="md:py-20 py-10 px-0 md:px-2 lg:px-1">
-          <div className="border-[#BCBFBA] border relative">
-            <Image
-              className="absolute rounded-full md:w-32 md:h-32 md:-top-20 -top-10 xl:left-[32%] lg:left-[28%] md:left-[30%] left-[33%] z-10 h-20 w-20"
-              src={testimonialImage}
-              alt="testimonials image"
-              width={500}
-              height={500}
-            />
+            </div> */}
 
-            <div className="text-center md:pt-14 pt-12  px-2 pb-5 space-y-2">
-              <div>
-                <h2 className="text-[#040404] font-semibold">Atif</h2>
-                <h2 className="text-sm text-[#040404]">
-                  Position, Company name
-                </h2>
-              </div>
-              <p className="text-[#535552] text-sm md:text-base">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
-                massa mi. Aliquam in hendrerit urna. Pellentesque sit amet
-                sapien fringilla,
-              </p>
-              <Rating
-                placeholderRating={3.5}
-                emptySymbol={<IoIosStarOutline />}
-                placeholderSymbol={<IoIosStar />}
-                fullSymbol={<IoIosStar />}
-                className="text-[#FFBE00] text-xl "
-              />
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="md:py-20 py-10 px-0 md:px-2 lg:px-1">
-          <div className="border-[#BCBFBA] border relative">
-            <Image
-              className="absolute rounded-full md:w-32 md:h-32 md:-top-20 -top-10 xl:left-[32%] lg:left-[28%] md:left-[30%] left-[33%] z-10 h-20 w-20"
-              src={testimonialImage}
-              alt="testimonials image"
-              width={500}
-              height={500}
-            />
-
-            <div className="text-center md:pt-14 pt-12  px-2 pb-5 space-y-2">
-              <div>
-                <h2 className="text-[#040404] font-semibold">Atif</h2>
-                <h2 className="text-sm text-[#040404]">
-                  Position, Company name
-                </h2>
-              </div>
-              <p className="text-[#535552] text-sm md:text-base">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
-                massa mi. Aliquam in hendrerit urna. Pellentesque sit amet
-                sapien fringilla,
-              </p>
-              <Rating
-                placeholderRating={3.5}
-                emptySymbol={<IoIosStarOutline />}
-                placeholderSymbol={<IoIosStar />}
-                fullSymbol={<IoIosStar />}
-                className="text-[#FFBE00] text-xl "
-              />
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="md:py-20 py-10 px-0 md:px-2 lg:px-1">
-          <div className="border-[#BCBFBA] border relative">
-            <Image
-              className="absolute rounded-full md:w-32 md:h-32 md:-top-20 -top-10 xl:left-[32%] lg:left-[28%] md:left-[30%] left-[33%] z-10 h-20 w-20"
-              src={testimonialImage}
-              alt="testimonials image"
-              width={500}
-              height={500}
-            />
-
-            <div className="text-center md:pt-14 pt-12  px-2 pb-5 space-y-2">
-              <div>
-                <h2 className="text-[#040404] font-semibold">Atif</h2>
-                <h2 className="text-sm text-[#040404]">
-                  Position, Company name
-                </h2>
-              </div>
-              <p className="text-[#535552] text-sm md:text-base">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
-                massa mi. Aliquam in hendrerit urna. Pellentesque sit amet
-                sapien fringilla,
-              </p>
-              <Rating
-                placeholderRating={3.5}
-                emptySymbol={<IoIosStarOutline />}
-                placeholderSymbol={<IoIosStar />}
-                fullSymbol={<IoIosStar />}
-                className="text-[#FFBE00] text-xl "
-              />
-            </div>
-          </div>
-        </SwiperSlide>
-        
+            <TestimonialCard data={i}/>
+          </SwiperSlide>
+        ))}
       </Swiper>
 
       {/* custom arrow button */}
