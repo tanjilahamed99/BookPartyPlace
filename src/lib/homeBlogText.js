@@ -11,6 +11,7 @@ const ENGAGEMENT_CEREMONY = "Engagement Ceremony";
 const PARTIES = "Parties";
 const TEAM_BUILDING = "Team Building";
 const PHOTO_SHOOTS = "Photo shoots";
+const RECEPTION_CEREMONY = "Reception ceremony"
 
 const AllHomeBlogText = {
     TITLE,
@@ -22,6 +23,7 @@ const AllHomeBlogText = {
     PARTIES,
     TEAM_BUILDING,
     PHOTO_SHOOTS,
+    RECEPTION_CEREMONY
   };
 
 export default AllHomeBlogText;

@@ -18,6 +18,7 @@ const HomeBlog = ({ data }) => {
     PARTIES,
     TEAM_BUILDING,
     PHOTO_SHOOTS,
+    RECEPTION_CEREMONY
   } = AllHomeBlogText;
 
   const blogData = [
@@ -65,30 +66,31 @@ const HomeBlog = ({ data }) => {
       <p className="text-[#535552] text-center">{DESC}</p>
 
       {/* Home blog all filter ml-[290px] md:ml-[420px] lg:ml-[250px] xl:ml-0*/}
-      <div className="">
-        <div className="flex lg:gap-5 gap-1 justify-center mt-10 overflow-scroll">
-          <button className=" ml-[95%]">
-            {}
-          </button>
-          <button className="bg-white rounded-none btn  md:rounded-l-full md:rounded-r-full border-[#BCBFBA] md:px-8 md:py-2 hover:bg-primary-color active:bg-primary-color border md:border-2  text-[#040404] md:text-xl text-sm p-1">
-            {WEDDING}
-          </button>
-          <button className="bg-white rounded-none btn  md:rounded-l-full md:rounded-r-full border-[#BCBFBA] md:px-8 md:py-2 hover:bg-primary-color active:bg-primary-color border md:border-2  text-[#040404] md:text-xl text-sm p-1">
-            {CORPORATE_BLOG}
-          </button>
-          <button className="bg-white rounded-none btn  md:rounded-l-full md:rounded-r-full border-[#BCBFBA] md:px-8 md:py-2 hover:bg-primary-color active:bg-primary-color border md:border-2  text-[#040404] md:text-xl text-sm p-1">
-            {ENGAGEMENT_CEREMONY}
-          </button>
-          <button className="bg-white rounded-none btn  md:rounded-l-full md:rounded-r-full border-[#BCBFBA] md:px-8 md:py-2 hover:bg-primary-color active:bg-primary-color border md:border-2  text-[#040404] md:text-xl text-sm p-1">
-            {PARTIES}
-          </button>
-          <button className="bg-white rounded-none btn  md:rounded-l-full md:rounded-r-full border-[#BCBFBA] md:px-8 md:py-2 hover:bg-primary-color active:bg-primary-color border md:border-2  text-[#040404] md:text-xl text-sm p-1">
-            {TEAM_BUILDING}
-          </button>
-          <button className="bg-white rounded-none btn  md:rounded-l-full md:rounded-r-full border-[#BCBFBA] md:px-8 md:py-2 hover:bg-primary-color active:bg-primary-color border md:border-2  text-[#040404] md:text-xl text-sm p-1">
-            {PHOTO_SHOOTS}
-          </button>
-        </div>
+      <div className="overflow-x-auto mt-10">
+        <table className="table">
+          <thead>
+            <tr className="">
+              <th className="bg-white rounded-none btn   border-[#BCBFBA] md:px-8 md:py-2 hover:bg-primary-color active:bg-primary-color border md:border-2  text-[#040404] md:text-xl text-sm p-1">
+                {WEDDING}
+              </th>
+              <th className="bg-white rounded-none btn   border-[#BCBFBA] md:px-8 md:py-2 hover:bg-primary-color active:bg-primary-color border md:border-2  text-[#040404] md:text-xl text-sm p-1">
+                {CORPORATE_BLOG}
+              </th>
+              <th className="bg-white rounded-none btn   border-[#BCBFBA] md:px-8 md:py-2 hover:bg-primary-color active:bg-primary-color border md:border-2  text-[#040404] md:text-xl text-sm p-1">
+                {ENGAGEMENT_CEREMONY}
+              </th>
+              <th className="bg-white rounded-none btn   border-[#BCBFBA] md:px-8 md:py-2 hover:bg-primary-color active:bg-primary-color border md:border-2  text-[#040404] md:text-xl text-sm p-1">
+                {PARTIES}
+              </th>
+              <th className="bg-white rounded-none btn   border-[#BCBFBA] md:px-8 md:py-2 hover:bg-primary-color active:bg-primary-color border md:border-2  text-[#040404] md:text-xl text-sm p-1">
+                {TEAM_BUILDING}
+              </th>
+              <th className="bg-white rounded-none btn   border-[#BCBFBA] md:px-8 md:py-2 hover:bg-primary-color active:bg-primary-color border md:border-2  text-[#040404] md:text-xl text-sm p-1">
+                {RECEPTION_CEREMONY}
+              </th>
+            </tr>
+          </thead>
+        </table>
       </div>
 
       {/* display blog data here*/}

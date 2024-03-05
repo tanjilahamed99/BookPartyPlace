@@ -31,11 +31,7 @@ const Suggestion = ({ data }) => {
     {
       img: suggestionImage5,
       type: "Other",
-    },
-    {
-      img: suggestionImage1,
-      type: "Farm House",
-    },
+    }
   ];
 
   return (

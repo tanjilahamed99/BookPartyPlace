@@ -6,12 +6,12 @@ import "swiper/css";
 import "swiper/css/pagination";
 import DisplayNData from "@/components/Shared/DisplayNData/DisplayNData";
 
-const SuggestionSlider = ({mainData }) => {
+const SuggestionSlider = ({ mainData }) => {
   return (
     // suggestion data map for showing card
     <div>
       <Swiper
-        slidesPerView={3.1}
+        slidesPerView={3.2}
         spaceBetween={10}
         pagination={{
           clickable: true,
