@@ -11,9 +11,9 @@ const Drawer = () => {
     WADDING,
     PARTIES,
     CORPORATE_EVENT,
-    BIRTHDAY_PARTY,
+    BIRTHDAY_PARTY: BIRTHDAY_PARTY_TITLE,
     PHOTO_FILM_SHOOT,
-    WORK_SHOP,
+    WORK_SHOP: WORK_SHOP_TITLE,
   } = allNavText;
 
   const {
@@ -42,10 +42,10 @@ const Drawer = () => {
   } = weddingText;
 
   // workshop text
-  //   const { AUDITORIUMS, TENT_HOUSE, WORK_SHOP, SEMINARS, WARE_HOUSE } = workshop;
+  const { AUDITORIUMS, TENT_HOUSE, WORK_SHOP, SEMINARS, WARE_HOUSE } = workshop;
 
   // BirthdayParty text
-  //   const { BIRTHDAY_PARTY, KIDS_BIRTHDAY, FIRST_BIRTHDAY } = birthdayParty;
+  const { BIRTHDAY_PARTY, KIDS_BIRTHDAY, FIRST_BIRTHDAY } = birthdayParty;
 
   // Corporate text
   const {
@@ -88,7 +88,7 @@ const Drawer = () => {
   } = photoFilmShoot;
 
   return (
-    <div className="drawer z-20">
+    <div className="drawer z-10">
       <input id="my-drawer" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content">
         {/* Page content here */}
@@ -112,14 +112,18 @@ const Drawer = () => {
           <hr className="border border-primary-text-gray" />
 
           {/* wedding drawer */}
-          <div className="drawer z-30">
-            <input id="my-drawer1" type="checkbox" className="drawer-toggle" />
+          <div className="drawer ">
+            <input id="my-drawer1" type="checkbox" className="drawer-toggle " />
             <div className="drawer-content">
-              <label htmlFor="my-drawer1" className="drawer-button">
+              <label
+                htmlFor="my-drawer1"
+                className="drawer-button flex items-center justify-between"
+              >
                 {WADDING}
+                <MdOutlineKeyboardArrowRight className="text-2xl font-bold" />
               </label>
             </div>
-            <div className="drawer-side">
+            <div className="drawer-side z-40">
               <label
                 htmlFor="my-drawer1"
                 aria-label="close sidebar"
@@ -140,18 +144,340 @@ const Drawer = () => {
                   </li>
                 </ul>
                 <hr className="border border-primary-text-gray" />
-                <li><Link href={'/'}>{PELLI_KODUKU}</Link></li>
-                <li><Link href={'/'}>{PELLI_KUTHURU}</Link></li>
-                <li><Link href={'/'}>{ WEDDING_CEREMONY}</Link></li>
-                <li><Link href={'/'}>{WEDDING_RECEPTION}</Link></li>
-                <li><Link href={'/'}>{WEDDING_VENUES}</Link></li>
-                <li><Link href={'/'}>{ MEHENDI_CELEBRATION}</Link></li>
-                <li><Link href={'/'}>{HALDI_EVENT}</Link></li>
-                <li><Link href={'/'}>{RING_CEREMONY}</Link></li>
-                <li><Link href={'/'}>{HONEYMOON_PLACES}</Link></li>
-                <li><Link href={'/'}>{KALYANA_MANDAPAM}</Link></li>
-                <li><Link href={'/'}>{INDIAN_SANGEET_WEDDING}</Link></li>
-                <li><Link href={'/'}>{PRE_WEDDING_CEREMONY}</Link></li>
+                <li>
+                  <Link href={"/"}>{PELLI_KODUKU}</Link>
+                </li>
+                <li>
+                  <Link href={"/"}>{PELLI_KUTHURU}</Link>
+                </li>
+                <li>
+                  <Link href={"/"}>{WEDDING_CEREMONY}</Link>
+                </li>
+                <li>
+                  <Link href={"/"}>{WEDDING_RECEPTION}</Link>
+                </li>
+                <li>
+                  <Link href={"/"}>{WEDDING_VENUES}</Link>
+                </li>
+                <li>
+                  <Link href={"/"}>{MEHENDI_CELEBRATION}</Link>
+                </li>
+                <li>
+                  <Link href={"/"}>{HALDI_EVENT}</Link>
+                </li>
+                <li>
+                  <Link href={"/"}>{RING_CEREMONY}</Link>
+                </li>
+                <li>
+                  <Link href={"/"}>{HONEYMOON_PLACES}</Link>
+                </li>
+                <li>
+                  <Link href={"/"}>{KALYANA_MANDAPAM}</Link>
+                </li>
+                <li>
+                  <Link href={"/"}>{INDIAN_SANGEET_WEDDING}</Link>
+                </li>
+                <li>
+                  <Link href={"/"}>{PRE_WEDDING_CEREMONY}</Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* parties */}
+          <div className="drawer ">
+            <input id="my-drawer2" type="checkbox" className="drawer-toggle" />
+            <div className="drawer-content">
+              <label
+                htmlFor="my-drawer2"
+                className="drawer-button flex items-center justify-between"
+              >
+                {PARTIES}
+                <MdOutlineKeyboardArrowRight className="text-2xl font-bold" />
+              </label>
+            </div>
+            <div className="drawer-side z-40">
+              <label
+                htmlFor="my-drawer2"
+                aria-label="close sidebar"
+                className="drawer-overlay"
+              ></label>
+              <ul className="menu p-4 md:w-80 w-60 min-h-full bg-base-200 text-base-content ">
+                {/* Close button */}
+                <ul className="flex justify-between">
+                  <li className="">
+                    <label htmlFor="my-drawer2" className="cursor-pointer">
+                      <IoChevronBackOutline className="text-2xl" />
+                    </label>
+                  </li>
+                  <li className="">
+                    <label htmlFor="my-drawer" className="cursor-pointer">
+                      <MdCancel className="text-2xl" />
+                    </label>
+                  </li>
+                </ul>
+                <hr className="border border-primary-text-gray" />
+                <li>
+                  <Link href={"/"}>{NEW_YEAR_PARTY}</Link>
+                </li>
+                <li>
+                  <Link href={"/"}>{CHRISTMAS_PARTY}</Link>
+                </li>
+                <li>
+                  <Link href={"/"}>{OUTDOOR_VENUE_PARTY}</Link>
+                </li>
+                <li>
+                  {" "}
+                  <Link href={"/"}>{FESTIVAL_PARTY}</Link>
+                </li>
+                <li>
+                  <Link href={"/"}>{HOLI_PARTY}</Link>
+                </li>
+                <li>
+                  {" "}
+                  <Link href={"/"}>{PRIVATE_PARTY}</Link>
+                </li>
+                <li>
+                  {" "}
+                  <Link href={"/"}>{HALLOWEEN_PARTY}</Link>
+                </li>
+                <li>
+                  <Link href={"/"}>{DINNER_PLACES}</Link>
+                </li>
+                <li>
+                  <Link href={"/"}>{BACHELORETTE_PARTY}</Link>
+                </li>
+                <li>
+                  {" "}
+                  <Link href={"/"}>{POOL_PARTY}</Link>
+                </li>
+                <li>
+                  {" "}
+                  <Link href={"/"}>{ANNIVERSARY_CELEBRATIONS}</Link>
+                </li>
+                <li>
+                  <Link href={"/"}>{OTHER_TYPES_PARTY}</Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* corporate events */}
+          <div className="drawer ">
+            <input id="my-drawer3" type="checkbox" className="drawer-toggle" />
+            <div className="drawer-content">
+              <label
+                htmlFor="my-drawer3"
+                className="drawer-button flex items-center justify-between"
+              >
+                {CORPORATE_EVENT}
+                <MdOutlineKeyboardArrowRight className="text-2xl font-bold" />
+              </label>
+            </div>
+            <div className="drawer-side z-40">
+              <label
+                htmlFor="my-drawer3"
+                aria-label="close sidebar"
+                className="drawer-overlay"
+              ></label>
+              <ul className="menu p-4 md:w-80 w-60 min-h-full bg-base-200 text-base-content">
+                {/* Close button */}
+                <ul className="flex justify-between">
+                  <li className="">
+                    <label htmlFor="my-drawer3" className="cursor-pointer">
+                      <IoChevronBackOutline className="text-2xl" />
+                    </label>
+                  </li>
+                  <li className="">
+                    <label htmlFor="my-drawer" className="cursor-pointer">
+                      <MdCancel className="text-2xl" />
+                    </label>
+                  </li>
+                </ul>
+                <hr className="border border-primary-text-gray" />
+                <li>
+                  <Link href={"/"}>{CORPORATE_OUTING}</Link>
+                </li>
+                <li>
+                  <Link href={"/"}>{CORPORATE_PARTY}</Link>
+                </li>
+                <li>
+                  <Link href={"/"}>{CO_WORKING_SPACE}</Link>
+                </li>
+                <li>
+                  <Link href={"/"}>{CONFERENCE}</Link>
+                </li>
+                <li>
+                  <Link href={"/"}>{TEAM_DINNER}</Link>
+                </li>
+                <li>
+                  <Link href={"/"}>{TEAM_BUILDING}</Link>
+                </li>
+                <li>
+                  <Link href={"/"}>{TEAM_LUNCH}</Link>
+                </li>
+                <li>
+                  <Link href={"/"}>{EXIBITION}</Link>
+                </li>
+                <li>
+                  <Link href={"/"}>{TEAM_OUTINGS}</Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* birthday party */}
+          <div className="drawer ">
+            <input id="my-drawer4" type="checkbox" className="drawer-toggle" />
+            <div className="drawer-content">
+              <label
+                htmlFor="my-drawer4"
+                className="drawer-button flex items-center justify-between"
+              >
+                {BIRTHDAY_PARTY_TITLE}
+                <MdOutlineKeyboardArrowRight className="text-2xl font-bold" />
+              </label>
+            </div>
+            <div className="drawer-side z-40">
+              <label
+                htmlFor="my-drawer4"
+                aria-label="close sidebar"
+                className="drawer-overlay"
+              ></label>
+              <ul className="menu p-4 md:w-80 w-60 min-h-full bg-base-200 text-base-content">
+                {/* Close button */}
+                <ul className="flex justify-between">
+                  <li className="">
+                    <label htmlFor="my-drawer4" className="cursor-pointer">
+                      <IoChevronBackOutline className="text-2xl" />
+                    </label>
+                  </li>
+                  <li className="">
+                    <label htmlFor="my-drawer" className="cursor-pointer">
+                      <MdCancel className="text-2xl" />
+                    </label>
+                  </li>
+                </ul>
+                <hr className="border border-primary-text-gray" />
+                <li>
+                  <Link href={"/"}>{BIRTHDAY_PARTY}</Link>
+                </li>
+                <li>
+                  <Link href={"/"}>{KIDS_BIRTHDAY}</Link>
+                </li>
+                <li>
+                  <Link href={"/"}>{FIRST_BIRTHDAY}</Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* photo/Film_shoot */}
+          <div className="drawer ">
+            <input id="my-drawer5" type="checkbox" className="drawer-toggle" />
+            <div className="drawer-content">
+              <label
+                htmlFor="my-drawer5"
+                className="drawer-button flex items-center justify-between"
+              >
+                {PHOTO_FILM_SHOOT}
+                <MdOutlineKeyboardArrowRight className="text-2xl font-bold" />
+              </label>
+            </div>
+            <div className="drawer-side z-40">
+              <label
+                htmlFor="my-drawer5"
+                aria-label="close sidebar"
+                className="drawer-overlay"
+              ></label>
+              <ul className="menu p-4 md:w-80 w-60 min-h-full bg-base-200 text-base-content">
+                {/* Close button */}
+                <ul className="flex justify-between">
+                  <li className="">
+                    <label htmlFor="my-drawer5" className="cursor-pointer">
+                      <IoChevronBackOutline className="text-2xl" />
+                    </label>
+                  </li>
+                  <li className="">
+                    <label htmlFor="my-drawer" className="cursor-pointer">
+                      <MdCancel className="text-2xl" />
+                    </label>
+                  </li>
+                </ul>
+                <hr className="border border-primary-text-gray" />
+                <li>
+                  <Link href={"/"}>{PHOTO_SHOOT_STUDIO}</Link>
+                </li>
+                <li>
+                  <Link href={"/"}>{MUSIC_STUDIES}</Link>
+                </li>
+                <li>
+                  <Link href={"/"}>{FILM_STUDIOS}</Link>
+                </li>
+                <li>
+                  <Link href={"/"}>{ANIMATION_STUDIOS}</Link>
+                </li>
+                <li>
+                  <Link href={"/"}>{RECORDING_STUDIOS}</Link>
+                </li>
+                <li>
+                  <Link href={"/"}>{VFX_STUDIOS}</Link>
+                </li>
+                <li>
+                  <Link href={"/"}>{DANCE_STUDIOS}</Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* work shop */}
+          <div className="drawer ">
+            <input id="my-drawer6" type="checkbox" className="drawer-toggle" />
+            <div className="drawer-content">
+              <label
+                htmlFor="my-drawer6"
+                className="drawer-button flex items-center justify-between"
+              >
+                {WORK_SHOP_TITLE}
+                <MdOutlineKeyboardArrowRight className="text-2xl font-bold" />
+              </label>
+            </div>
+            <div className="drawer-side z-40">
+              <label
+                htmlFor="my-drawer6"
+                aria-label="close sidebar"
+                className="drawer-overlay"
+              ></label>
+              <ul className="menu p-4 md:w-80 w-60 min-h-full bg-base-200 text-base-content">
+                {/* Close button */}
+                <ul className="flex justify-between">
+                  <li className="">
+                    <label htmlFor="my-drawer6" className="cursor-pointer">
+                      <IoChevronBackOutline className="text-2xl" />
+                    </label>
+                  </li>
+                  <li className="">
+                    <label htmlFor="my-drawer" className="cursor-pointer">
+                      <MdCancel className="text-2xl" />
+                    </label>
+                  </li>
+                </ul>
+                <hr className="border border-primary-text-gray" />
+                <li>
+                  <Link href={"/"}>{AUDITORIUMS}</Link>
+                </li>
+                <li>
+                  <Link href={"/"}>{TENT_HOUSE}</Link>
+                </li>
+                <li>
+                  <Link href={"/"}>{WORK_SHOP}</Link>
+                </li>
+                <li>
+                  <Link href={"/"}>{SEMINARS}</Link>
+                </li>
+                <li>
+                  <Link href={"/"}>{WARE_HOUSE}</Link>
+                </li>
               </ul>
             </div>
           </div>
