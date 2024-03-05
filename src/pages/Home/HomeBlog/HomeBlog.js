@@ -18,7 +18,7 @@ const HomeBlog = ({ data }) => {
     PARTIES,
     TEAM_BUILDING,
     PHOTO_SHOOTS,
-    RECEPTION_CEREMONY
+    RECEPTION_CEREMONY,
   } = AllHomeBlogText;
 
   const blogData = [
@@ -70,22 +70,22 @@ const HomeBlog = ({ data }) => {
         <table className="table">
           <thead>
             <tr>
-              <th className="bg-white rounded-none btn md:w-60  w-28 border-[#BCBFBA] md:py-2 hover:bg-primary-color active:bg-primary-color border md:border text-[#040404] md:text-xl text-[10px]">
+              <th className="bg-white rounded-none btn md:w-60  w-40 border-[#BCBFBA] md:py-2 hover:bg-primary-color active:bg-primary-color border md:border text-[#040404] md:text-xl text-[10px]p-0">
                 {WEDDING}
               </th>
-              <th className="bg-white rounded-none btn   md:w-60  w-28 border-[#BCBFBA]  md:py-2 hover:bg-primary-color active:bg-primary-color border md:border text-[#040404] md:text-xl text-[10px] p-1">
+              <th className="bg-white rounded-none btn md:w-60  w-40 border-[#BCBFBA] md:py-2 hover:bg-primary-color active:bg-primary-color border md:border text-[#040404] md:text-xl text-[10px]p-0">
                 {CORPORATE_BLOG}
               </th>
-              <th className="bg-white rounded-none btn   md:w-60  w-28 border-[#BCBFBA]  md:py-2 hover:bg-primary-color active:bg-primary-color border md:border text-[#040404] md:text-xl text-[10px] p-1">
+              <th className="bg-white rounded-none btn md:w-60  w-40 border-[#BCBFBA] md:py-2 hover:bg-primary-color active:bg-primary-color border md:border text-[#040404] md:text-xl text-[10px]p-0 ">
                 {ENGAGEMENT_CEREMONY}
               </th>
-              <th className="bg-white rounded-none btn   md:w-60  w-28 border-[#BCBFBA]  md:py-2 hover:bg-primary-color active:bg-primary-color border md:border text-[#040404] md:text-xl text-[10px] p-1">
+              <th className="bg-white rounded-none btn md:w-60  w-40 border-[#BCBFBA] md:py-2 hover:bg-primary-color active:bg-primary-color border md:border text-[#040404] md:text-xl text-[10px]p-0">
                 {PARTIES}
               </th>
-              <th className="bg-white rounded-none btn  md:w-60  w-28  border-[#BCBFBA]  md:py-2 hover:bg-primary-color active:bg-primary-color border md:border text-[#040404] md:text-xl text-[10px] p-1">
+              <th className="bg-white rounded-none btn md:w-60  w-40 border-[#BCBFBA] md:py-2 hover:bg-primary-color active:bg-primary-color border md:border text-[#040404] md:text-xl text-[10px]p-0">
                 {TEAM_BUILDING}
               </th>
-              <th className="bg-white rounded-none btn  md:w-60  w-28  border-[#BCBFBA]  md:py-2 hover:bg-primary-color active:bg-primary-color border md:border text-[#040404] md:text-xl text-[10px] p-1">
+              <th className="bg-white rounded-none btn md:w-60  w-40 border-[#BCBFBA] md:py-2 hover:bg-primary-color active:bg-primary-color border md:border text-[#040404] md:text-xl text-[10px]p-0">
                 {RECEPTION_CEREMONY}
               </th>
             </tr>
@@ -95,13 +95,13 @@ const HomeBlog = ({ data }) => {
 
       {/* display blog data here*/}
       <div className="grid grid-cols-2  lg:hidden lg:grid-cols-3 items-center gap-2 md:gap-10 lg:gap-5 xl:gap-10 md:mt-10 mt-5">
-        {blogData?.map((i,idx) => (
+        {blogData?.map((i, idx) => (
           <DisplayBlogData key={idx} data={i}></DisplayBlogData>
         ))}
       </div>
 
       <div className="lg:grid grid-cols-2 hidden  lg:grid-cols-3 items-center gap-2 md:gap-10 lg:gap-5 xl:gap-10 md:mt-10 mt-5">
-        {blogData?.slice(0, 3).map((i,idx) => (
+        {blogData?.slice(0, 3).map((i, idx) => (
           <DisplayBlogData key={idx} data={i}></DisplayBlogData>
         ))}
       </div>
