@@ -69,23 +69,23 @@ const HomeBlog = ({ data }) => {
       <div className="overflow-x-auto mt-10">
         <table className="table">
           <thead>
-            <tr className="">
-              <th className="bg-white rounded-none btn   border-[#BCBFBA] md:px-8 md:py-2 hover:bg-primary-color active:bg-primary-color border md:border-2  text-[#040404] md:text-xl text-sm p-1">
+            <tr>
+              <th className="bg-white rounded-none btn md:w-60  w-28 border-[#BCBFBA] md:py-2 hover:bg-primary-color active:bg-primary-color border md:border text-[#040404] md:text-xl text-[10px]">
                 {WEDDING}
               </th>
-              <th className="bg-white rounded-none btn   border-[#BCBFBA] md:px-8 md:py-2 hover:bg-primary-color active:bg-primary-color border md:border-2  text-[#040404] md:text-xl text-sm p-1">
+              <th className="bg-white rounded-none btn   md:w-60  w-28 border-[#BCBFBA]  md:py-2 hover:bg-primary-color active:bg-primary-color border md:border text-[#040404] md:text-xl text-[10px] p-1">
                 {CORPORATE_BLOG}
               </th>
-              <th className="bg-white rounded-none btn   border-[#BCBFBA] md:px-8 md:py-2 hover:bg-primary-color active:bg-primary-color border md:border-2  text-[#040404] md:text-xl text-sm p-1">
+              <th className="bg-white rounded-none btn   md:w-60  w-28 border-[#BCBFBA]  md:py-2 hover:bg-primary-color active:bg-primary-color border md:border text-[#040404] md:text-xl text-[10px] p-1">
                 {ENGAGEMENT_CEREMONY}
               </th>
-              <th className="bg-white rounded-none btn   border-[#BCBFBA] md:px-8 md:py-2 hover:bg-primary-color active:bg-primary-color border md:border-2  text-[#040404] md:text-xl text-sm p-1">
+              <th className="bg-white rounded-none btn   md:w-60  w-28 border-[#BCBFBA]  md:py-2 hover:bg-primary-color active:bg-primary-color border md:border text-[#040404] md:text-xl text-[10px] p-1">
                 {PARTIES}
               </th>
-              <th className="bg-white rounded-none btn   border-[#BCBFBA] md:px-8 md:py-2 hover:bg-primary-color active:bg-primary-color border md:border-2  text-[#040404] md:text-xl text-sm p-1">
+              <th className="bg-white rounded-none btn  md:w-60  w-28  border-[#BCBFBA]  md:py-2 hover:bg-primary-color active:bg-primary-color border md:border text-[#040404] md:text-xl text-[10px] p-1">
                 {TEAM_BUILDING}
               </th>
-              <th className="bg-white rounded-none btn   border-[#BCBFBA] md:px-8 md:py-2 hover:bg-primary-color active:bg-primary-color border md:border-2  text-[#040404] md:text-xl text-sm p-1">
+              <th className="bg-white rounded-none btn  md:w-60  w-28  border-[#BCBFBA]  md:py-2 hover:bg-primary-color active:bg-primary-color border md:border text-[#040404] md:text-xl text-[10px] p-1">
                 {RECEPTION_CEREMONY}
               </th>
             </tr>

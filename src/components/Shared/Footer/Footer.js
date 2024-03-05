@@ -71,19 +71,19 @@ const Footer = () => {
       <div className="">
         {/* footer icons */}
         <div className="flex gap-6 items-center ">
-          <Link href={"/"}>
+          <Link href={"#facebook"}>
             <FaFacebookF className="bg-[#61687233] text-4xl p-2 rounded-xl text-black" />
           </Link>
-          <Link href={"/"}>
+          <Link href={"#twitter"}>
             <FaTwitter className="bg-[#61687233] text-4xl p-2 rounded-xl text-black" />
           </Link>
-          <Link href={"/"}>
+          <Link href={"#instagram"}>
             <FaInstagram className="bg-[#61687233] text-4xl p-2 rounded-xl text-black" />
           </Link>
-          <Link href={"/"}>
+          <Link href={"#linkedin"}>
             <FaLinkedinIn className="bg-[#61687233] text-4xl p-2 rounded-xl text-black" />
           </Link>
-          <Link href={"/"}>
+          <Link href={"#youtube"}>
             <GrYoutube className="bg-[#61687233] text-4xl p-2 rounded-xl text-black" />
           </Link>
         </div>
