@@ -21,9 +21,7 @@ const SuggestionSlider = ({ mainData }) => {
       >
         {mainData?.map((i, idx) => (
           <SwiperSlide key={idx}>
-            <div>
               <DisplayNData data={i} />
-            </div>
           </SwiperSlide>
         ))}
       </Swiper>

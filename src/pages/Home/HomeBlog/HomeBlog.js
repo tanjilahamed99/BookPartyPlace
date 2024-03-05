@@ -95,14 +95,14 @@ const HomeBlog = ({ data }) => {
 
       {/* display blog data here*/}
       <div className="grid grid-cols-2  lg:hidden lg:grid-cols-3 items-center gap-2 md:gap-10 lg:gap-5 xl:gap-10 md:mt-10 mt-5">
-        {blogData?.map((i) => (
-          <DisplayBlogData key={i._id} data={i}></DisplayBlogData>
+        {blogData?.map((i,idx) => (
+          <DisplayBlogData key={idx} data={i}></DisplayBlogData>
         ))}
       </div>
 
       <div className="lg:grid grid-cols-2 hidden  lg:grid-cols-3 items-center gap-2 md:gap-10 lg:gap-5 xl:gap-10 md:mt-10 mt-5">
-        {blogData?.slice(0, 3).map((i) => (
-          <DisplayBlogData key={i._id} data={i}></DisplayBlogData>
+        {blogData?.slice(0, 3).map((i,idx) => (
+          <DisplayBlogData key={idx} data={i}></DisplayBlogData>
         ))}
       </div>
 

@@ -71,11 +71,21 @@ const Footer = () => {
       <div className="">
         {/* footer icons */}
         <div className="flex gap-6 items-center ">
-          <FaFacebookF className="bg-[#61687233] text-4xl p-2 rounded-xl text-black" />
-          <FaTwitter className="bg-[#61687233] text-4xl p-2 rounded-xl text-black" />
-          <FaInstagram className="bg-[#61687233] text-4xl p-2 rounded-xl text-black" />
-          <FaLinkedinIn className="bg-[#61687233] text-4xl p-2 rounded-xl text-black" />
-          <GrYoutube className="bg-[#61687233] text-4xl p-2 rounded-xl text-black" />
+          <Link href={"/"}>
+            <FaFacebookF className="bg-[#61687233] text-4xl p-2 rounded-xl text-black" />
+          </Link>
+          <Link href={"/"}>
+            <FaTwitter className="bg-[#61687233] text-4xl p-2 rounded-xl text-black" />
+          </Link>
+          <Link href={"/"}>
+            <FaInstagram className="bg-[#61687233] text-4xl p-2 rounded-xl text-black" />
+          </Link>
+          <Link href={"/"}>
+            <FaLinkedinIn className="bg-[#61687233] text-4xl p-2 rounded-xl text-black" />
+          </Link>
+          <Link href={"/"}>
+            <GrYoutube className="bg-[#61687233] text-4xl p-2 rounded-xl text-black" />
+          </Link>
         </div>
         <p className="text-[#535552] mt-3">{RIGHTS}</p>
       </div>

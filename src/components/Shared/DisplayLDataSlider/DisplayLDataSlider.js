@@ -30,24 +30,11 @@ const DisplayLDataSlider = ({ data, view,mainData }) => {
       >
         {/* dynamic  */}
         {/* data facing for display card */}
-        {mainData?.map((i) => (
-          <SwiperSlide key={i._id}>
+        {mainData?.map((i,idx) => (
+          <SwiperSlide key={idx}>
             <DisplayLData data={i} />
           </SwiperSlide>
         ))}
-
-        {/* <SwiperSlide>
-          <DisplayLData data={{ img: data?.img1, _id: 1 }} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <DisplayLData data={{ img: data?.img2, _id: 2 }} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <DisplayLData data={{ img: data?.img3, _id: 3 }} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <DisplayLData data={{ img: data?.img4, _id: 4 }} />
-        </SwiperSlide> */}
       </Swiper>
 
       {/* custom arrow Button */}

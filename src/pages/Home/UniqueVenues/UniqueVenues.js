@@ -90,8 +90,8 @@ const UniqueVenues = ({ data }) => {
       {/* Grid layout for small device  */}
       <div className=" grid grid-cols-2 items-center gap-4 mx-3 md:hidden">
         {/* dynamic card data */}
-        {uniqueVenuesData?.map((i) => (
-          <DisplayLData key={i._id} data={i} />
+        {uniqueVenuesData?.map((i,idx) => (
+          <DisplayLData key={idx} data={i} />
         ))}
       </div>
     </div>

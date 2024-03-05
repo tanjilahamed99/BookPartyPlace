@@ -40,8 +40,8 @@ const Suggestion = ({ data }) => {
 
       {/* suggestion card for mobile devices */}
       <div className="lg:grid grid-cols-5 items-center gap-5   hidden">
-        {suggestionData?.slice(0, 5).map((i) => (
-          <DisplayNData key={i._id} data={i}></DisplayNData>
+        {suggestionData?.slice(0, 5).map((i,idx) => (
+          <DisplayNData key={idx} data={i}></DisplayNData>
         ))}
       </div>
 
