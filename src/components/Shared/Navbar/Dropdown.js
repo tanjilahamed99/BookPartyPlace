@@ -81,7 +81,7 @@ const Dropdown = () => {
         <div
           tabIndex={0}
           role="button"
-          className=" font-semibold  text-xl  text-primary-text-gray p-2"
+          className=" font-semibold  text-xl  text-primary-text-gray p-2 border-b-2 border-white hover:border-primary-color focus:border-primary-color"
         >
           Weddings
         </div>
@@ -133,7 +133,7 @@ const Dropdown = () => {
         <div
           tabIndex={0}
           role="button"
-          className=" font-semibold  text-xl  text-primary-text-gray p-2"
+          className=" font-semibold  text-xl  text-primary-text-gray p-2 border-b-2 border-white hover:border-primary-color focus:border-primary-color"
         >
           Parties
         </div>
@@ -185,7 +185,7 @@ const Dropdown = () => {
         <div
           tabIndex={0}
           role="button"
-          className=" font-semibold  text-xl  text-primary-text-gray p-2"
+          className=" font-semibold  text-xl  text-primary-text-gray p-2 border-b-2 border-white hover:border-primary-color focus:border-primary-color"
         >
           Corporate Events
         </div>
@@ -228,7 +228,7 @@ const Dropdown = () => {
         <div
           tabIndex={0}
           role="button"
-          className=" font-semibold  text-xl  text-primary-text-gray p-2"
+          className=" font-semibold  text-xl  text-primary-text-gray p-2 border-b-2 border-white hover:border-primary-color focus:border-primary-color"
         >
           Birthday Party
         </div>
@@ -253,7 +253,7 @@ const Dropdown = () => {
         <div
           tabIndex={0}
           role="button"
-          className=" font-semibold  text-xl  text-primary-text-gray p-2"
+          className=" font-semibold  text-xl  text-primary-text-gray p-2 border-b-2 border-white hover:border-primary-color focus:border-primary-color"
         >
           Photo/ Filmshoot
         </div>
@@ -290,7 +290,7 @@ const Dropdown = () => {
         <div
           tabIndex={0}
           role="button"
-          className=" font-semibold  text-xl  text-primary-text-gray p-2"
+          className=" font-semibold  text-xl  text-primary-text-gray p-2 border-b-2 border-white hover:border-primary-color focus:border-primary-color"
         >
           Workshop
         </div>
