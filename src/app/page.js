@@ -22,17 +22,20 @@ const Home = async () => {
       <Navbar />
 
       {/* Search bar / search section */}
-      <SearchBar />
+      {/* <div className="bg-slate-50 pt-5"></div> */}
 
       <div className=" space-y-16 md:space-y-20">
-        {/* suggestion component */}
-        <Suggestion data={data} />
+        <div className="bg-slate-50 md:bg-white space-y-6 md:space-y-20 pt-1">
+          <SearchBar />
+          {/* suggestion component */}
+          <Suggestion data={data} />
 
-        {/* event categories */}
-        <EventCategories data={data} />
+          {/* event categories */}
+          <EventCategories data={data} />
 
-        {/* Unique Venues*/}
-        <UniqueVenues data={data} />
+          {/* Unique Venues*/}
+          <UniqueVenues data={data} />
+        </div>
 
         {/* work commands */}
         <WorkCommand />

@@ -11,7 +11,7 @@ const SuggestionSlider = ({mainData }) => {
     // suggestion data map for showing card
     <div>
       <Swiper
-        slidesPerView={3}
+        slidesPerView={3.1}
         spaceBetween={10}
         pagination={{
           clickable: true,
@@ -21,7 +21,7 @@ const SuggestionSlider = ({mainData }) => {
       >
         {mainData?.map((i, idx) => (
           <SwiperSlide key={idx}>
-            <div className={`md:rounded-2xl md:shadow-2xl shadow md:shadow-[#0404041A] md:py-4 py-3`}>
+            <div>
               <DisplayNData data={i} />
             </div>
           </SwiperSlide>
