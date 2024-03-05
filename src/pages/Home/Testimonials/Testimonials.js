@@ -62,7 +62,7 @@ const Testimonials = () => {
 
       {/* small screen */}
       <div className="md:hidden">
-        <TestimonialsSlider data={testimonialData} view={1.1} pagination={false} />
+        <TestimonialsSlider data={testimonialData} view={1.3} pagination={false} />
       </div>
     </div>
   );

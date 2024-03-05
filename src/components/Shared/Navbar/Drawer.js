@@ -1,3 +1,5 @@
+"use client";
+
 import allNavText from "@/lib/allNavText";
 import Link from "next/link";
 import { HiMenuAlt2 } from "react-icons/hi";
@@ -87,9 +89,18 @@ const Drawer = () => {
     DANCE_STUDIOS,
   } = photoFilmShoot;
 
+  function toggleBodyOverflow() {
+    document.body.classList.toggle("drawer-open");
+  }
+
   return (
-    <div className="drawer z-10">
-      <input id="my-drawer" type="checkbox" className="drawer-toggle" />
+    <div className="drawer z-50">
+      <input
+        id="my-drawer"
+        type="checkbox"
+        className="drawer-toggle"
+        onClick={toggleBodyOverflow}
+      />
       <div className="drawer-content">
         {/* Page content here */}
         <label htmlFor="my-drawer" className="drawer-button">
@@ -102,14 +113,14 @@ const Drawer = () => {
           aria-label="close sidebar"
           className="drawer-overlay"
         ></label>
-        <ul className="menu p-4 md:w-80 w-60 min-h-full bg-base-200 text-base-content space-y-2">
+        <ul className="menu p-4 md:w-80 w-60 min-h-full space-y-2 bg-primary-color text-black">
           {/* Close button */}
           <li className="w-10 ml-40 md:ml-60">
             <label htmlFor="my-drawer" className="cursor-pointer">
               <MdCancel className="text-2xl" />
             </label>
           </li>
-          <hr className="border border-primary-text-gray" />
+          <hr className="border border-black w-60 md:w-80 -ml-4" />
 
           {/* wedding drawer */}
           <div className="drawer ">
@@ -129,7 +140,7 @@ const Drawer = () => {
                 aria-label="close sidebar"
                 className="drawer-overlay"
               ></label>
-              <ul className="menu p-4 md:w-80 w-60 min-h-full bg-base-200 text-base-content">
+              <ul className="menu px-2 py-4 md:w-80 w-60 min-h-full  bg-primary-color text-black">
                 {/* Close button */}
                 <ul className="flex justify-between">
                   <li className="">
@@ -143,7 +154,7 @@ const Drawer = () => {
                     </label>
                   </li>
                 </ul>
-                <hr className="border border-primary-text-gray" />
+                <hr className="border border-black w-60 md:w-80 -ml-4" />
                 <li>
                   <Link href={"/"}>{PELLI_KODUKU}</Link>
                 </li>
@@ -202,7 +213,7 @@ const Drawer = () => {
                 aria-label="close sidebar"
                 className="drawer-overlay"
               ></label>
-              <ul className="menu p-4 md:w-80 w-60 min-h-full bg-base-200 text-base-content ">
+              <ul className="menu py-4 px-2 md:w-80 w-60 min-h-full bg-primary-color text-black">
                 {/* Close button */}
                 <ul className="flex justify-between">
                   <li className="">
@@ -216,7 +227,7 @@ const Drawer = () => {
                     </label>
                   </li>
                 </ul>
-                <hr className="border border-primary-text-gray" />
+                <hr className="border border-black w-60 md:w-80 -ml-4" />
                 <li>
                   <Link href={"/"}>{NEW_YEAR_PARTY}</Link>
                 </li>
@@ -280,7 +291,7 @@ const Drawer = () => {
                 aria-label="close sidebar"
                 className="drawer-overlay"
               ></label>
-              <ul className="menu p-4 md:w-80 w-60 min-h-full bg-base-200 text-base-content">
+              <ul className="menu py-4 px-2 md:w-80 w-60 min-h-full bg-primary-color text-black">
                 {/* Close button */}
                 <ul className="flex justify-between">
                   <li className="">
@@ -294,7 +305,7 @@ const Drawer = () => {
                     </label>
                   </li>
                 </ul>
-                <hr className="border border-primary-text-gray" />
+                <hr className="border border-black w-60 md:w-80 -ml-4" />
                 <li>
                   <Link href={"/"}>{CORPORATE_OUTING}</Link>
                 </li>
@@ -344,7 +355,7 @@ const Drawer = () => {
                 aria-label="close sidebar"
                 className="drawer-overlay"
               ></label>
-              <ul className="menu p-4 md:w-80 w-60 min-h-full bg-base-200 text-base-content">
+              <ul className="menu py-4 px-2 md:w-80 w-60 min-h-full bg-primary-color text-black">
                 {/* Close button */}
                 <ul className="flex justify-between">
                   <li className="">
@@ -358,7 +369,7 @@ const Drawer = () => {
                     </label>
                   </li>
                 </ul>
-                <hr className="border border-primary-text-gray" />
+                <hr className="border border-black w-60 md:w-80 -ml-4" />
                 <li>
                   <Link href={"/"}>{BIRTHDAY_PARTY}</Link>
                 </li>
@@ -390,7 +401,7 @@ const Drawer = () => {
                 aria-label="close sidebar"
                 className="drawer-overlay"
               ></label>
-              <ul className="menu p-4 md:w-80 w-60 min-h-full bg-base-200 text-base-content">
+              <ul className="menu p-4 md:w-80 w-60 min-h-full bg-primary-color text-black">
                 {/* Close button */}
                 <ul className="flex justify-between">
                   <li className="">
@@ -404,7 +415,7 @@ const Drawer = () => {
                     </label>
                   </li>
                 </ul>
-                <hr className="border border-primary-text-gray" />
+                <hr className="border border-black w-60 md:w-80 -ml-4" />
                 <li>
                   <Link href={"/"}>{PHOTO_SHOOT_STUDIO}</Link>
                 </li>
@@ -445,10 +456,12 @@ const Drawer = () => {
             <div className="drawer-side z-40">
               <label
                 htmlFor="my-drawer6"
+                y
+                px-2
                 aria-label="close sidebar"
                 className="drawer-overlay"
               ></label>
-              <ul className="menu p-4 md:w-80 w-60 min-h-full bg-base-200 text-base-content">
+              <ul className="menu p-4 md:w-80 w-60 min-h-full bg-primary-color text-black">
                 {/* Close button */}
                 <ul className="flex justify-between">
                   <li className="">
@@ -462,7 +475,7 @@ const Drawer = () => {
                     </label>
                   </li>
                 </ul>
-                <hr className="border border-primary-text-gray" />
+                <hr className="border border-black w-60 md:w-80 -ml-4" />
                 <li>
                   <Link href={"/"}>{AUDITORIUMS}</Link>
                 </li>
