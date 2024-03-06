@@ -154,7 +154,7 @@ const Drawer = () => {
                     </label>
                   </li>
                 </ul>
-                <hr className="border border-black w-60 md:w-80 -ml-4" />
+                <hr className="border border-black w-60 md:w-80 -ml-2" />
                 <li>
                   <Link href={"/"}>{PELLI_KODUKU}</Link>
                 </li>
@@ -227,7 +227,7 @@ const Drawer = () => {
                     </label>
                   </li>
                 </ul>
-                <hr className="border border-black w-60 md:w-80 -ml-4" />
+                <hr className="border border-black w-60 md:w-80 -ml-2" />
                 <li>
                   <Link href={"/"}>{NEW_YEAR_PARTY}</Link>
                 </li>
@@ -305,7 +305,7 @@ const Drawer = () => {
                     </label>
                   </li>
                 </ul>
-                <hr className="border border-black w-60 md:w-80 -ml-4" />
+                <hr className="border border-black w-60 md:w-80 -ml-2" />
                 <li>
                   <Link href={"/"}>{CORPORATE_OUTING}</Link>
                 </li>
@@ -369,7 +369,7 @@ const Drawer = () => {
                     </label>
                   </li>
                 </ul>
-                <hr className="border border-black w-60 md:w-80 -ml-4" />
+                <hr className="border border-black w-60 md:w-80 -ml-2" />
                 <li>
                   <Link href={"/"}>{BIRTHDAY_PARTY}</Link>
                 </li>
@@ -456,8 +456,6 @@ const Drawer = () => {
             <div className="drawer-side z-40">
               <label
                 htmlFor="my-drawer6"
-                y
-                px-2
                 aria-label="close sidebar"
                 className="drawer-overlay"
               ></label>
