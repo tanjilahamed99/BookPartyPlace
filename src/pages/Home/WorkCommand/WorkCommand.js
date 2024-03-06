@@ -25,7 +25,7 @@ const WorkCommand = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-20 mt-10">
           {/* command 1 */}
           <div className="text-center space-y-3">
-            <h2 className="bg-black border-2 border-primary-color rounded-full text-primary-color  flex justify-center text-3xl items-center h-20 w-20 mx-auto">
+            <h2 className="bg-black border-2 border-primary-color  text-primary-color  flex justify-center text-3xl items-center h-[72px] w-20 rounded-full mx-auto">
               {ONE}
             </h2>
             <h2 className="text-xl text-[#040404] font-semibold">
@@ -36,7 +36,7 @@ const WorkCommand = () => {
 
           {/* command 2 */}
           <div className="text-center space-y-3">
-            <h2 className="bg-black border-2 border-primary-color rounded-full text-primary-color  flex justify-center text-3xl items-center h-20 w-20 mx-auto">
+            <h2 className="bg-black border-2 border-primary-color  text-primary-color  flex justify-center text-3xl items-center h-[72px] w-20 rounded-full mx-auto">
               {TWO}
             </h2>
             <h2 className="text-xl text-[#040404] font-semibold">
@@ -47,7 +47,7 @@ const WorkCommand = () => {
 
           {/* command 3 */}
           <div className="text-center space-y-3">
-            <h2 className="bg-black border-2 border-primary-color rounded-full text-primary-color  flex justify-center text-3xl items-center h-20 w-20 mx-auto">
+            <h2 className="bg-black border-2 border-primary-color  text-primary-color  flex justify-center text-3xl items-center h-[72px] w-20 rounded-full mx-auto">
               {THREE}
             </h2>
             <h2 className="text-xl text-[#040404] font-semibold">

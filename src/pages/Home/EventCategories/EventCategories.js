@@ -7,6 +7,7 @@ import eventCategoryImg2 from "../../../../public/images/ExploreEvent/02 Birthda
 import eventCategoryImg3 from "../../../../public/images/ExploreEvent/03 Festivals.jpg";
 import eventCategoryImg4 from "../../../../public/images/ExploreEvent/04 Performances.jpg";
 import eventCategoryImg5 from "../../../../public/images/ExploreEvent/05 Family Gatherings .jpg";
+import eventCategoryImg6 from "../../../../public/images/Promotion/hwergbiubheg.jpg";
 
 const EventCategories = ({ data }) => {
   const { TITLE } = AllEventByVenuesText;
@@ -31,7 +32,11 @@ const EventCategories = ({ data }) => {
     {
       img: eventCategoryImg5,
       type: "Family Gatherings",
-    }
+    },
+    {
+      img: eventCategoryImg6,
+      type: "Other",
+    },
   ];
 
 
@@ -51,7 +56,7 @@ const EventCategories = ({ data }) => {
       <div className="lg:inline hidden">
         <div className="">
           {/* swiper js */}
-          <SwiperSlider data={data} />
+          <SwiperSlider data={eventCategoryData} />
         </div>
       </div>
     </div>

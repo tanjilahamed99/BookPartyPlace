@@ -16,6 +16,7 @@ import eventCategoryImg3 from "../../../../public/images/ExploreEvent/03 Festiva
 import eventCategoryImg4 from "../../../../public/images/ExploreEvent/04 Performances.jpg";
 import eventCategoryImg5 from "../../../../public/images/ExploreEvent/05 Family Gatherings .jpg";
 import eventCategoryImg6 from "../../../../public/images/Promotion/AsLrdByMDng.jpg";
+import Link from "next/link";
 
 const SwiperSlider = ({ data }) => {
   const [setSwiperRef] = useState(null);
@@ -37,42 +38,13 @@ const SwiperSlider = ({ data }) => {
       >
         {/* data facing for display card */}
         {/* dynamic card data */}
-        {/* {data?.map((i) => (
+        {data?.map((i) => (
           <SwiperSlide key={i._id}>
-            <DisplayNData data={i}></DisplayNData>
+            <Link href={"/"}>
+              <DisplayNData data={i}></DisplayNData>
+            </Link>
           </SwiperSlide>
-        ))} */}
-
-        <SwiperSlide>
-          <DisplayNData
-            data={{ img: eventCategoryImg1, type: "Weddings" }}
-          ></DisplayNData>
-        </SwiperSlide>
-        <SwiperSlide>
-          <DisplayNData
-            data={{ img: eventCategoryImg2, type: "Birthday party" }}
-          ></DisplayNData>
-        </SwiperSlide>
-        <SwiperSlide>
-          <DisplayNData
-            data={{ img: eventCategoryImg3, type: "Festivals" }}
-          ></DisplayNData>
-        </SwiperSlide>
-        <SwiperSlide>
-          <DisplayNData
-            data={{ img: eventCategoryImg4, type: "Performances" }}
-          ></DisplayNData>
-        </SwiperSlide>
-        <SwiperSlide>
-          <DisplayNData
-            data={{ img: eventCategoryImg5, type: "Family Gatherings" }}
-          ></DisplayNData>
-        </SwiperSlide>
-        <SwiperSlide>
-          <DisplayNData
-            data={{ img: eventCategoryImg6, type: "Other" }}
-          ></DisplayNData>
-        </SwiperSlide>
+        ))}
       </Swiper>
 
       {/* slider custom button */}

@@ -8,12 +8,12 @@ const TestimonialCard = ({ data }) => {
     return (
         <div className="border-[#BCBFBA] border relative">
             <Image
-                className="absolute rounded-full md:w-32 md:h-32 md:-top-20 -top-10 xl:left-[32%] lg:left-[28%] md:left-[30%] left-[33%] z-10 h-20 w-20"
+                className="absolute rounded-full md:w-32 md:h-28 md:-top-16 -top-10 left-[40%] md:left-[108px] lg:left-[85px] xl:left-[120px] z-10 h-[72px] w-20"
                 src={data?.img} alt="testimonials image"
                 width={500}
                 height={500} />
 
-            <div className="text-center md:pt-14 pt-12  px-2 pb-5 space-y-3">
+            <div className="text-center md:pt-14 pt-10  px-2 pb-5 space-y-3">
                 <div>
                     <h2 className="text-[#040404] font-semibold">{data?.name}</h2>
                     <h2 className="text-sm text-[#040404]">{data?.position}</h2>

@@ -70,7 +70,7 @@ const HomeBlog = ({ data }) => {
         <table className="table">
           <thead>
             <tr>
-              <th className="bg-white rounded-none btn md:w-60  w-40 border-[#BCBFBA] md:py-2 hover:bg-primary-color active:bg-primary-color border md:border text-[#040404] md:text-xl text-[10px]p-0">
+              <th className="bg-white rounded-none btn md:w-60  w-40 border-[#BCBFBA] md:py-2 hover:bg-primary-color active:bg-primary-color  border md:border text-[#040404] md:text-xl text-[10px]p-0">
                 {WEDDING}
               </th>
               <th className="bg-white rounded-none btn md:w-60  w-40 border-[#BCBFBA] md:py-2 hover:bg-primary-color active:bg-primary-color border md:border text-[#040404] md:text-xl text-[10px]p-0">

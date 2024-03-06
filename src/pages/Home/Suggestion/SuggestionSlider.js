@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import DisplayNData from "@/components/Shared/DisplayNData/DisplayNData";
+import Link from "next/link";
 
 const SuggestionSlider = ({ mainData }) => {
   return (
@@ -21,7 +22,9 @@ const SuggestionSlider = ({ mainData }) => {
       >
         {mainData?.map((i, idx) => (
           <SwiperSlide key={idx}>
+            <Link href={'/'}>
               <DisplayNData data={i} />
+            </Link>
           </SwiperSlide>
         ))}
       </Swiper>

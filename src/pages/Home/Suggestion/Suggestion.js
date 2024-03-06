@@ -7,6 +7,7 @@ import suggestionImage2 from "../../../../public/images/SeggetionImages/02 Resor
 import suggestionImage3 from "../../../../public/images/SeggetionImages/03 Banquet Hall .jpg";
 import suggestionImage4 from "../../../../public/images/SeggetionImages/04 Party Lawns.jpg";
 import suggestionImage5 from "../../../../public/images/SeggetionImages/Card 7.png";
+import Link from "next/link";
 
 const Suggestion = ({ data }) => {
   const { TITLE } = AllSuggestionText;
@@ -31,7 +32,7 @@ const Suggestion = ({ data }) => {
     {
       img: suggestionImage5,
       type: "Other",
-    }
+    },
   ];
 
   return (
@@ -40,16 +41,16 @@ const Suggestion = ({ data }) => {
 
       {/* suggestion card for mobile devices */}
       <div className="lg:grid grid-cols-5 items-center gap-5   hidden">
-        {suggestionData?.slice(0, 5).map((i,idx) => (
-          <DisplayNData key={idx} data={i}></DisplayNData>
+        {suggestionData?.slice(0, 5).map((i, idx) => (
+          <Link key={idx} href={"/"}>
+            <DisplayNData data={i}></DisplayNData>
+          </Link>
         ))}
       </div>
 
       {/* suggestion card for lab and laptop or other larger devices */}
       <div className="lg:hidden">
-        <SuggestionSlider
-          mainData={suggestionData}
-        />
+        <SuggestionSlider mainData={suggestionData} />
       </div>
     </div>
   );
