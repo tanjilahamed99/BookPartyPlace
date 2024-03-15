@@ -5,6 +5,7 @@ import blogImage1 from "../../../../public/images/HomeBlog/Card 01.png";
 import blogImage2 from "../../../../public/images/HomeBlog/Card 02.png";
 import blogImage3 from "../../../../public/images/HomeBlog/Card 03.png";
 import blogImage4 from "../../../../public/images/Blog/01 Corporate Blogs/ergegh.png";
+import Link from "next/link";
 
 const HomeBlog = ({ data }) => {
   // Home Blog section all text
@@ -96,7 +97,9 @@ const HomeBlog = ({ data }) => {
       {/* display blog data here*/}
       <div className="grid grid-cols-2  lg:hidden lg:grid-cols-3 items-center gap-2 md:gap-10 lg:gap-5 xl:gap-10 md:mt-10 mt-5">
         {blogData?.map((i, idx) => (
-          <DisplayBlogData key={idx} data={i}></DisplayBlogData>
+          <Link href={"/"} key={idx}>
+            <DisplayBlogData data={i}></DisplayBlogData>
+          </Link>
         ))}
       </div>
 

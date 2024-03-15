@@ -9,8 +9,9 @@ import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import DisplayLData from "../DisplayLData/DisplayLData";
+import Link from "next/link";
 
-const DisplayLDataSlider = ({ data, view,mainData }) => {
+const DisplayLDataSlider = ({ data, view, mainData }) => {
   const [setSwiperRef] = useState(null);
 
   return (
@@ -30,9 +31,11 @@ const DisplayLDataSlider = ({ data, view,mainData }) => {
       >
         {/* dynamic  */}
         {/* data facing for display card */}
-        {mainData?.map((i,idx) => (
+        {mainData?.map((i, idx) => (
           <SwiperSlide key={idx}>
-            <DisplayLData data={i} />
+            <Link href={'/'}>
+              <DisplayLData data={i} />
+            </Link>
           </SwiperSlide>
         ))}
       </Swiper>

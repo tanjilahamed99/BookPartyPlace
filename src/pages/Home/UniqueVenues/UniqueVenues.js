@@ -6,6 +6,7 @@ import uniqueVenuesImg1 from "../../../../public/images/UniqueVenues/Card 01.jpg
 import uniqueVenuesImg2 from "../../../../public/images/UniqueVenues/Card 02.jpg";
 import uniqueVenuesImg3 from "../../../../public/images/UniqueVenues/Card 03.jpg";
 import uniqueVenuesImg4 from "../../../../public/images/UniqueVenues/Card 04.png";
+import Link from "next/link";
 
 const UniqueVenues = ({ data }) => {
   const { TITLE } = AllUniqueVenuesText;
@@ -91,7 +92,9 @@ const UniqueVenues = ({ data }) => {
       <div className=" grid grid-cols-2 items-center gap-4 mx-3 md:hidden">
         {/* dynamic card data */}
         {uniqueVenuesData?.map((i,idx) => (
-          <DisplayLData key={idx} data={i} />
+          <Link key={idx} href={'/'}>
+          <DisplayLData  data={i} />
+          </Link>
         ))}
       </div>
     </div>

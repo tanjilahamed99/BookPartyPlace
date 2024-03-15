@@ -1,4 +1,3 @@
-import UseAllSuggestionData from "@/Hooks/UseAllSuggestionData";
 import Footer from "@/components/Shared/Footer/Footer";
 import Navbar from "@/components/Shared/Navbar/Navbar";
 import EventCategories from "@/pages/Home/EventCategories/EventCategories";
@@ -14,7 +13,6 @@ import UniqueVenues from "@/pages/Home/UniqueVenues/UniqueVenues";
 import WorkCommand from "@/pages/Home/WorkCommand/WorkCommand";
 
 const Home = async () => {
-  const data = await UseAllSuggestionData();
 
   return (
     <div>
@@ -28,13 +26,13 @@ const Home = async () => {
         <div className="bg-slate-50 md:bg-white space-y-6 md:space-y-20 pt-1">
           <SearchBar />
           {/* suggestion component */}
-          <Suggestion data={data} />
+          <Suggestion />
 
           {/* event categories */}
-          <EventCategories data={data} />
+          <EventCategories />
 
           {/* Unique Venues*/}
-          <UniqueVenues data={data} />
+          <UniqueVenues />
         </div>
 
         {/* work commands */}
@@ -44,10 +42,10 @@ const Home = async () => {
         <HomeContact />
 
         {/* Home blog section */}
-        <HomeBlog data={data} />
+        <HomeBlog />
 
         {/* promotion */}
-        <Promotion data={data} />
+        <Promotion />
 
         {/* Testimonial */}
         <Testimonials />
@@ -56,7 +54,7 @@ const Home = async () => {
         <HomeAbout />
 
         {/* Events Published b Venues */}
-        <EventByVenues data={data} />
+        <EventByVenues />
       </div>
 
       {/* footer */}
